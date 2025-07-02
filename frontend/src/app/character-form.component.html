@@ -1,0 +1,34 @@
+<div>
+  <label>Name: <input [(ngModel)]="model.name" /></label>
+</div>
+<div>
+  <label>Description:</label>
+  <textarea [(ngModel)]="model.description"></textarea>
+</div>
+<div>
+  <label>License:
+    <select [(ngModel)]="model.license" (change)="onLicenseChange()">
+      <option value="">-- choose --</option>
+      <option *ngFor="let l of licenses" [value]="l">{{l}}</option>
+    </select>
+  </label>
+</div>
+<div>
+  <h3>Abilities</h3>
+  <div *ngFor="let key of licenses && ['Observation','Exploration','Deduction','Traversal']">
+    <label>{{key}}: <input [(ngModel)]="model.abilities[key]" /></label>
+  </div>
+</div>
+<div>
+  <h3>Skills</h3>
+  <div *ngFor="let s of skills">
+    <label><input type="checkbox" [value]="s" (change)="model.skills = $event.target.checked ? [...model.skills, s] : model.skills.filter(x => x !== s)"> {{s}}</label>
+  </div>
+</div>
+<div>
+  <h3>Interactions</h3>
+  <div *ngFor="let i of interactions">
+    <label><input type="checkbox" [value]="i" (change)="model.interactions = $event.target.checked ? [...model.interactions, i] : model.interactions.filter(x => x !== i)"> {{i}}</label>
+  </div>
+</div>
+<button (click)="save()">Save</button>
