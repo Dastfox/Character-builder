@@ -2,8 +2,10 @@ from fastapi import FastAPI, HTTPException
 from fastapi.responses import StreamingResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
-from typing import List, Dict
+from typing import List, Dict, Optional
 import io
+import json
+from pathlib import Path
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 
@@ -21,38 +23,23 @@ app.add_middleware(
 ABILITIES = ["Observation", "Exploration", "Deduction", "Traversal"]
 LICENSES = ["Archivist", "Diviner", "Fixer", "Guardian"]
 
-# Placeholder skill and interaction data
-SKILLS: Dict[str, List[str]] = {
-    # Using a subset of the official skill list for brevity
-    "Archivist": [
-        "Local Knowledge",
-        "Geography",
-        "Twitcher",
-        "Wanderer",
-        "Behaviourist",
-    ],
-    "Diviner": [
-        "Whispers",
-        "Intentions",
-        "Patterns",
-        "Presence",
-        "Memories",
-    ],
-    "Fixer": [
-        "Relationships",
-        "Resourceful",
-        "People Watcher",
-        "Steady Hands",
-        "Inner Workings",
-    ],
-    "Guardian": [
-        "Wide Ranging",
-        "Awareness",
-        "Sixth Sense",
-        "Quick Thinking",
-        "Keen Eyed",
-    ],
-}
+
+class SkillDetail(BaseModel):
+    name: str
+    license: str
+    ability: str
+    description: str
+    specialisation: Optional[str] = None
+
+
+ROOT_DIR = Path(__file__).resolve().parents[2]
+with open(ROOT_DIR / "skills_with_details.json", "r", encoding="utf-8") as f:
+    ALL_SKILLS: List[SkillDetail] = [SkillDetail(**s) for s in json.load(f)]
+
+# Map licence -> list of SkillDetail
+SKILLS_BY_LICENSE: Dict[str, List[SkillDetail]] = {}
+for s in ALL_SKILLS:
+    SKILLS_BY_LICENSE.setdefault(s.license, []).append(s)
 
 INTERACTIONS: Dict[str, List[str]] = {
     "Archivist": ["Diagnose", "Sketch", "Study", "Take Samples", "Talk"],
@@ -83,9 +70,18 @@ next_id = 1
 def get_licenses():
     return LICENSES
 
+@app.get("/skills", response_model=List[SkillDetail])
+def list_skills(license: str | None = None, ability: str | None = None):
+    skills = ALL_SKILLS
+    if license:
+        skills = [s for s in skills if s.license == license]
+    if ability:
+        skills = [s for s in skills if s.ability == ability]
+    return skills
+
 @app.get("/skills/{license}", response_model=List[str])
 def get_skills(license: str):
-    return SKILLS.get(license, [])
+    return [s.name for s in SKILLS_BY_LICENSE.get(license, [])]
 
 @app.get("/interactions/{license}", response_model=List[str])
 def get_interactions(license: str):
@@ -122,7 +118,7 @@ def create_character(char: Character):
             )
 
     # validate selected skills
-    allowed_skills = SKILLS.get(char.license, [])
+    allowed_skills = [s.name for s in SKILLS_BY_LICENSE.get(char.license, [])]
     if any(s not in allowed_skills for s in char.skills):
         raise HTTPException(status_code=400, detail="Invalid skill for licence")
     if len(char.skills) != 4:
