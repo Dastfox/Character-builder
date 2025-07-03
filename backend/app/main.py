@@ -197,13 +197,32 @@ def build_from_scenario(data: ScenarioAnswers):
             abil_map[a] = "d4" if list(abil_map.values()).count("d4") < 2 else "d6"
     abilities = AbilityDice(**abil_map)
 
+    # ensure selected skills are valid starting skills for the licence and
+    # satisfy the required ability distribution
+    allowed = [
+        s for s in SKILLS_BY_LICENSE.get(license, []) if s.level == "starting"
+    ]
+    allowed_names = [s.name for s in allowed]
+    skills = [s for s in skills if s in allowed_names]
+
+    rule = SKILL_RULES.get(license, {})
+    ability_counts: Dict[str, int] = {a: 0 for a in ABILITIES}
+    for s in skills:
+        ability = SKILL_MAP.get(s).ability
+        ability_counts[ability] += 1
+
+    by_ability: Dict[str, List[str]] = {}
+    for s in allowed:
+        by_ability.setdefault(s.ability, []).append(s.name)
+
+    for ability, required in rule.items():
+        choices = [n for n in by_ability.get(ability, []) if n not in skills]
+        while ability_counts.get(ability, 0) < required and choices:
+            skills.append(choices.pop(0))
+            ability_counts[ability] += 1
+
     if len(skills) < 4:
-        defaults = [
-            s.name
-            for s in SKILLS_BY_LICENSE.get(license, [])
-            if s.level == "starting"
-        ]
-        for s in defaults:
+        for s in allowed_names:
             if len(skills) >= 4:
                 break
             if s not in skills:
