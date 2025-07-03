@@ -1,4 +1,4 @@
-<div>
+<div class="form-card">
   <label>Name: <input [(ngModel)]="model.name" /></label>
 </div>
 <div>
@@ -31,4 +31,5 @@
     <label><input type="checkbox" [value]="i" (change)="toggleInteraction(i, $event.target.checked)"> {{i}}</label>
   </div>
 </div>
-<button (click)="save()">Save</button>
+</div>
+<button class="save" (click)="save()">Save</button>

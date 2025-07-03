@@ -1,5 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import StreamingResponse
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from typing import List, Dict
 import io
@@ -7,6 +8,15 @@ from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 
 app = FastAPI(title="Mappa Mundi Character Builder")
+
+# Allow requests from the front-end during development
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 ABILITIES = ["Observation", "Exploration", "Deduction", "Traversal"]
 LICENSES = ["Archivist", "Diviner", "Fixer", "Guardian"]
