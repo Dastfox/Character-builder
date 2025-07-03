@@ -13,6 +13,7 @@
         <option *ngFor="let l of licenses" [value]="l">{{l}}</option>
       </select>
     </label>
+    <div class="rule" *ngIf="ruleText">{{ruleText}}</div>
   </div>
 
   <div>

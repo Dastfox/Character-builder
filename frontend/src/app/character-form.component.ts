@@ -31,6 +31,13 @@ export class CharacterFormComponent implements OnInit {
   skills: Skill[] = [];
   interactions: string[] = [];
   abilityKeys = ['Observation', 'Exploration', 'Deduction', 'Traversal'];
+  licenseSkillRules: Record<string, Record<string, number>> = {
+    Archivist: { Observation: 2, Deduction: 1, Exploration: 1 },
+    Diviner: { Deduction: 2, Observation: 1, Exploration: 1 },
+    Fixer: { Deduction: 2, Exploration: 1, Observation: 1 },
+    Guardian: { Traversal: 2, Exploration: 1, Observation: 1 }
+  };
+  ruleText = '';
   locked: Set<string> = new Set();
   model: Character = {
     name: '',
@@ -58,6 +65,13 @@ export class CharacterFormComponent implements OnInit {
     this.api.getSkills({ license: this.model.license, level: 'starting' }).subscribe(s => this.skills = s);
     this.api.getInteractions(this.model.license).subscribe(i => this.interactions = i);
     this.setTrainingDefaults();
+    const rule = this.licenseSkillRules[this.model.license];
+    if (rule) {
+      const parts = Object.entries(rule).map(([a, n]) => `${n} ${a} Skill${n > 1 ? 's' : ''}`);
+      this.ruleText = `Choose ${parts.join(', ')} from the ${this.model.license} Skill Path Starting Skills.`;
+    } else {
+      this.ruleText = '';
+    }
   }
 
   setTrainingDefaults() {
@@ -108,6 +122,17 @@ export class CharacterFormComponent implements OnInit {
     }
   }
 
+  private getAbilityCounts(): Record<string, number> {
+    const counts: Record<string, number> = {};
+    for (const name of this.model.skills) {
+      const s = this.skills.find(sk => sk.name === name);
+      if (s) {
+        counts[s.ability] = (counts[s.ability] || 0) + 1;
+      }
+    }
+    return counts;
+  }
+
   toggleInteraction(interaction: string, checked: boolean) {
     if (checked) {
       if (this.model.interactions.length >= 3) {
@@ -132,7 +157,16 @@ export class CharacterFormComponent implements OnInit {
   }
 
   isSkillDisabled(skill: Skill): boolean {
-    return !this.model.skills.includes(skill.name) && this.model.skills.length >= 4;
+    if (this.model.skills.includes(skill.name)) return false;
+    const rule = this.licenseSkillRules[this.model.license];
+    if (rule) {
+      const counts = this.getAbilityCounts();
+      const allowed = rule[skill.ability] || 0;
+      if ((counts[skill.ability] || 0) >= allowed) {
+        return true;
+      }
+    }
+    return this.model.skills.length >= 4;
   }
 
   isInteractionDisabled(interaction: string): boolean {
