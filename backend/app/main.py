@@ -29,6 +29,7 @@ class SkillDetail(BaseModel):
     license: str
     ability: str
     description: str
+    level: str
     specialisation: Optional[str] = None
 
 
@@ -71,12 +72,14 @@ def get_licenses():
     return LICENSES
 
 @app.get("/skills", response_model=List[SkillDetail])
-def list_skills(license: str | None = None, ability: str | None = None):
+def list_skills(license: str | None = None, ability: str | None = None, level: str | None = None):
     skills = ALL_SKILLS
     if license:
         skills = [s for s in skills if s.license == license]
     if ability:
         skills = [s for s in skills if s.ability == ability]
+    if level:
+        skills = [s for s in skills if s.level == level]
     return skills
 
 @app.get("/skills/{license}", response_model=List[str])
@@ -117,8 +120,12 @@ def create_character(char: Character):
                 detail=f"{char.license} requires {rules['strength']} d6 and {rules['weakness']} d4",
             )
 
-    # validate selected skills
-    allowed_skills = [s.name for s in SKILLS_BY_LICENSE.get(char.license, [])]
+    # validate selected skills (only starting level allowed on creation)
+    allowed_skills = [
+        s.name
+        for s in SKILLS_BY_LICENSE.get(char.license, [])
+        if s.level == "starting"
+    ]
     if any(s not in allowed_skills for s in char.skills):
         raise HTTPException(status_code=400, detail="Invalid skill for licence")
     if len(char.skills) != 4:

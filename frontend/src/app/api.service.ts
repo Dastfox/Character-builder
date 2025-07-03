@@ -12,13 +12,16 @@ export class ApiService {
     return this.http.get<string[]>(`${this.base}/licenses`);
   }
 
-  getSkills(filters: { license?: string; ability?: string } = {}): Observable<any[]> {
+  getSkills(filters: { license?: string; ability?: string; level?: string } = {}): Observable<any[]> {
     let params = new HttpParams();
     if (filters.license) {
       params = params.set('license', filters.license);
     }
     if (filters.ability) {
       params = params.set('ability', filters.ability);
+    }
+    if (filters.level) {
+      params = params.set('level', filters.level);
     }
     return this.http.get<any[]>(`${this.base}/skills`, { params });
   }
