@@ -61,14 +61,10 @@ input[type="text"], textarea, select {
 
 .skill-desc {
   width: 250px;
-  position: absolute;
-  right: -270px;
-  top: 0;
-  background: #ffffff;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  position: fixed;
+  right: 20em;
+  top: 10em;
   padding: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   opacity: 0;
   transform: translateX(10px);
   transition: opacity 0.3s ease, transform 0.3s ease;

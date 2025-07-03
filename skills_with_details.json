@@ -10,7 +10,7 @@
     "name": "Geography",
     "license": "Archivist",
     "ability": "Exploration",
-    "description": "During your�ee hours, you wile away the time studying maps and speaking with foragers and gatherers. As a result, you have built up a robust mental map of the local area and are familiar with its major geographical features.",
+    "description": "During your three hours, you wile away the time studying maps and speaking with foragers and gatherers. As a result, you have built up a robust mental map of the local area and are familiar with its major geographical features.",
     "level": "starting"
   },
   {
@@ -150,7 +150,7 @@
     "name": "Traces of Fate",
     "license": "Archivist",
     "ability": "Observation",
-    "description": "Ecumene’s natural historians agree on one thing: the substance of our world was drawn together by Fate. This act of creation, intentional or accidental, has le�traces in the earth. These traces, be they shadows of intention or accidents, can be mapped.",
+    "description": "Ecumene's natural historians agree on one thing: the substance of our world was drawn together by Fate. This act of creation, intentional or accidental, has le�traces in the earth. These traces, be they shadows of intention or accidents, can be mapped.",
     "level": "level_two"
   },
   {
