@@ -38,3 +38,19 @@
 
   <button class="save" (click)="save()">Save</button>
 </div>
+
+<div *ngIf="created" class="result-card">
+  <h2>Saved Character</h2>
+  <p><strong>ID:</strong> {{created?.id}}</p>
+  <p><strong>Name:</strong> {{created?.name}}</p>
+  <p><strong>Description:</strong> {{created?.description}}</p>
+  <p><strong>License:</strong> {{created?.license}}</p>
+  <div>
+    <h3>Abilities</h3>
+    <div *ngFor="let key of abilityKeys">
+      {{key}}: {{created?.abilities[key]}}
+    </div>
+  </div>
+  <p><strong>Skills:</strong> {{created?.skills.join(', ')}}</p>
+  <p><strong>Interactions:</strong> {{created?.interactions.join(', ')}}</p>
+</div>
