@@ -84,6 +84,7 @@
     "text": "When trouble brews you usually:",
     "options": [
       {"id": "arch", "text": "Care for your favourite creature", "skill": "Animal Enthusiast", "license": "Archivist"},
+
       {"id": "div", "text": "Read motives and signs", "skill": "Intentions", "license": "Diviner"},
       {"id": "fix", "text": "Improve your tools", "skill": "Steady Hands", "license": "Fixer"},
       {"id": "gua", "text": "React quickly to threats", "skill": "Quick Thinking", "license": "Guardian"}

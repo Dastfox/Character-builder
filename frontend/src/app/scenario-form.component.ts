@@ -34,6 +34,7 @@ export class ScenarioFormComponent implements OnInit {
     this.api.getScenarioQuestions().subscribe(q => (this.questions = q));
   }
 
+
   get currentQuestion() {
     return this.questions[this.currentIndex];
   }
@@ -78,6 +79,7 @@ export class ScenarioFormComponent implements OnInit {
   finished() {
     return this.currentIndex >= this.questions.length;
   }
+
 
   submit() {
     const payload = { name: this.name, description: this.description, answers: this.answers };
