@@ -58,6 +58,7 @@ export class CharacterFormComponent implements OnInit {
       Archivist: { strength: 'Observation', weakness: 'Traversal' },
       Fixer: { strength: 'Deduction', weakness: 'Traversal' },
       Guardian: { strength: 'Traversal', weakness: 'Deduction' },
+
     };
     const r = rules[this.model.license as keyof typeof rules];
     if (r) {
@@ -65,6 +66,10 @@ export class CharacterFormComponent implements OnInit {
       this.locked.add(r.weakness);
       this.model.abilities[r.strength] = 'd6';
       this.model.abilities[r.weakness] = 'd4';
+      const rest = this.abilityKeys.filter(k => !this.locked.has(k));
+      // default remaining assignments
+      this.model.abilities[rest[0]] = 'd6';
+      this.model.abilities[rest[1]] = 'd4';
     }
   }
 
@@ -125,7 +130,7 @@ export class CharacterFormComponent implements OnInit {
       },
       error: err => {
         alert('Error: ' + (err.error?.detail || 'unknown'));
-      },
+      }
     });
   }
 }
