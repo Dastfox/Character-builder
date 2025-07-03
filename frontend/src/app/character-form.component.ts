@@ -53,6 +53,7 @@ export class CharacterFormComponent implements OnInit {
     interactions: []
   };
   created: Character | null = null;
+  hoveredSkill: Skill | null = null;
 
   constructor(private api: ApiService) {}
 

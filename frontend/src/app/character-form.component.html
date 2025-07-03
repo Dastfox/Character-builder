@@ -39,18 +39,28 @@
     </button>
   </div>
 
-  <div>
-    <h3>Skills</h3>
-    <div *ngFor="let s of skills">
-      <label>
-        <input
-          type="checkbox"
-          [checked]="model.skills.includes(s.name)"
-          [disabled]="isSkillDisabled(s)"
-          (change)="toggleSkill(s, $event.target.checked)"
-        />
-        {{s.name}} <span class="ability">({{s.ability}})</span>
-      </label>
+  <div class="skills-section">
+    <div class="skill-list">
+      <h3>Skills</h3>
+      <div
+        *ngFor="let s of skills"
+        (mouseenter)="hoveredSkill = s"
+        (mouseleave)="hoveredSkill = null"
+      >
+        <label>
+          <input
+            type="checkbox"
+            [checked]="model.skills.includes(s.name)"
+            [disabled]="isSkillDisabled(s)"
+            (change)="toggleSkill(s, $event.target.checked)"
+          />
+          {{ s.name }} <span class="ability">({{ s.ability }})</span>
+        </label>
+      </div>
+    </div>
+    <div class="skill-desc" [class.show]="hoveredSkill">
+      <h4 *ngIf="hoveredSkill">{{ hoveredSkill.name }}</h4>
+      <p *ngIf="hoveredSkill">{{ hoveredSkill.description }}</p>
     </div>
   </div>
 
