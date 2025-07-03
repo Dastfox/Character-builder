@@ -19,6 +19,7 @@ export class CharacterFormComponent implements OnInit {
   licenses: string[] = [];
   skills: string[] = [];
   interactions: string[] = [];
+  abilityKeys = ['Observation', 'Exploration', 'Deduction', 'Traversal'];
   model: Character = {
     name: '',
     description: '',
@@ -43,6 +44,22 @@ export class CharacterFormComponent implements OnInit {
     if (!this.model.license) return;
     this.api.getSkills(this.model.license).subscribe(s => this.skills = s);
     this.api.getInteractions(this.model.license).subscribe(i => this.interactions = i);
+  }
+
+  toggleSkill(skill: string, checked: boolean) {
+    if (checked) {
+      this.model.skills = [...this.model.skills, skill];
+    } else {
+      this.model.skills = this.model.skills.filter(x => x !== skill);
+    }
+  }
+
+  toggleInteraction(interaction: string, checked: boolean) {
+    if (checked) {
+      this.model.interactions = [...this.model.interactions, interaction];
+    } else {
+      this.model.interactions = this.model.interactions.filter(x => x !== interaction);
+    }
   }
 
   save() {
