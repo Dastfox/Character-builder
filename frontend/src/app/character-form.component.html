@@ -41,14 +41,14 @@
   <div>
     <h3>Skills</h3>
     <div *ngFor="let s of skills">
-      <label><input type="checkbox" [value]="s" (change)="toggleSkill(s, $event.target.checked)"> {{s}}</label>
+      <label><input type="checkbox" [checked]="model.skills.includes(s)" [disabled]="isSkillDisabled(s)" [value]="s" (change)="toggleSkill(s, $event.target.checked)"> {{s}}</label>
     </div>
   </div>
 
   <div>
     <h3>Interactions</h3>
     <div *ngFor="let i of interactions">
-      <label><input type="checkbox" [value]="i" (change)="toggleInteraction(i, $event.target.checked)"> {{i}}</label>
+      <label><input type="checkbox" [checked]="model.interactions.includes(i)" [disabled]="isInteractionDisabled(i)" [value]="i" (change)="toggleInteraction(i, $event.target.checked)"> {{i}}</label>
     </div>
   </div>
 
