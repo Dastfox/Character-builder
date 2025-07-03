@@ -90,6 +90,9 @@ export class CharacterFormComponent implements OnInit {
 
   toggleSkill(skill: string, checked: boolean) {
     if (checked) {
+      if (this.model.skills.length >= 4) {
+        return;
+      }
       this.model.skills = [...this.model.skills, skill];
     } else {
       this.model.skills = this.model.skills.filter(x => x !== skill);
@@ -98,6 +101,9 @@ export class CharacterFormComponent implements OnInit {
 
   toggleInteraction(interaction: string, checked: boolean) {
     if (checked) {
+      if (this.model.interactions.length >= 3) {
+        return;
+      }
       this.model.interactions = [...this.model.interactions, interaction];
     } else {
       this.model.interactions = this.model.interactions.filter(x => x !== interaction);
@@ -114,6 +120,14 @@ export class CharacterFormComponent implements OnInit {
     }
     if (die === 'd4') return d4 >= 2;
     return d6 >= 2;
+  }
+
+  isSkillDisabled(skill: string): boolean {
+    return !this.model.skills.includes(skill) && this.model.skills.length >= 4;
+  }
+
+  isInteractionDisabled(interaction: string): boolean {
+    return !this.model.interactions.includes(interaction) && this.model.interactions.length >= 3;
   }
 
   save() {
