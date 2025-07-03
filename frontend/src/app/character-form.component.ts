@@ -53,11 +53,12 @@ export class CharacterFormComponent implements OnInit {
 
   setTrainingDefaults() {
     this.locked.clear();
-    this.abilityKeys.forEach(k => this.model.abilities[k] = '');
+    this.abilityKeys.forEach(k => (this.model.abilities[k] = ''));
     const rules: any = {
-      Archivist: {strength: 'Observation', weakness: 'Traversal'},
-      Fixer: {strength: 'Deduction', weakness: 'Traversal'},
-      Guardian: {strength: 'Traversal', weakness: 'Deduction'},
+      Archivist: { strength: 'Observation', weakness: 'Traversal' },
+      Fixer: { strength: 'Deduction', weakness: 'Traversal' },
+      Guardian: { strength: 'Traversal', weakness: 'Deduction' },
+
     };
     const r = rules[this.model.license as keyof typeof rules];
     if (r) {
@@ -82,8 +83,9 @@ export class CharacterFormComponent implements OnInit {
     this.locked.add(weakness);
     this.model.abilities[strength] = 'd6';
     this.model.abilities[weakness] = 'd4';
-    this.model.abilities[pool[0]] = 'd6';
-    this.model.abilities[pool[1]] = 'd4';
+    // leave remaining abilities empty so the player must assign them
+    this.model.abilities[pool[0]] = '';
+    this.model.abilities[pool[1]] = '';
   }
 
   toggleSkill(skill: string, checked: boolean) {
@@ -102,7 +104,26 @@ export class CharacterFormComponent implements OnInit {
     }
   }
 
+  isDieDisabled(key: string, die: string): boolean {
+    let d4 = 0,
+      d6 = 0;
+    for (const k of this.abilityKeys) {
+      if (k === key) continue;
+      if (this.model.abilities[k] === 'd4') d4++;
+      if (this.model.abilities[k] === 'd6') d6++;
+    }
+    if (die === 'd4') return d4 >= 2;
+    return d6 >= 2;
+  }
+
   save() {
+    for (const key of this.abilityKeys) {
+      if (!this.model.abilities[key]) {
+        alert('Please assign dice to all abilities.');
+        return;
+      }
+    }
+
     this.api.createCharacter(this.model).subscribe({
       next: res => {
         this.created = res as Character;

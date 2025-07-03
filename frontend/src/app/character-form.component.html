@@ -20,9 +20,13 @@
     <div *ngFor="let key of abilityKeys">
       <label>
         {{key}}:
-        <select [(ngModel)]="model.abilities[key]" [disabled]="locked.has(key)">
-          <option value="d4">D4</option>
-          <option value="d6">D6</option>
+        <select
+          [(ngModel)]="model.abilities[key]"
+          [disabled]="locked.has(key)"
+        >
+          <option value="">--</option>
+          <option value="d4" [disabled]="isDieDisabled(key, 'd4')">D4</option>
+          <option value="d6" [disabled]="isDieDisabled(key, 'd6')">D6</option>
         </select>
         <span *ngIf="locked.has(key)">
           {{ model.abilities[key] === 'd6' ? '(Strength)' : '(Weakness)' }}
