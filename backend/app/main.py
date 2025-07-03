@@ -49,6 +49,17 @@ INTERACTIONS: Dict[str, List[str]] = {
     "Guardian": ["Explore", "Feed", "Play", "Protect", "Provoke"],
 }
 
+# Starting skill distribution rules per licence
+SKILL_RULES: Dict[str, Dict[str, int]] = {
+    "Archivist": {"Observation": 2, "Deduction": 1, "Exploration": 1},
+    "Diviner": {"Deduction": 2, "Observation": 1, "Exploration": 1},
+    "Fixer": {"Deduction": 2, "Exploration": 1, "Observation": 1},
+    "Guardian": {"Traversal": 2, "Exploration": 1, "Observation": 1},
+}
+
+# Map skill name -> detail for quick lookups
+SKILL_MAP: Dict[str, SkillDetail] = {s.name: s for s in ALL_SKILLS}
+
 class AbilityDice(BaseModel):
     Observation: str = Field(default="")
     Exploration: str = Field(default="")
@@ -130,6 +141,22 @@ def create_character(char: Character):
         raise HTTPException(status_code=400, detail="Invalid skill for licence")
     if len(char.skills) != 4:
         raise HTTPException(status_code=400, detail="Choose exactly four starting skills")
+
+    # enforce ability distribution for starting skills
+    ability_counts: Dict[str, int] = {a: 0 for a in ABILITIES}
+    for s in char.skills:
+        detail = SKILL_MAP.get(s)
+        if detail:
+            ability_counts[detail.ability] += 1
+    rule = SKILL_RULES.get(char.license)
+    if rule:
+        for ability, required in rule.items():
+            if ability_counts.get(ability, 0) != required:
+                needed = ", ".join(f"{n} {a}" for a, n in rule.items())
+                raise HTTPException(
+                    status_code=400,
+                    detail=f"{char.license} requires {needed} starting skills",
+                )
 
     # validate interactions
     allowed_interactions = INTERACTIONS.get(char.license, [])

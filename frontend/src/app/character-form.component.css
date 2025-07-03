@@ -46,3 +46,8 @@ input[type="text"], textarea, select {
   color: #666;
   font-size: 0.85em;
 }
+
+.rule {
+  font-style: italic;
+  margin-top: 0.5rem;
+}
