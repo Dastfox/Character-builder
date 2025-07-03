@@ -41,3 +41,8 @@ input[type="text"], textarea, select {
 .save:hover {
   background: linear-gradient(45deg, #478ed1, #42a5f5);
 }
+
+.ability {
+  color: #666;
+  font-size: 0.85em;
+}

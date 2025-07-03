@@ -41,7 +41,15 @@
   <div>
     <h3>Skills</h3>
     <div *ngFor="let s of skills">
-      <label><input type="checkbox" [checked]="model.skills.includes(s)" [disabled]="isSkillDisabled(s)" [value]="s" (change)="toggleSkill(s, $event.target.checked)"> {{s}}</label>
+      <label>
+        <input
+          type="checkbox"
+          [checked]="model.skills.includes(s.name)"
+          [disabled]="isSkillDisabled(s)"
+          (change)="toggleSkill(s, $event.target.checked)"
+        />
+        {{s.name}} <span class="ability">({{s.ability}})</span>
+      </label>
     </div>
   </div>
 

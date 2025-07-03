@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable()
@@ -12,8 +12,15 @@ export class ApiService {
     return this.http.get<string[]>(`${this.base}/licenses`);
   }
 
-  getSkills(license: string): Observable<string[]> {
-    return this.http.get<string[]>(`${this.base}/skills/${license}`);
+  getSkills(filters: { license?: string; ability?: string } = {}): Observable<any[]> {
+    let params = new HttpParams();
+    if (filters.license) {
+      params = params.set('license', filters.license);
+    }
+    if (filters.ability) {
+      params = params.set('ability', filters.ability);
+    }
+    return this.http.get<any[]>(`${this.base}/skills`, { params });
   }
 
   getInteractions(license: string): Observable<string[]> {

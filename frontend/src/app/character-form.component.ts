@@ -11,6 +11,14 @@ interface Character {
   interactions: string[];
 }
 
+interface Skill {
+  name: string;
+  license: string;
+  ability: string;
+  description: string;
+  specialisation?: string | null;
+}
+
 @Component({
     selector: 'character-form',
     templateUrl: './character-form.component.html',
@@ -19,7 +27,7 @@ interface Character {
 })
 export class CharacterFormComponent implements OnInit {
   licenses: string[] = [];
-  skills: string[] = [];
+  skills: Skill[] = [];
   interactions: string[] = [];
   abilityKeys = ['Observation', 'Exploration', 'Deduction', 'Traversal'];
   locked: Set<string> = new Set();
@@ -46,7 +54,7 @@ export class CharacterFormComponent implements OnInit {
 
   onLicenseChange() {
     if (!this.model.license) return;
-    this.api.getSkills(this.model.license).subscribe(s => this.skills = s);
+    this.api.getSkills({ license: this.model.license }).subscribe(s => this.skills = s);
     this.api.getInteractions(this.model.license).subscribe(i => this.interactions = i);
     this.setTrainingDefaults();
   }
@@ -88,14 +96,14 @@ export class CharacterFormComponent implements OnInit {
     this.model.abilities[pool[1]] = '';
   }
 
-  toggleSkill(skill: string, checked: boolean) {
+  toggleSkill(skill: Skill, checked: boolean) {
     if (checked) {
       if (this.model.skills.length >= 4) {
         return;
       }
-      this.model.skills = [...this.model.skills, skill];
+      this.model.skills = [...this.model.skills, skill.name];
     } else {
-      this.model.skills = this.model.skills.filter(x => x !== skill);
+      this.model.skills = this.model.skills.filter(x => x !== skill.name);
     }
   }
 
@@ -122,8 +130,8 @@ export class CharacterFormComponent implements OnInit {
     return d6 >= 2;
   }
 
-  isSkillDisabled(skill: string): boolean {
-    return !this.model.skills.includes(skill) && this.model.skills.length >= 4;
+  isSkillDisabled(skill: Skill): boolean {
+    return !this.model.skills.includes(skill.name) && this.model.skills.length >= 4;
   }
 
   isInteractionDisabled(interaction: string): boolean {
