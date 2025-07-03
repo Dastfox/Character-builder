@@ -23,17 +23,42 @@ LICENSES = ["Archivist", "Diviner", "Fixer", "Guardian"]
 
 # Placeholder skill and interaction data
 SKILLS: Dict[str, List[str]] = {
-    "Archivist": ["Local Knowledge", "Cartographer's Tools", "Biologist"],
-    "Diviner": ["Whispers", "Cartomancer", "Ossiomancer"],
-    "Fixer": ["Tinker", "Mechanic", "Smuggler"],
-    "Guardian": ["Protector", "Warrior", "Bodyguard"],
+    # Using a subset of the official skill list for brevity
+    "Archivist": [
+        "Local Knowledge",
+        "Geography",
+        "Twitcher",
+        "Wanderer",
+        "Behaviourist",
+    ],
+    "Diviner": [
+        "Whispers",
+        "Intentions",
+        "Patterns",
+        "Presence",
+        "Memories",
+    ],
+    "Fixer": [
+        "Relationships",
+        "Resourceful",
+        "People Watcher",
+        "Steady Hands",
+        "Inner Workings",
+    ],
+    "Guardian": [
+        "Wide Ranging",
+        "Awareness",
+        "Sixth Sense",
+        "Quick Thinking",
+        "Keen Eyed",
+    ],
 }
 
 INTERACTIONS: Dict[str, List[str]] = {
-    "Archivist": ["Research", "Analyse", "Catalog"],
-    "Diviner": ["Predict", "Read Bones", "Interpret"],
-    "Fixer": ["Negotiate", "Repair", "Trade"],
-    "Guardian": ["Defend", "Intimidate", "Lead"],
+    "Archivist": ["Diagnose", "Sketch", "Study", "Take Samples", "Talk"],
+    "Diviner": ["Gift", "Read", "Sing", "Soothe", "Touch"],
+    "Fixer": ["Bait", "Gift", "Provoke", "Read", "Touch"],
+    "Guardian": ["Explore", "Feed", "Play", "Protect", "Provoke"],
 }
 
 class AbilityDice(BaseModel):
@@ -71,6 +96,45 @@ def create_character(char: Character):
     global next_id
     if char.license not in LICENSES:
         raise HTTPException(status_code=400, detail="Invalid license")
+
+    # validate ability dice: only D4 or D6, two of each
+    dice = {k: v.strip().lower() for k, v in char.abilities.model_dump().items()}
+    counts = {"d4": 0, "d6": 0}
+    for die in dice.values():
+        if die not in counts:
+            raise HTTPException(status_code=400, detail="Abilities must use D4 or D6")
+        counts[die] += 1
+    if counts["d4"] != 2 or counts["d6"] != 2:
+        raise HTTPException(status_code=400, detail="Assign exactly two D4 and two D6 to abilities")
+
+    # enforce strength and weakness for most licences
+    training = {
+        "Archivist": {"strength": "Observation", "weakness": "Traversal"},
+        "Fixer": {"strength": "Deduction", "weakness": "Traversal"},
+        "Guardian": {"strength": "Traversal", "weakness": "Deduction"},
+    }
+    rules = training.get(char.license)
+    if rules:
+        if dice[rules["strength"]] != "d6" or dice[rules["weakness"]] != "d4":
+            raise HTTPException(
+                status_code=400,
+                detail=f"{char.license} requires {rules['strength']} d6 and {rules['weakness']} d4",
+            )
+
+    # validate selected skills
+    allowed_skills = SKILLS.get(char.license, [])
+    if any(s not in allowed_skills for s in char.skills):
+        raise HTTPException(status_code=400, detail="Invalid skill for licence")
+    if len(char.skills) != 4:
+        raise HTTPException(status_code=400, detail="Choose exactly four starting skills")
+
+    # validate interactions
+    allowed_interactions = INTERACTIONS.get(char.license, [])
+    if any(i not in allowed_interactions for i in char.interactions):
+        raise HTTPException(status_code=400, detail="Invalid interaction for licence")
+    if len(char.interactions) != 3:
+        raise HTTPException(status_code=400, detail="Choose exactly three interactions")
+
     char.id = next_id
     next_id += 1
     characters[char.id] = char
