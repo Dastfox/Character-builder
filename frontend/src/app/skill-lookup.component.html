@@ -1,0 +1,8 @@
+<div class="lookup-card">
+  <label>Search: <input [(ngModel)]="search" placeholder="Enter skill name" /></label>
+  <div *ngFor="let s of filteredSkills" class="skill-item">
+    <h4>{{s.name}}</h4>
+    <div class="meta">{{s.license}} - {{s.ability}}</div>
+    <p>{{s.description}}</p>
+  </div>
+</div>
