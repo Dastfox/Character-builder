@@ -20,10 +20,13 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "app:build"
+            "buildTarget": "app:build"
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
