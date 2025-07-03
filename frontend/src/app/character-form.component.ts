@@ -16,6 +16,7 @@ interface Skill {
   license: string;
   ability: string;
   description: string;
+  level: string;
   specialisation?: string | null;
 }
 
@@ -54,7 +55,7 @@ export class CharacterFormComponent implements OnInit {
 
   onLicenseChange() {
     if (!this.model.license) return;
-    this.api.getSkills({ license: this.model.license }).subscribe(s => this.skills = s);
+    this.api.getSkills({ license: this.model.license, level: 'starting' }).subscribe(s => this.skills = s);
     this.api.getInteractions(this.model.license).subscribe(i => this.interactions = i);
     this.setTrainingDefaults();
   }
