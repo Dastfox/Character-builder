@@ -3,1088 +3,1259 @@
     "name": "Local Knowledge",
     "license": "Archivist",
     "ability": "Observation",
-    "description": "You were born in this region and have studied here for some years. As such, you are well acquainted with local customs. In lesser known areas of the region, you have a better chance at understanding cultural variants."
+    "description": "You were born in this region and have studied here for some years. As such, you are well acquainted with local customs. In lesser known areas of the region, you have a better chance at understanding cultural variants.",
+    "level": "starting"
   },
   {
     "name": "Geography",
     "license": "Archivist",
     "ability": "Exploration",
-    "description": "During your�ee hours, you wile away the time studying maps and speaking with foragers and gatherers. As a result, you have built up a robust mental map of the local area and are familiar with its major geographical features."
+    "description": "During your�ee hours, you wile away the time studying maps and speaking with foragers and gatherers. As a result, you have built up a robust mental map of the local area and are familiar with its major geographical features.",
+    "level": "starting"
   },
   {
     "name": "Twitcher",
     "license": "Archivist",
     "ability": "Observation",
-    "description": "You have devoted time to the study of birds and their migratory patterns. You know their favoured nesting grounds and recognise their calls. When the birdsong changes, you know the next season isn't far behind. With this knowledge, you can anticipate changes in the weather and ascertain your general location in your birth region."
+    "description": "You have devoted time to the study of birds and their migratory patterns. You know their favoured nesting grounds and recognise their calls. When the birdsong changes, you know the next season isn't far behind. With this knowledge, you can anticipate changes in the weather and ascertain your general location in your birth region.",
+    "level": "starting"
   },
   {
     "name": "Wanderer",
     "license": "Archivist",
     "ability": "Traversal",
-    "description": "The Wilds call to each and every person. Most ignore the whispers on the wind, hearkening back toﬁreside stories about the dangers that await the unprepared. But you were never one for listening too much to anyone, and you have spent your�ee time wandering the hidden paths and secret trails, going ever deeper into the Wilds beyond the borders."
+    "description": "The Wilds call to each and every person. Most ignore the whispers on the wind, hearkening back toﬁreside stories about the dangers that await the unprepared. But you were never one for listening too much to anyone, and you have spent your�ee time wandering the hidden paths and secret trails, going ever deeper into the Wilds beyond the borders.",
+    "level": "starting"
   },
   {
     "name": "Behaviourist",
     "license": "Archivist",
     "ability": "Observation",
-    "description": "Everything in this world is governed by behaviours. The attentive can observe these behaviours across individual beings. You excel at this, and you’ve even learned to anticipate and predict the commonalities between beings of various groups."
+    "description": "Everything in this world is governed by behaviours. The attentive can observe these behaviours across individual beings. You excel at this, and you’ve even learned to anticipate and predict the commonalities between beings of various groups.",
+    "level": "starting"
   },
   {
     "name": "Animal Enthusiast",
     "license": "Archivist",
     "ability": "Deduction",
-    "description": "You have always felt an aﬃnity for a certain type of Creature. When you were a child, you would imitate them, and now, as a Chronicler, you have carried that fascination with you, devoting your time to the study of both that Creature and its cultural signiﬁcance."
+    "description": "You have always felt an aﬃnity for a certain type of Creature. When you were a child, you would imitate them, and now, as a Chronicler, you have carried that fascination with you, devoting your time to the study of both that Creature and its cultural signiﬁcance.",
+    "level": "starting"
   },
   {
     "name": "Folk Tradition",
     "license": "Archivist",
     "ability": "Deduction",
-    "description": "Oﬃcial histories tell oﬃcial stories. Folk traditions, meanwhile, are where the subversive, the dangerous, the bawdy, and the cautionary stories can be found. The tales of princes and kings are one thing, but the stories of the woods,ﬁelds, rivers, and lowly people are quite another.Politics [Observation] The study of power is the study of politics. Perhaps you have political aspirations, or perhaps you believe that the powerful prey on the weak, and that the only way to protect the people is to play the powerful at their own game. Whatever your motivation is, you have studied the political and know that old enmities are o�en the reason new relationships fail."
+    "description": "Oﬃcial histories tell oﬃcial stories. Folk traditions, meanwhile, are where the subversive, the dangerous, the bawdy, and the cautionary stories can be found. The tales of princes and kings are one thing, but the stories of the woods,ﬁelds, rivers, and lowly people are quite another.Politics [Observation] The study of power is the study of politics. Perhaps you have political aspirations, or perhaps you believe that the powerful prey on the weak, and that the only way to protect the people is to play the powerful at their own game. Whatever your motivation is, you have studied the political and know that old enmities are o�en the reason new relationships fail.",
+    "level": "starting"
   },
   {
     "name": "Politics",
     "license": "Archivist",
     "ability": "Observation",
-    "description": "The study of power is the study of politics. Perhaps you have political aspirations, or perhaps you believe that the powerful prey on the weak, and that the only way to protect the people is to play the powerful at their own game. Whatever your motivation is, you have studied the political and know that old enmities are o�en the reason new relationships fail."
+    "description": "The study of power is the study of politics. Perhaps you have political aspirations, or perhaps you believe that the powerful prey on the weak, and that the only way to protect the people is to play the powerful at their own game. Whatever your motivation is, you have studied the political and know that old enmities are o�en the reason new relationships fail.",
+    "level": "starting"
   },
   {
     "name": "Foundations",
     "license": "Archivist",
     "ability": "Deduction",
-    "description": "History is sanctioned myth, the fantastical made tangible, the foundations of culture covered with the ediﬁces of the everyday. You have devoted yourself to the origins of people and cultures, back to the foundational stories of our world, and you can call these stories to mind when required. Archivist Level One Skills"
+    "description": "History is sanctioned myth, the fantastical made tangible, the foundations of culture covered with the ediﬁces of the everyday. You have devoted yourself to the origins of people and cultures, back to the foundational stories of our world, and you can call these stories to mind when required. Archivist Level One Skills",
+    "level": "starting"
   },
   {
     "name": "Local Guides",
     "license": "Archivist",
     "ability": "Exploration",
-    "description": "Forging connections with locals is a great means of gaining speciﬁc knowledge and clues regarding regional geography. You make sure to build these connections at the earliest opportunity, allowing you to call on guides as and when they are needed."
+    "description": "Forging connections with locals is a great means of gaining speciﬁc knowledge and clues regarding regional geography. You make sure to build these connections at the earliest opportunity, allowing you to call on guides as and when they are needed.",
+    "level": "level_one"
   },
   {
     "name": "Internal Compass",
     "license": "Archivist",
     "ability": "Exploration",
-    "description": "No matter how thick the forest may be, no matter how sparse the desert, no matter how featureless the tundra, you always seem to know which direction to travel."
+    "description": "No matter how thick the forest may be, no matter how sparse the desert, no matter how featureless the tundra, you always seem to know which direction to travel.",
+    "level": "level_one"
   },
   {
     "name": "Migratory Patterns",
     "license": "Archivist",
     "ability": "Observation",
-    "description": "Out in the Wilds, humans are o�en ineﬃcient creatures. The routes we take are rarely the most optimal and more o�en lead to danger rather than safety. Creatures, however, use their own highways and byways, and the study of migratory patterns has helped you to identi�them."
+    "description": "Out in the Wilds, humans are o�en ineﬃcient creatures. The routes we take are rarely the most optimal and more o�en lead to danger rather than safety. Creatures, however, use their own highways and byways, and the study of migratory patterns has helped you to identi�them.",
+    "level": "level_one"
   },
   {
     "name": "Wildwalker",
     "license": "Archivist",
     "ability": "Traversal",
-    "description": "They say that time spent in the Wilds is a transformative experience; that while you change the landscape with your presence, it changes you, too. In your case, this is certainly true. Your aﬃnity for this landscape is deeper than familiarity; it is kinship."
+    "description": "They say that time spent in the Wilds is a transformative experience; that while you change the landscape with your presence, it changes you, too. In your case, this is certainly true. Your aﬃnity for this landscape is deeper than familiarity; it is kinship.",
+    "level": "level_one"
   },
   {
     "name": "Green Fingered",
     "license": "Archivist",
     "ability": "Deduction",
-    "description": "The living world is fascinating and, for you, nothing is more fascinating than plant life. You take any opportunity to study plants, trees, shrubs, andﬂowers, jotting them down in your notes and even taking pressings."
+    "description": "The living world is fascinating and, for you, nothing is more fascinating than plant life. You take any opportunity to study plants, trees, shrubs, andﬂowers, jotting them down in your notes and even taking pressings.",
+    "level": "level_one"
   },
   {
     "name": "Creature Specialist",
     "license": "Archivist",
     "ability": "Deduction",
-    "description": "Your time spent observing and working with Creatures has gained you the reputation of a specialist. You can be relied on to know a Creature’s intricacies and its behaviours."
+    "description": "Your time spent observing and working with Creatures has gained you the reputation of a specialist. You can be relied on to know a Creature’s intricacies and its behaviours.",
+    "level": "level_one"
   },
   {
     "name": "Monstrous Ecologies",
     "license": "Archivist",
     "ability": "Exploration",
-    "description": "The study of Monsters can be�aught with danger. These are some of the largest, smartest, most wily, and potentially intelligent beings alive. You have dedicated yourself to the study of Monster habitats, allowing you to make predictions about the way a Monster lives long before you reach its ecosystem."
+    "description": "The study of Monsters can be�aught with danger. These are some of the largest, smartest, most wily, and potentially intelligent beings alive. You have dedicated yourself to the study of Monster habitats, allowing you to make predictions about the way a Monster lives long before you reach its ecosystem.",
+    "level": "level_one"
   },
   {
     "name": "Lore Keeper",
     "license": "Archivist",
     "ability": "Observation",
-    "description": "The peoples of Ecumene are diverse and varied. While some common understandings and customs bind them all together, each culture is unique. You have dedicated your study to understanding the stories and histories of a range of people, and your journeys into far regions are to both veri�the stories you have heard and to learn more."
+    "description": "The peoples of Ecumene are diverse and varied. While some common understandings and customs bind them all together, each culture is unique. You have dedicated your study to understanding the stories and histories of a range of people, and your journeys into far regions are to both veri�the stories you have heard and to learn more.",
+    "level": "level_one"
   },
   {
     "name": "Negotiator",
     "license": "Archivist",
     "ability": "Deduction",
-    "description": "To bring together people riven by conﬂict is a noble skill. You have studied how to manage conﬂict, knowing that not all can be resolved, but that negotiation is the ground on which new agreements and understandings can be built."
+    "description": "To bring together people riven by conﬂict is a noble skill. You have studied how to manage conﬂict, knowing that not all can be resolved, but that negotiation is the ground on which new agreements and understandings can be built.",
+    "level": "level_one"
   },
   {
     "name": "Amateur Archaeologist",
     "license": "Archivist",
     "ability": "Exploration",
-    "description": "Some secrets are hidden in books, others in stories. The most elusive remain buried in the ground. In your spare time, you have been known to excavate abandoned sites, looking for the treasures of knowledge that are waiting to be found within."
+    "description": "Some secrets are hidden in books, others in stories. The most elusive remain buried in the ground. In your spare time, you have been known to excavate abandoned sites, looking for the treasures of knowledge that are waiting to be found within.",
+    "level": "level_one"
   },
   {
     "name": "Obscure Languages",
     "license": "Archivist",
     "ability": "Deduction",
-    "description": "Dead tongues hold living knowledge, or so your instructors taught you. Fascinated by the histories of those without voices le�to speak, you have devoted yourself to learning those languages that many have forgotten, knowing that what was once worth sharing retains its value and importance, even if none are le�to speak it. Archivist Level Two Skills Flânerie [Traversal] Time in the Wilds is important, yes, but so is time in the city, for where else can one learn more about human cultures than in these hives of activity? You are skilled at reading the hidden and explicit routes of cities, and they now feel like a second home.Traces of Fate [Observation] Ecumene’s natural historians agree on one thing: the substance of our world was drawn together by Fate. This act of creation, intentional or accidental, has le�traces in the earth. These traces, be they shadows of intention or accidents, can be mapped."
+    "description": "Dead tongues hold living knowledge, or so your instructors taught you. Fascinated by the histories of those without voices le�to speak, you have devoted yourself to learning those languages that many have forgotten, knowing that what was once worth sharing retains its value and importance, even if none are le�to speak it. Archivist Level Two Skills Flânerie [Traversal] Time in the Wilds is important, yes, but so is time in the city, for where else can one learn more about human cultures than in these hives of activity? You are skilled at reading the hidden and explicit routes of cities, and they now feel like a second home.Traces of Fate [Observation] Ecumene’s natural historians agree on one thing: the substance of our world was drawn together by Fate. This act of creation, intentional or accidental, has le�traces in the earth. These traces, be they shadows of intention or accidents, can be mapped.",
+    "level": "level_one"
   },
   {
     "name": "Flânerie",
     "license": "Archivist",
     "ability": "Traversal",
-    "description": "Time in the Wilds is important, yes, but so is time in the city, for where else can one learn more about human cultures than in these hives of activity? You are skilled at reading the hidden and explicit routes of cities, and they now feel like a second home.Traces of Fate [Observation] Ecumene’s natural historians agree on one thing: the substance of our world was drawn together by Fate. This act of creation, intentional or accidental, has le�traces in the earth. These traces, be they shadows of intention or accidents, can be mapped."
+    "description": "Time in the Wilds is important, yes, but so is time in the city, for where else can one learn more about human cultures than in these hives of activity? You are skilled at reading the hidden and explicit routes of cities, and they now feel like a second home.Traces of Fate [Observation] Ecumene’s natural historians agree on one thing: the substance of our world was drawn together by Fate. This act of creation, intentional or accidental, has le�traces in the earth. These traces, be they shadows of intention or accidents, can be mapped.",
+    "level": "level_two"
   },
   {
     "name": "Traces of Fate",
     "license": "Archivist",
     "ability": "Observation",
-    "description": "Ecumene’s natural historians agree on one thing: the substance of our world was drawn together by Fate. This act of creation, intentional or accidental, has le�traces in the earth. These traces, be they shadows of intention or accidents, can be mapped."
+    "description": "Ecumene’s natural historians agree on one thing: the substance of our world was drawn together by Fate. This act of creation, intentional or accidental, has le�traces in the earth. These traces, be they shadows of intention or accidents, can be mapped.",
+    "level": "level_two"
   },
   {
     "name": "Hidden Networks",
     "license": "Archivist",
     "ability": "Exploration",
-    "description": "All things are connected. The world is a single ecosystem made up of many webs and connections, joining all in a single network. Your study of life and its connections has given you insight into these hidden networks. You can exploit this knowledge for your own gain."
+    "description": "All things are connected. The world is a single ecosystem made up of many webs and connections, joining all in a single network. Your study of life and its connections has given you insight into these hidden networks. You can exploit this knowledge for your own gain.",
+    "level": "level_two"
   },
   {
     "name": "Plant Collector",
     "license": "Archivist",
     "ability": "Deduction",
-    "description": "Your pack isﬁlled with samples and cuttings of plants, tree barks, leaves, andﬂowers, each gently harvested�om locations visited during your travels. These are the cornerstone to your collection, which one day you hope will allow those�om one side of the world to see and smell the plants�om the other side. Non-Verbal Communication [Observation] Most assume that human-Monster or human-Creature communication is an impossibility; a beautiful dream, but nothing more. You, however, believe that those non-human beings we share this world with are capable of communication on levels beyond human abilities. To that end, you have studied multiple forms of non-verbal communication, all for that one opportunity to make contact with a being diﬀerent to yourself."
+    "description": "Your pack isﬁlled with samples and cuttings of plants, tree barks, leaves, andﬂowers, each gently harvested�om locations visited during your travels. These are the cornerstone to your collection, which one day you hope will allow those�om one side of the world to see and smell the plants�om the other side. Non-Verbal Communication [Observation] Most assume that human-Monster or human-Creature communication is an impossibility; a beautiful dream, but nothing more. You, however, believe that those non-human beings we share this world with are capable of communication on levels beyond human abilities. To that end, you have studied multiple forms of non-verbal communication, all for that one opportunity to make contact with a being diﬀerent to yourself.",
+    "level": "level_two"
   },
   {
     "name": "Non-Verbal Communication",
     "license": "Archivist",
     "ability": "Observation",
-    "description": "Most assume that human-Monster or human-Creature communication is an impossibility; a beautiful dream, but nothing more. You, however, believe that those non-human beings we share this world with are capable of communication on levels beyond human abilities. To that end, you have studied multiple forms of non-verbal communication, all for that one opportunity to make contact with a being diﬀerent to yourself."
+    "description": "Most assume that human-Monster or human-Creature communication is an impossibility; a beautiful dream, but nothing more. You, however, believe that those non-human beings we share this world with are capable of communication on levels beyond human abilities. To that end, you have studied multiple forms of non-verbal communication, all for that one opportunity to make contact with a being diﬀerent to yourself.",
+    "level": "level_two"
   },
   {
     "name": "Monster Specialist",
     "license": "Archivist",
     "ability": "Deduction",
-    "description": "Monsters are the most compelling entities to dwell on this planet. Your years of study and devotion to these beings have made you a recognised expert, and when someone has a question about Monsters, it is usually you they come to."
+    "description": "Monsters are the most compelling entities to dwell on this planet. Your years of study and devotion to these beings have made you a recognised expert, and when someone has a question about Monsters, it is usually you they come to.",
+    "level": "level_two"
   },
   {
     "name": "Curator",
     "license": "Archivist",
     "ability": "Deduction",
-    "description": "Over an extended period in the Wilds, one tends to collect materials�om diﬀerent landscapes and to receive gi�s�om diﬀerent peoples. These items are worthy of respect, and to tell their story properly relies on the skill of a curator."
+    "description": "Over an extended period in the Wilds, one tends to collect materials�om diﬀerent landscapes and to receive gi�s�om diﬀerent peoples. These items are worthy of respect, and to tell their story properly relies on the skill of a curator.",
+    "level": "level_two"
   },
   {
     "name": "Excavations",
     "license": "Archivist",
     "ability": "Deduction",
-    "description": "Your pursuit of the historical has led you into a number of subterranean situations. These environments rarely feel natural, though you have become more accustomed than most at keeping your head when you need to venture underground. 25 26Cartographer Skills"
+    "description": "Your pursuit of the historical has led you into a number of subterranean situations. These environments rarely feel natural, though you have become more accustomed than most at keeping your head when you need to venture underground. 25 26Cartographer Skills",
+    "level": "level_two"
   },
   {
     "name": "Cartographer's Tools",
     "license": "Archivist",
     "ability": "Observation",
     "description": "Your mastery of the mapmaker’s cra�has relied, in part, on your expertise with the tools of the trade. Armed with compasses, sextants, and astrolabes, you have moved beyond the dead reckoning practised by amateurs and can determine your position – and that of landmarks, terrain features, and natural phenomena – with striking precision and accuracy.",
-    "specialisation": "Cartographer"
+    "specialisation": "Cartographer",
+    "level": "specialisation"
   },
   {
     "name": "Mathematician",
     "license": "Archivist",
     "ability": "Deduction",
     "description": "Determining latitude and longitude, tracing a path by the position of the stars, and providing accurate information about altitude, depth, and distance are diﬃcult skills. Your aptitude for mathematics makes solving the challenges of space and place a joy, rather than a chore. Numbers are the foundations of the world, so a mathematical mind is one with a glimpse into Fate’s design.",
-    "specialisation": "Cartographer"
+    "specialisation": "Cartographer",
+    "level": "specialisation"
   },
   {
     "name": "Travel Hardened",
     "license": "Archivist",
     "ability": "Traversal",
     "description": "You volunteered to travel the Wilds, getting lost beyond the borders of the old to draw maps so others wouldn’t have to lose their way. Name it, and there is a good chance you’ve fallen into it, oﬀit, through it, or out of it. But you wear your weatherbeaten cloak with pride, and every tear, scratch, and bruise is just another story to tell of the glories of the Wilds.",
-    "specialisation": "Cartographer"
+    "specialisation": "Cartographer",
+    "level": "specialisation"
   },
   {
     "name": "Over the Edge",
     "license": "Archivist",
     "ability": "Exploration",
     "description": "Since the Flux, even before it, most people feared what lay over the edge of the map, beyond the borders of home and the comforts of a sheltered life. You might even have been one of them. But now? Now you’ve seen what lies over the edge. A life where nothing is surprising is not one worth living, but you retain your capacity for surprise, even if fear of the unknown has le�you.",
-    "specialisation": "Cartographer"
+    "specialisation": "Cartographer",
+    "level": "specialisation"
   },
   {
     "name": "Master Cartographer",
     "license": "Archivist",
     "ability": "Observation",
     "description": "The world is contour lines charting local relief. The world is ink on parchment, tracing paths through the Wilds. The world is grids and numbers, labels and tags, notes of explanation describing the intricacies of the unknown. The world, as you know, is this, and so much, much more.Biologist Skills",
-    "specialisation": "Cartographer"
+    "specialisation": "Cartographer",
+    "level": "specialisation"
   },
   {
     "name": "Sentience",
     "license": "Archivist",
     "ability": "Observation",
     "description": "There are those who regard Monsters and Creatures as nothing more than a collection of instincts and fears, driven by the desire to survive. You know better than this. Sentience and consciousness are not the preserve of humanity (which, a�er all, can be described as nothing more than a collection of instincts and fears). The world is a vessel for consciousness, and everything contains a share.",
-    "specialisation": "Biologist"
+    "specialisation": "Biologist",
+    "level": "specialisation"
   },
   {
     "name": "Breath of Life",
     "license": "Archivist",
     "ability": "Deduction",
     "description": "Discussions about the soul are the preserve of Diviners. But the theory of an animating presence, some vital essence, that dwells within all life has begun to take root in your mind during your time in the Wilds. You hear it in the trees, see it in the eyes of Monsters and people alike, feel it in the warmth of a Creature as you touch it. You can sense it�om afar, essential and reassuring.",
-    "specialisation": "Biologist"
+    "specialisation": "Biologist",
+    "level": "specialisation"
   },
   {
     "name": "Field Expert",
     "license": "Archivist",
     "ability": "Traversal",
     "description": "The samples you have taken�om every imaginable environment, Monster, and Creature, the foods you have tasted, the stories you have heard, the challenges you have overcome in pursuit of your cra�, the practical experiments gone right and wrong – all of them have made you an expert traveller. Your opinions on the domains of life and death are listened to wherever you go.",
-    "specialisation": "Biologist"
+    "specialisation": "Biologist",
+    "level": "specialisation"
   },
   {
     "name": "Fate’s Laboratory",
     "license": "Archivist",
     "ability": "Exploration",
     "description": "If you have learned one thing during your journey, it is this: Fate is a biologist. The Wilds are a place of experimentation, of radical change and violent revolution. The Flux may not have been a disaster or a loss of control, but the next stage in this great experiment. But, like all with a scientiﬁc mind, you can see order in chaos, planning in tumult, and can anticipate chance and its consequences.",
-    "specialisation": "Biologist"
+    "specialisation": "Biologist",
+    "level": "specialisation"
   },
   {
     "name": "Master Biologist",
     "license": "Archivist",
     "ability": "Deduction",
     "description": "The world is blood and bone, keeping life moving and standing. The world is teeth and claws, skin, fur, scales. The world is samples, experiments, solutions to solve the great question: what are we? The world, as you know it, is life, breath, experience, and joy in the unanswerable. Historian Skills Diﬀerence [Observation] Your research and years of study have taught you two fundamental truths: diﬀerence divides, and diﬀerence unites. You have travelled to more places, met more people, experienced more major events and examples of the everyday than almost any before you. You have changed; this journey has changed you. Where once you were outside, now you canﬁt. Respect for diﬀerence has paid dividends.",
-    "specialisation": "Biologist"
+    "specialisation": "Biologist",
+    "level": "specialisation"
   },
   {
     "name": "Power Comes From Below",
     "license": "Archivist",
     "ability": "Deduction",
     "description": "Many think that power rests in the hearts of the powerful, might in the hands of the mighty, inﬂuence in the mouths of the inﬂuential. You know this is an illusion. Power, might, and inﬂuence come�om below; they are the province of the many. You have pierced the veil, unmasked the actor. What should you do with this knowledge? Why, share it, of course. It belongs to those on their knees.",
-    "specialisation": "Historian"
+    "specialisation": "Historian",
+    "level": "specialisation"
   },
   {
     "name": "Ancient and New",
     "license": "Archivist",
     "ability": "Traversal",
     "description": "History is not just the preserve of people. The Wilds have their own histories, etched into stone, bark, and soil. The age of the world is ancient, the story of the world is new. You are one author of this history, your mark le�behind you in ink and parchment. But the Wilds record history in their own way, their stories told over aeons. You know where to look for and how to read this history.",
-    "specialisation": "Historian"
+    "specialisation": "Historian",
+    "level": "specialisation"
   },
   {
     "name": "Knowledgeable",
     "license": "Archivist",
     "ability": "Exploration",
     "description": "There are few living who can match you. What you know couldﬁll a library, and one day it will. You are in possession of an accumulated knowledge the likes of which the world has never seen before. Taken with respect, you are the custodian of generations, of beginnings and ends. When someone wants to know something, you can search your knowledge banks. If it isn’t there, you know how toﬁnd it.",
-    "specialisation": "Historian"
+    "specialisation": "Historian",
+    "level": "specialisation"
   },
   {
     "name": "Master Historian",
     "license": "Archivist",
     "ability": "Exploration",
     "description": "The world is facts and figures: dates, names, and numbers. The world is events and great people, writ large with fury and blood. The world is contained in the pages of a book, inert, dead, nearly forgotten. The world, as you know, is in the hands of the people, the beating heart of the Wilds.",
-    "specialisation": "Historian"
+    "specialisation": "Historian",
+    "level": "specialisation"
   },
   {
     "name": "Whispers",
     "license": "Diviner",
     "ability": "Deduction",
-    "description": "Your gi�was always there, but it took time for your ears to register it. You hear the whisper of Fate, carried on the wind, in the rustle of leaves, as a faint hum underneath the voices of those around you. If you listen closely enough, you can hear Fate speaking through the world."
+    "description": "Your gi�was always there, but it took time for your ears to register it. You hear the whisper of Fate, carried on the wind, in the rustle of leaves, as a faint hum underneath the voices of those around you. If you listen closely enough, you can hear Fate speaking through the world.",
+    "level": "starting"
   },
   {
     "name": "Intentions",
     "license": "Diviner",
     "ability": "Deduction",
-    "description": "How does�ee will exist in a world governed by Fate? Scholars and philosophers have driven themselves mad pondering the question. For you, the answer is simpler: intention is the tool by which Fate is shaped, and you possess great skill at seeing the intentions around you."
+    "description": "How does�ee will exist in a world governed by Fate? Scholars and philosophers have driven themselves mad pondering the question. For you, the answer is simpler: intention is the tool by which Fate is shaped, and you possess great skill at seeing the intentions around you.",
+    "level": "starting"
   },
   {
     "name": "Patterns",
     "license": "Diviner",
     "ability": "Observation",
-    "description": "Out in the Wilds, humans are o�en ineﬃcient creatures. The routes we take are rarely the most optimal and more o�en lead to danger rather than safety. Creatures, however, use their own highways and byways, and the study of migratory patterns has helped you to identi�them."
+    "description": "Out in the Wilds, humans are o�en ineﬃcient creatures. The routes we take are rarely the most optimal and more o�en lead to danger rather than safety. Creatures, however, use their own highways and byways, and the study of migratory patterns has helped you to identi�them.",
+    "level": "starting"
   },
   {
     "name": "Presence",
     "license": "Diviner",
     "ability": "Observation",
-    "description": "You have always felt an aﬃnity for the Bones, the tokens by which the people of Ecumene try to ascertain the will of Fate before acting. Nearly every person carries their own set of Bones, and you can feel when someone has asked questions of them recently."
+    "description": "You have always felt an aﬃnity for the Bones, the tokens by which the people of Ecumene try to ascertain the will of Fate before acting. Nearly every person carries their own set of Bones, and you can feel when someone has asked questions of them recently.",
+    "level": "starting"
   },
   {
     "name": "Memories",
     "license": "Diviner",
     "ability": "Exploration",
-    "description": "When navigating a place with your Bones, you can sometimes sense memories�om long ago. Perhaps these memories are�om the Bones themselves – a�er all, they were once living things. Who is to say that they aren't still alive and seeking answers of their own? To feel those memories, to understand the questions asked and answered, is to understand the true role the Bones play."
+    "description": "When navigating a place with your Bones, you can sometimes sense memories�om long ago. Perhaps these memories are�om the Bones themselves – a�er all, they were once living things. Who is to say that they aren't still alive and seeking answers of their own? To feel those memories, to understand the questions asked and answered, is to understand the true role the Bones play.",
+    "level": "starting"
   },
   {
     "name": "Familiar",
     "license": "Diviner",
     "ability": "Traversal",
-    "description": "Many people roll their Bones for luck before attempting diﬃcult physical ordeals. Some claim this habit is simple superstition, but you know that there is strength in it. When exerting yourself, your Bones can oﬀer boons and blessings you might otherwise not have expected."
+    "description": "Many people roll their Bones for luck before attempting diﬃcult physical ordeals. Some claim this habit is simple superstition, but you know that there is strength in it. When exerting yourself, your Bones can oﬀer boons and blessings you might otherwise not have expected.",
+    "level": "starting"
   },
   {
     "name": "Shadows on the Wall",
     "license": "Diviner",
     "ability": "Deduction",
-    "description": "Diviners are more than just adept at reading people. Many are illusionists, using their reputation to pass oﬀsleight of hand as the whims of Fate. Some�own on such tricks, but others know that Fate sometimes needs a helping hand.Signs in the Wild [Observation] Diviners understand that Fate works through everything. Nowhere is this connection more apparent than in the behaviours of Creatures and Monsters. By pinpointing these signs in the wild, you can sense features of Ecumene’s organisms that most wouldn’t be able to identi�."
+    "description": "Diviners are more than just adept at reading people. Many are illusionists, using their reputation to pass oﬀsleight of hand as the whims of Fate. Some�own on such tricks, but others know that Fate sometimes needs a helping hand.Signs in the Wild [Observation] Diviners understand that Fate works through everything. Nowhere is this connection more apparent than in the behaviours of Creatures and Monsters. By pinpointing these signs in the wild, you can sense features of Ecumene’s organisms that most wouldn’t be able to identi�.",
+    "level": "starting"
   },
   {
     "name": "Signs in the Wild",
     "license": "Diviner",
     "ability": "Observation",
-    "description": "Diviners understand that Fate works through everything. Nowhere is this connection more apparent than in the behaviours of Creatures and Monsters. By pinpointing these signs in the wild, you can sense features of Ecumene’s organisms that most wouldn’t be able to identi�."
+    "description": "Diviners understand that Fate works through everything. Nowhere is this connection more apparent than in the behaviours of Creatures and Monsters. By pinpointing these signs in the wild, you can sense features of Ecumene’s organisms that most wouldn’t be able to identi�.",
+    "level": "starting"
   },
   {
     "name": "Divina",
     "license": "Diviner",
     "ability": "Observation",
-    "description": "Several groups have secret languages they communicate in. Diviners are no diﬀerent. Though there are many dialects of Divina, all combine words, hand gestures, and vocal clicks, and Divina is mutually intelligible across regions. Diviner Level One Skills"
+    "description": "Several groups have secret languages they communicate in. Diviners are no diﬀerent. Though there are many dialects of Divina, all combine words, hand gestures, and vocal clicks, and Divina is mutually intelligible across regions. Diviner Level One Skills",
+    "level": "starting"
   },
   {
     "name": "Reader",
     "license": "Diviner",
     "ability": "Deduction",
-    "description": "With time and practice, the cards – tools used to divine people’s futures and answer their questions – can be read like a book. It is a rare talent that can read beyond the surface meanings contained within the deck, glimpsing into the weaves beyond, but that gi�belongs to you."
+    "description": "With time and practice, the cards – tools used to divine people’s futures and answer their questions – can be read like a book. It is a rare talent that can read beyond the surface meanings contained within the deck, glimpsing into the weaves beyond, but that gi�belongs to you.",
+    "level": "level_one"
   },
   {
     "name": "Welcome Presence",
     "license": "Diviner",
     "ability": "Exploration",
-    "description": "Diviners are a polarising group. Though Fate’s inﬂuence in the world is well accepted, superstitions surrounding the second sight are still widespread. Growing up, people looked to your gi�as a blessing and a boon, and wherever you go people seem drawn to you and your wisdom."
+    "description": "Diviners are a polarising group. Though Fate’s inﬂuence in the world is well accepted, superstitions surrounding the second sight are still widespread. Growing up, people looked to your gi�as a blessing and a boon, and wherever you go people seem drawn to you and your wisdom.",
+    "level": "level_one"
   },
   {
     "name": "Outsider",
     "license": "Diviner",
     "ability": "Exploration",
-    "description": "From an early age you knew that people looked at you diﬀerently. At times it was diﬃcult to discern whether the whispers you heard were�om Fate herself or�om those around you. Eventually you took to isolating yourself, recognising that there was safety in solitude. You are now practised at passing unseen and avoiding suspicious gazes."
+    "description": "From an early age you knew that people looked at you diﬀerently. At times it was diﬃcult to discern whether the whispers you heard were�om Fate herself or�om those around you. Eventually you took to isolating yourself, recognising that there was safety in solitude. You are now practised at passing unseen and avoiding suspicious gazes.",
+    "level": "level_one"
   },
   {
     "name": "Weaver",
     "license": "Diviner",
     "ability": "Traversal",
-    "description": "In the more treacherous areas of the Wilds, travellers have been known to weave string along their route, ensuring that they can return home the way they came. This physical practice is an unconscious manifestation of Fate’s threads. You don’t need to rely on these physical guides, as Fate makes her threads visible to you."
+    "description": "In the more treacherous areas of the Wilds, travellers have been known to weave string along their route, ensuring that they can return home the way they came. This physical practice is an unconscious manifestation of Fate’s threads. You don’t need to rely on these physical guides, as Fate makes her threads visible to you.",
+    "level": "level_one"
   },
   {
     "name": "Cut Threads",
     "license": "Diviner",
     "ability": "Deduction",
-    "description": "Woven by Fate herself, a life lasts the length of its thread. But threads can be cut, and lives extinguished too soon. When you come upon signs of death, you possess the sight to see how and when a thread was cut, and even by whom."
+    "description": "Woven by Fate herself, a life lasts the length of its thread. But threads can be cut, and lives extinguished too soon. When you come upon signs of death, you possess the sight to see how and when a thread was cut, and even by whom.",
+    "level": "level_one"
   },
   {
     "name": "Resonance",
     "license": "Diviner",
     "ability": "Observation",
-    "description": "Each choice, each decision, each footstep changes theﬂow of the weave. Fate’s tapestry is a work constantly in progress, and the vibrations one’s choices make can be felt across the skein. Quieting your mind and sensing these vibrations allows you to feel a person’s resonance in your current location and steal a glimpse into their life."
+    "description": "Each choice, each decision, each footstep changes theﬂow of the weave. Fate’s tapestry is a work constantly in progress, and the vibrations one’s choices make can be felt across the skein. Quieting your mind and sensing these vibrations allows you to feel a person’s resonance in your current location and steal a glimpse into their life.",
+    "level": "level_one"
   },
   {
     "name": "Voices",
     "license": "Diviner",
     "ability": "Exploration",
-    "description": "If Bones were once living things with memories, who is to say they don’t retain a voice? Who is to say that they don’t have words of wisdom to share? When exploring a location, you’ve learned to ‘speak’ to the voices that emanate�om your Bones and any you might encounter in your travels."
+    "description": "If Bones were once living things with memories, who is to say they don’t retain a voice? Who is to say that they don’t have words of wisdom to share? When exploring a location, you’ve learned to ‘speak’ to the voices that emanate�om your Bones and any you might encounter in your travels.",
+    "level": "level_one"
   },
   {
     "name": "Light Fingers",
     "license": "Diviner",
     "ability": "Observation",
-    "description": "Taking�om those in need is wrong. But taking�om those with more than they need? Well, that’s for the whims of Fate to decide. As a Diviner with lightﬁngers, you’re always aware of the right moment to grab hold of something that doesn’t belong to you, but has a higher purpose in your hands thanks to Fate’s grand plan."
+    "description": "Taking�om those in need is wrong. But taking�om those with more than they need? Well, that’s for the whims of Fate to decide. As a Diviner with lightﬁngers, you’re always aware of the right moment to grab hold of something that doesn’t belong to you, but has a higher purpose in your hands thanks to Fate’s grand plan.",
+    "level": "level_one"
   },
   {
     "name": "Fateways",
     "license": "Diviner",
     "ability": "Deduction",
-    "description": "Almost all can follow someone at a short distance. But very few can sense the tracks a person leaves through the Fateways. Everyone leaves a trace, and you can deduce that trace, discerning where someone has been or where they are going with careful study."
+    "description": "Almost all can follow someone at a short distance. But very few can sense the tracks a person leaves through the Fateways. Everyone leaves a trace, and you can deduce that trace, discerning where someone has been or where they are going with careful study.",
+    "level": "level_one"
   },
   {
     "name": "Dialects",
     "license": "Diviner",
     "ability": "Exploration",
-    "description": "You can o�en tell a lot about someone by their dialect. Where they’re�om, whether there was more or less money in the house, and whether they grew up giving orders or taking them. You have learned not only to recognise dialect but to mask it, allowing you to blend into social situations that some might say are not yours by birth. Diviner Level Two Skills"
+    "description": "You can o�en tell a lot about someone by their dialect. Where they’re�om, whether there was more or less money in the house, and whether they grew up giving orders or taking them. You have learned not only to recognise dialect but to mask it, allowing you to blend into social situations that some might say are not yours by birth. Diviner Level Two Skills",
+    "level": "level_one"
   },
   {
     "name": "Speaker",
     "license": "Diviner",
     "ability": "Exploration",
-    "description": "The very best Diviners know that the cards are not just a tool for reading and instruction, but are one side of a conversation. When consulting the cards for information, you can converse with them as you would a close comrade, learning much�om the seemingly esoteric answers their illustrations provide.Seer [Deduction] Wherever you go, people recognise you as a possessor of the second sight. The troubled, the poor, the rich, and the powerful allﬂock to you, seeking your wisdom and insight. While you are always willing to help, the price people o�en pay is your knowledge of their future, however uncomfortable that may be."
+    "description": "The very best Diviners know that the cards are not just a tool for reading and instruction, but are one side of a conversation. When consulting the cards for information, you can converse with them as you would a close comrade, learning much�om the seemingly esoteric answers their illustrations provide.Seer [Deduction] Wherever you go, people recognise you as a possessor of the second sight. The troubled, the poor, the rich, and the powerful allﬂock to you, seeking your wisdom and insight. While you are always willing to help, the price people o�en pay is your knowledge of their future, however uncomfortable that may be.",
+    "level": "level_two"
   },
   {
     "name": "Seer",
     "license": "Diviner",
     "ability": "Deduction",
-    "description": "Wherever you go, people recognise you as a possessor of the second sight. The troubled, the poor, the rich, and the powerful allﬂock to you, seeking your wisdom and insight. While you are always willing to help, the price people o�en pay is your knowledge of their future, however uncomfortable that may be."
+    "description": "Wherever you go, people recognise you as a possessor of the second sight. The troubled, the poor, the rich, and the powerful allﬂock to you, seeking your wisdom and insight. While you are always willing to help, the price people o�en pay is your knowledge of their future, however uncomfortable that may be.",
+    "level": "level_two"
   },
   {
     "name": "Witch",
     "license": "Diviner",
     "ability": "Deduction",
-    "description": "Beguiler. Hexer. Witch. These are words that follow you whenever you appear, along with fear and intimidation. Of course, you are none of these things. But fear can be a useful tool, and you also don’t mind taking advantage of people’s perceptions of you when it proves convenient."
+    "description": "Beguiler. Hexer. Witch. These are words that follow you whenever you appear, along with fear and intimidation. Of course, you are none of these things. But fear can be a useful tool, and you also don’t mind taking advantage of people’s perceptions of you when it proves convenient.",
+    "level": "level_two"
   },
   {
     "name": "True Sight",
     "license": "Diviner",
     "ability": "Observation",
-    "description": "Truth and lies weave diﬀerent patterns. With practice, you have learned to recognise those patterns as each person speaks them, giving you a preternatural sense of when someone is being honest or not."
+    "description": "Truth and lies weave diﬀerent patterns. With practice, you have learned to recognise those patterns as each person speaks them, giving you a preternatural sense of when someone is being honest or not.",
+    "level": "level_two"
   },
   {
     "name": "Shaper",
     "license": "Diviner",
     "ability": "Traversal",
-    "description": "Years of long practice have given you an aﬃnity for your chosen tools of either the Bones or the cards. Through you, these items, imbued with the second sight and touched by Fate herself, help shape the world, changing the destinies of those you call�iends."
+    "description": "Years of long practice have given you an aﬃnity for your chosen tools of either the Bones or the cards. Through you, these items, imbued with the second sight and touched by Fate herself, help shape the world, changing the destinies of those you call�iends.",
+    "level": "level_two"
   },
   {
     "name": "Fortune Teller",
     "license": "Diviner",
     "ability": "Deduction",
-    "description": "You remember them�om childhood: travellers, bedecked in motley clothes or pied in many colours, who appeared in your village square oﬀering fortune readings. You also remember everyone’s purses were much lighter a�er they le�, even if they hadn’t spent any money. Everyone has to make a living, right?"
+    "description": "You remember them�om childhood: travellers, bedecked in motley clothes or pied in many colours, who appeared in your village square oﬀering fortune readings. You also remember everyone’s purses were much lighter a�er they le�, even if they hadn’t spent any money. Everyone has to make a living, right?",
+    "level": "level_two"
   },
   {
     "name": "Energy Flows",
     "license": "Diviner",
     "ability": "Exploration",
-    "description": "Fate weaves a vital essence through all things, living and dead. You can followﬂows related to this energy with excellent accuracy, noticing minute details such as the path that a Creature trod before it died, or the hidden route it took to hunt its food source."
+    "description": "Fate weaves a vital essence through all things, living and dead. You can followﬂows related to this energy with excellent accuracy, noticing minute details such as the path that a Creature trod before it died, or the hidden route it took to hunt its food source.",
+    "level": "level_two"
   },
   {
     "name": "Wildspeaker",
     "license": "Diviner",
     "ability": "Observation",
-    "description": "The Wilds have always talked to you. Trees speak through ancient creaking, the wind in whispers, and Creatures through a bristling energy. You have heard these languages for so long they are as familiar as your own voice. One day, you spoke back. And the Wilds listened. 35 36Cartomancer Skills"
+    "description": "The Wilds have always talked to you. Trees speak through ancient creaking, the wind in whispers, and Creatures through a bristling energy. You have heard these languages for so long they are as familiar as your own voice. One day, you spoke back. And the Wilds listened. 35 36Cartomancer Skills",
+    "level": "level_two"
   },
   {
     "name": "Dark Premonitions",
     "license": "Diviner",
     "ability": "Observation",
     "description": "Divinersﬁnd solace in reading the cards. It is at once a meditation and an action; contemplation that seeks change or control. You have gained a level of insight almost unmatched. But this dedication has opened up a dark path. You can sense the depths of the problems people face when you perform readings for them, oﬀering a window into inner darkness.",
-    "specialisation": "Cartomancer"
+    "specialisation": "Cartomancer",
+    "level": "specialisation"
   },
   {
     "name": "Symbology",
     "license": "Diviner",
     "ability": "Deduction",
     "description": "You have grown used to the symbolism of the cards as they apply to your own background and training. What you have come to realise, though, is that cards, like languages, are diﬀerent when borders are crossed, and are mere representations of the multitude of symbols that exist in the Wilds. You are adept at reading and understanding these symbols no matter where you are or what form they take.",
-    "specialisation": "Cartomancer"
+    "specialisation": "Cartomancer",
+    "level": "specialisation"
   },
   {
     "name": "A Thinking Map",
     "license": "Diviner",
     "ability": "Traversal",
     "description": "Your journeys in the Wilds have taught you one thing: cards can be just as good a guide as even the best maps. Trusting the cards to guide your way may seem like a fool’s errand, but your trust is repaid tenfold. Your ability to read direction, distance, altitude, and danger�om your deck is second to none. They have gotten you out of trouble before, and there is no reason to think they won’t again.",
-    "specialisation": "Cartomancer"
+    "specialisation": "Cartomancer",
+    "level": "specialisation"
   },
   {
     "name": "The World in Images",
     "license": "Diviner",
     "ability": "Exploration",
     "description": "You have travelled to places and seen things beyond your wildest imagination. The cultures you have encountered have introduced new cards to your deck, your experiences have given you more to draw on in your readings, and the Monsters you have encountered shaped your understanding of the world. You know more, and can see more, than you ever thought possible.",
-    "specialisation": "Cartomancer"
+    "specialisation": "Cartomancer",
+    "level": "specialisation"
   },
   {
     "name": "Master Cartomancer",
     "license": "Diviner",
     "ability": "Deduction",
     "description": "The world is desperate questions without answers, asked in fear. The world is a spread of cards, as mindless as the wood they rest on. The world is an unknowable chaos, formless, without rhyme or reason. The world, as you know, is more than this; an open book waiting to be read.Ossiomancer Skills",
-    "specialisation": "Cartomancer"
+    "specialisation": "Cartomancer",
+    "level": "specialisation"
   },
   {
     "name": "Games of Chance",
     "license": "Diviner",
     "ability": "Observation",
     "description": "When you were growing up, your grandparents taught you to respect the Bones. ‘They’re not toys!’ And so you treated them like sacred objects, honouring their insights. Your journeys have taught you that this is not always the way. Games are life and play unites. People across the world use their Bones in games of chance, and you have learned their rules.",
-    "specialisation": "Ossiomancer"
+    "specialisation": "Ossiomancer",
+    "level": "specialisation"
   },
   {
     "name": "Vestiges of Life",
     "license": "Diviner",
     "ability": "Deduction",
     "description": "Only the oldest sets of inherited Bones are still made of the substance they are named for. Most are now made of wood or stone. But just as bone was once a living thing, so is wood and stone. You are an expert at reading the Bones, but not just the numbers or signs they reveal. You can sense the past lives Bones and their owners have lived, and they are much, much older than you.",
-    "specialisation": "Ossiomancer"
+    "specialisation": "Ossiomancer",
+    "level": "specialisation"
   },
   {
     "name": "Seasoned",
     "license": "Diviner",
     "ability": "Traversal",
     "description": "You have called on your Bones to help you make decisions both great and small. Ossiomancers believe that the more the Bones are used, the more adept they become at imparting advice. Some say that it is the reader who becomes honed by experience, but you know your Bones, and these are seasoned. Whenever you’re in greatest need, you know they’ll point you right or get you out of trouble.",
-    "specialisation": "Ossiomancer"
+    "specialisation": "Ossiomancer",
+    "level": "specialisation"
   },
   {
     "name": "Bonesmith",
     "license": "Diviner",
     "ability": "Exploration",
     "description": "Most Ossiomancers can give advice to a person seeking a new set of Bones. The advice goes that the material should be something familiar to them, or something that matches what they’re trying to replace. But your journeys have opened your eyes to unfamiliar possibilities! The materials used for Bones are as varied as the cultures that use them, and you have an eye for cra�ing new sets.",
-    "specialisation": "Ossiomancer"
+    "specialisation": "Ossiomancer",
+    "level": "specialisation"
   },
   {
     "name": "Master Ossiomancer",
     "license": "Diviner",
     "ability": "Observation",
     "description": "The world is scraps and detritus, cast aside without regard. The world is the clink of coins and the thunk of shovels in mud. The world isﬁxed, unchanging, immutable and cold to the cries of downtrodden. The world is a test of chance, aﬂash of luck, a game of life’s essence revealing the road. Augur Skills",
-    "specialisation": "Ossiomancer"
+    "specialisation": "Ossiomancer",
+    "level": "specialisation"
   },
   {
     "name": "Making Itself Known",
     "license": "Diviner",
     "ability": "Observation",
     "description": "You have the greensight. You have seen the sands tell stories, the snows whisper so�nothings, the rain and the storm show the rage of the Wilds. You have felt the mycological connections thrum under the forestﬂoor, and walked the greenways, the stoneways, the waterways under the guidance of the earth. You have seen. You have heard. You will follow the signs, again and again.",
-    "specialisation": "Augur"
+    "specialisation": "Augur",
+    "level": "specialisation"
   },
   {
     "name": "The Voice of the Wilds",
     "license": "Diviner",
     "ability": "Deduction",
     "description": "It is common knowledge that Monsters and Creatures have agency. Like humans, they live rich inner lives and react to the world around them. It is less common to believe that the Wilds have agency. You, though, know this to be true. Not only do the Wilds think, feel, and react, they speak. Your journeys have taught you to hear this voice without noise, this agency without sound.",
-    "specialisation": "Augur"
+    "specialisation": "Augur",
+    "level": "specialisation"
   },
   {
     "name": "A Guiding Light",
     "license": "Diviner",
     "ability": "Traversal",
     "description": "The Wilds contain multitudes. They are neither good nor evil, kind nor cruel, welcoming nor shunning. The Wilds simply are. Augurs feel the Wilds more than others. Your journeys have exposed you to every kind of terrain you can imagine. And while the Wilds may not care for you, they do notice you. You, and you alone, it feels. You are a guiding light in the Wilds, as they are a guide for you.",
-    "specialisation": "Augur"
+    "specialisation": "Augur",
+    "level": "specialisation"
   },
   {
     "name": "Unspoiled",
     "license": "Diviner",
     "ability": "Exploration",
     "description": "Nothing gives you greater joy than the spectacle of the Wilds unspoiled. Areas untouched by human interference are shrinking, and even you change this state of being. But you have come to realise that everything is unspoiled, that humans are just as much a part of the Wilds you love as Monsters and Creatures, trees, rivers, and deserts. You see the best in humanity, and they see it in you, too.",
-    "specialisation": "Augur"
+    "specialisation": "Augur",
+    "level": "specialisation"
   },
   {
     "name": "Master Augur",
     "license": "Diviner",
     "ability": "Exploration",
     "description": "The world is a green terror, mud, blood, and suffering. The world is struggle, survival, storm and darkness. The world is a roiling sea, a sandstorm, a blizzard, a flood. The world, as you know, is much more. The world is a beating heart, a grasping hand, a toothed smile beaming.",
-    "specialisation": "Augur"
+    "specialisation": "Augur",
+    "level": "specialisation"
   },
   {
     "name": "Relationships",
     "license": "Fixer",
     "ability": "Deduction",
-    "description": "You are a keen scholar of human behaviour, and nowhere is that behaviour more interesting than in the politics of personal relationships, small towns, big cities, and entire regions. You can see how it all connects, and sometimes, it isn’t very pretty."
+    "description": "You are a keen scholar of human behaviour, and nowhere is that behaviour more interesting than in the politics of personal relationships, small towns, big cities, and entire regions. You can see how it all connects, and sometimes, it isn’t very pretty.",
+    "level": "starting"
   },
   {
     "name": "Resourceful",
     "license": "Fixer",
     "ability": "Exploration",
-    "description": "When something needsﬁxing, you know how to get it done based on what is at hand. When someone is suﬀering�om an issue, you can think up some advice to help alleviate it. Given enough time, you can whip together a basic and functional solution to situations just a bit beyond the trivial, be it physical or social."
+    "description": "When something needsﬁxing, you know how to get it done based on what is at hand. When someone is suﬀering�om an issue, you can think up some advice to help alleviate it. Given enough time, you can whip together a basic and functional solution to situations just a bit beyond the trivial, be it physical or social.",
+    "level": "starting"
   },
   {
     "name": "People Watcher",
     "license": "Fixer",
     "ability": "Observation",
-    "description": "You've been around people all your life, and seen all manner of tricks, ruses, and moments of touching honesty. This has stood you in good stead, teaching you how to read moods, truths, and falsehoods."
+    "description": "You've been around people all your life, and seen all manner of tricks, ruses, and moments of touching honesty. This has stood you in good stead, teaching you how to read moods, truths, and falsehoods.",
+    "level": "starting"
   },
   {
     "name": "Steady Hands",
     "license": "Fixer",
     "ability": "Deduction",
-    "description": "Years ofﬁddling with objects – be they watches and clocks, axles and cogs, or books and bindings – have given you the steady hands necessary to start assembling or repairing just about anything, whether a mechanical contraption or a broken bone."
+    "description": "Years ofﬁddling with objects – be they watches and clocks, axles and cogs, or books and bindings – have given you the steady hands necessary to start assembling or repairing just about anything, whether a mechanical contraption or a broken bone.",
+    "level": "starting"
   },
   {
     "name": "Inner Workings",
     "license": "Fixer",
     "ability": "Deduction",
-    "description": "You've spent your life watching cra�speople at their work, learning what you could before you began your own training. As such, you have a basic understanding of a certain cra�, such as the creation of simple objects, mechanisms, or alchemical brews."
+    "description": "You've spent your life watching cra�speople at their work, learning what you could before you began your own training. As such, you have a basic understanding of a certain cra�, such as the creation of simple objects, mechanisms, or alchemical brews.",
+    "level": "starting"
   },
   {
     "name": "Working Patterns",
     "license": "Fixer",
     "ability": "Observation",
-    "description": "Each place has its own habits and routines that are, more o�en than not, followed by all around. You have a gi�for spotting these routines, understanding when a place is working, and more crucially when it isn't. Don’t Eat That! [Deduction] You have a good knowledge of both edible and poisonous foods found in your home region, meaning you can give those mushrooms that might spoil your day a wide berth."
+    "description": "Each place has its own habits and routines that are, more o�en than not, followed by all around. You have a gi�for spotting these routines, understanding when a place is working, and more crucially when it isn't. Don’t Eat That! [Deduction] You have a good knowledge of both edible and poisonous foods found in your home region, meaning you can give those mushrooms that might spoil your day a wide berth.",
+    "level": "starting"
   },
   {
     "name": "Don’t Eat That!",
     "license": "Fixer",
     "ability": "Deduction",
-    "description": "You have a good knowledge of both edible and poisonous foods found in your home region, meaning you can give those mushrooms that might spoil your day a wide berth."
+    "description": "You have a good knowledge of both edible and poisonous foods found in your home region, meaning you can give those mushrooms that might spoil your day a wide berth.",
+    "level": "starting"
   },
   {
     "name": "Quartermaster",
     "license": "Fixer",
     "ability": "Traversal",
-    "description": "No trip into the Wilds is safe without proper preparation. You can be relied upon to have properly provisionedyourself for excursions beyond the walls and fences of towns and villages, or, at the very least, to be able toﬁnd some victuals out in theﬁeld."
+    "description": "No trip into the Wilds is safe without proper preparation. You can be relied upon to have properly provisionedyourself for excursions beyond the walls and fences of towns and villages, or, at the very least, to be able toﬁnd some victuals out in theﬁeld.",
+    "level": "starting"
   },
   {
     "name": "Stolen Opportunities",
     "license": "Fixer",
     "ability": "Observation",
-    "description": "Treasure is synonymous with opportunity in your mind. You have a keen eye for treasures of all kinds, and always know the right opportunity to pilfer something you’ll inevitably make use of later. Fixer Level One Skills"
+    "description": "Treasure is synonymous with opportunity in your mind. You have a keen eye for treasures of all kinds, and always know the right opportunity to pilfer something you’ll inevitably make use of later. Fixer Level One Skills",
+    "level": "starting"
   },
   {
     "name": "Silver Tongue",
     "license": "Fixer",
     "ability": "Exploration",
-    "description": "Some use brawn to get their way, and some use cunning. For you, your words are the ticket that helps you move through the world. The right words in the right ear, and any door can open."
+    "description": "Some use brawn to get their way, and some use cunning. For you, your words are the ticket that helps you move through the world. The right words in the right ear, and any door can open.",
+    "level": "level_one"
   },
   {
     "name": "Finder",
     "license": "Fixer",
     "ability": "Observation",
-    "description": "Everyone in this world is looking for something, whether they know it or not. And you? You are good atﬁnding the things people are looking for: goods, information, or people. And there is great power, and no small amount of proﬁt, to be had for someone who knows how toﬁnd something."
+    "description": "Everyone in this world is looking for something, whether they know it or not. And you? You are good atﬁnding the things people are looking for: goods, information, or people. And there is great power, and no small amount of proﬁt, to be had for someone who knows how toﬁnd something.",
+    "level": "level_one"
   },
   {
     "name": "Body Language",
     "license": "Fixer",
     "ability": "Deduction",
-    "description": "More important than the things someone says are the things they don’t say, or the way they do or don’t say them. You have studied body language and can usually tell when someone is hiding something."
+    "description": "More important than the things someone says are the things they don’t say, or the way they do or don’t say them. You have studied body language and can usually tell when someone is hiding something.",
+    "level": "level_one"
   },
   {
     "name": "Gift Giver",
     "license": "Fixer",
     "ability": "Observation",
-    "description": "Many a relationship has been formed, or a conﬂict resolved, by the giving of gi�s. But this practice isn’t as simple as it might appear. Knowing which gi�to give, whom to give it to, and when is a vital skill and one you have honed over time."
+    "description": "Many a relationship has been formed, or a conﬂict resolved, by the giving of gi�s. But this practice isn’t as simple as it might appear. Knowing which gi�to give, whom to give it to, and when is a vital skill and one you have honed over time.",
+    "level": "level_one"
   },
   {
     "name": "Gift Maker",
     "license": "Fixer",
     "ability": "Observation",
-    "description": "The perfect gi�can end a war, or start one. You have dedicated your creative energies to the creation of gi�s. In a world where the practical is o�en theﬁrst and last consideration, time spent creating something of value that is of no use beyond itself is a noble pursuit."
+    "description": "The perfect gi�can end a war, or start one. You have dedicated your creative energies to the creation of gi�s. In a world where the practical is o�en theﬁrst and last consideration, time spent creating something of value that is of no use beyond itself is a noble pursuit.",
+    "level": "level_one"
   },
   {
     "name": "Advanced Workings",
     "license": "Fixer",
     "ability": "Deduction",
-    "description": "You have spent time practising your chosen cra�and can be relied upon to speak with authority on matters concerning it. You can even provide a basic level of training for others in yourﬁeld."
+    "description": "You have spent time practising your chosen cra�and can be relied upon to speak with authority on matters concerning it. You can even provide a basic level of training for others in yourﬁeld.",
+    "level": "level_one"
   },
   {
     "name": "Guild Member",
     "license": "Fixer",
     "ability": "Exploration",
-    "description": "Commerce, training, and protection: these are the things the trade guilds oﬀer to their members. As a valued guild member, you willﬁnd both a bed and assistance anywhere your guild’s presence is to be found."
+    "description": "Commerce, training, and protection: these are the things the trade guilds oﬀer to their members. As a valued guild member, you willﬁnd both a bed and assistance anywhere your guild’s presence is to be found.",
+    "level": "level_one"
   },
   {
     "name": "Emergency Treatment",
     "license": "Fixer",
     "ability": "Deduction",
-    "description": "Depending on how you think about them, humans and machinery aren’t really too dissimilar. Setting a lever isn’t radically diﬀerent�om setting a bone. Right? Here, bite down on this."
+    "description": "Depending on how you think about them, humans and machinery aren’t really too dissimilar. Setting a lever isn’t radically diﬀerent�om setting a bone. Right? Here, bite down on this.",
+    "level": "level_one"
   },
   {
     "name": "Black Marketeer",
     "license": "Fixer",
     "ability": "Exploration",
-    "description": "There are common goods and there are rare goods. There are also legal goods and, shall we say, less-than-legal goods. You know the signs to follow toﬁnd the latter category, and the people who sell them."
+    "description": "There are common goods and there are rare goods. There are also legal goods and, shall we say, less-than-legal goods. You know the signs to follow toﬁnd the latter category, and the people who sell them.",
+    "level": "level_one"
   },
   {
     "name": "Backwoods Prepper",
     "license": "Fixer",
     "ability": "Traversal",
-    "description": "Survival in the Wilds revolves around being prepared for the worst. You have taken this message to heart and ensure that you always have what you and your companions will need to get by in the Wilds, regardless of the dangers you might face."
+    "description": "Survival in the Wilds revolves around being prepared for the worst. You have taken this message to heart and ensure that you always have what you and your companions will need to get by in the Wilds, regardless of the dangers you might face.",
+    "level": "level_one"
   },
   {
     "name": "Lucky Charm",
     "license": "Fixer",
     "ability": "Exploration",
-    "description": "Everyone needs a little bit of luck to get by in the world, and you’re luckier than most. Your good luck charm seems to make Fate more kindly disposed to you, and you aren’t going to turn down that kind of help! Fixer Level Two Skills"
+    "description": "Everyone needs a little bit of luck to get by in the world, and you’re luckier than most. Your good luck charm seems to make Fate more kindly disposed to you, and you aren’t going to turn down that kind of help! Fixer Level Two Skills",
+    "level": "level_one"
   },
   {
     "name": "Leader",
     "license": "Fixer",
     "ability": "Observation",
-    "description": "Few rise to the challenge of leadership; the world, a�er all, is full of unqualiﬁed, unsuitable leaders. But in all walks of life, leaders are born, leaders are made, and some take that step forward where others will not. You are one of those few, able to inspire conﬁdence in those around you."
+    "description": "Few rise to the challenge of leadership; the world, a�er all, is full of unqualiﬁed, unsuitable leaders. But in all walks of life, leaders are born, leaders are made, and some take that step forward where others will not. You are one of those few, able to inspire conﬁdence in those around you.",
+    "level": "level_two"
   },
   {
     "name": "Linguist",
     "license": "Fixer",
     "ability": "Observation",
-    "description": "A talent for languages is perhaps one of the best gi�s a Chronicler can possess, making travel through the Wilds and regions of Ecumene that much smoother. You have dedicated yourself to studying the world’s many languages, allowing you to speak to and understand a diverse range of people more easily.Manipulator [Deduction] Most people are predictable. They follow certain habits, rules, and customs. This predictability makes them easier to understand and, to the right person, easier to steer. As a student in the subtle art of manipulation, you can use these behaviours to your advantage."
+    "description": "A talent for languages is perhaps one of the best gi�s a Chronicler can possess, making travel through the Wilds and regions of Ecumene that much smoother. You have dedicated yourself to studying the world’s many languages, allowing you to speak to and understand a diverse range of people more easily.Manipulator [Deduction] Most people are predictable. They follow certain habits, rules, and customs. This predictability makes them easier to understand and, to the right person, easier to steer. As a student in the subtle art of manipulation, you can use these behaviours to your advantage.",
+    "level": "level_two"
   },
   {
     "name": "Manipulator",
     "license": "Fixer",
     "ability": "Deduction",
-    "description": "Most people are predictable. They follow certain habits, rules, and customs. This predictability makes them easier to understand and, to the right person, easier to steer. As a student in the subtle art of manipulation, you can use these behaviours to your advantage."
+    "description": "Most people are predictable. They follow certain habits, rules, and customs. This predictability makes them easier to understand and, to the right person, easier to steer. As a student in the subtle art of manipulation, you can use these behaviours to your advantage.",
+    "level": "level_two"
   },
   {
     "name": "Emotional Resonance",
     "license": "Fixer",
     "ability": "Deduction",
-    "description": "Things are containers for feeling and emotion. Nowhere is this more true, in the customs of Ecumene, than in each person’s collection of Bones. But other objects and items absorb traces of emotion, too, through long use or moments of heightened feelings. By studying an object, you are able to read it, to feel this emotional resonance, and draw conclusions�om it."
+    "description": "Things are containers for feeling and emotion. Nowhere is this more true, in the customs of Ecumene, than in each person’s collection of Bones. But other objects and items absorb traces of emotion, too, through long use or moments of heightened feelings. By studying an object, you are able to read it, to feel this emotional resonance, and draw conclusions�om it.",
+    "level": "level_two"
   },
   {
     "name": "Unusual Engineering",
     "license": "Fixer",
     "ability": "Deduction",
-    "description": "Some machines are designed to confuse an observer, with hidden mechanisms, processes that seem to lead in strange directions, and outcomes that don’t match inputs. However, with the right eye and the right mind, even the most devilish of inventions can be puzzled out!"
+    "description": "Some machines are designed to confuse an observer, with hidden mechanisms, processes that seem to lead in strange directions, and outcomes that don’t match inputs. However, with the right eye and the right mind, even the most devilish of inventions can be puzzled out!",
+    "level": "level_two"
   },
   {
     "name": "Forgery",
     "license": "Fixer",
     "ability": "Observation",
-    "description": "Sometimes you need the right documentation to smooth the way. It could be a ticket, an identity document, or a certiﬁcate of origin. Whatever it is, you can turn your hand to copying it."
+    "description": "Sometimes you need the right documentation to smooth the way. It could be a ticket, an identity document, or a certiﬁcate of origin. Whatever it is, you can turn your hand to copying it.",
+    "level": "level_two"
   },
   {
     "name": "Hireling",
     "license": "Fixer",
     "ability": "Traversal",
-    "description": "For the right price, you can usuallyﬁnd someone to do those tasks you just don’t want (or can’t) do for yourself. Whether it's running errands, fetching and carrying, or gathering information, you know where toﬁnd people to get things done for you."
+    "description": "For the right price, you can usuallyﬁnd someone to do those tasks you just don’t want (or can’t) do for yourself. Whether it's running errands, fetching and carrying, or gathering information, you know where toﬁnd people to get things done for you.",
+    "level": "level_two"
   },
   {
     "name": "Underground Connections",
     "license": "Fixer",
     "ability": "Exploration",
-    "description": "Moving in certain circles and trading in certain goods o�en draws the attention of a certain group of people who might work on the shadier side of the law. These people, if you know how toﬁnd them, can come in very useful, and you happen to know where they meet."
+    "description": "Moving in certain circles and trading in certain goods o�en draws the attention of a certain group of people who might work on the shadier side of the law. These people, if you know how toﬁnd them, can come in very useful, and you happen to know where they meet.",
+    "level": "level_two"
   },
   {
     "name": "Reuse and Recycle",
     "license": "Fixer",
     "ability": "Exploration",
-    "description": "Life is tough, and for those travelling the Wilds, coming by useful objects and items is even tougher. But you’ve learned how to make use of those things others might throw away, or at least toﬁnd additional ways of using something that seems to be used up. 45 46Envoy Skills"
+    "description": "Life is tough, and for those travelling the Wilds, coming by useful objects and items is even tougher. But you’ve learned how to make use of those things others might throw away, or at least toﬁnd additional ways of using something that seems to be used up. 45 46Envoy Skills",
+    "level": "level_two"
   },
   {
     "name": "Power Behind the Throne",
     "license": "Fixer",
     "ability": "Observation",
     "description": "Leaders do not get to where they are on their own. Frequently, they are the most charismatic or the most brutal, not the most capable. What they each have in common is a conﬁdant, aﬁxer, the power behind the throne. The person doing their thinking for them. You have walked the corridors of power, and you know the levers that need to be pulled to get the outcome you desire.",
-    "specialisation": "Envoy"
+    "specialisation": "Envoy",
+    "level": "specialisation"
   },
   {
     "name": "Faultlines and Fissures",
     "license": "Fixer",
     "ability": "Deduction",
     "description": "Society is an ediﬁce, a smokescreen, a painted set in�ont of which the actors play. Or so the cynical view runs. Society is a brick wall, a pyramid, a road that winds in the direction of progress. Each person adds their own brick, but even the greatest cra�speople leaveﬂaws behind them. You might not be good with your hands, but you can see and have a mind to explore these imperfections.",
-    "specialisation": "Envoy"
+    "specialisation": "Envoy",
+    "level": "specialisation"
   },
   {
     "name": "Safe Passage",
     "license": "Fixer",
     "ability": "Traversal",
     "description": "You have talked yourself into and out of more places than most can imagine. Documents have been obtained, legally or otherwise, and once or twice you even managed to convince someone to carry your luggage for you. Travel is easy when you know how. You are adept at negotiating even the most diﬃcult of terrain. A�er all, climbing a mountain is easier than talking your way into a palace!",
-    "specialisation": "Envoy"
+    "specialisation": "Envoy",
+    "level": "specialisation"
   },
   {
     "name": "Diplomat",
     "license": "Fixer",
     "ability": "Exploration",
     "description": "If you leave one mark on the world before you hang up your cloak, it will be to have le�it more connected than you found it. Travel broadens the mind, and in a world that very nearly lost itself, you have soaked up every experience you can. You honour the traditions of others by engaging openly and sharing them with those you meet next. The world needs connection, and you are a thread.",
-    "specialisation": "Envoy"
+    "specialisation": "Envoy",
+    "level": "specialisation"
   },
   {
     "name": "Master Envoy",
     "license": "Fixer",
     "ability": "Observation",
     "description": "The world is miscommunication, a lost letter, a harsh word. The world is diﬀerence and division, dissatisfaction and disrepute. The world is the lost being led by the strong. The world, as you know, is more. The world is�iendship, collaboration, community.Fabricator Skills",
-    "specialisation": "Envoy"
+    "specialisation": "Envoy",
+    "level": "specialisation"
   },
   {
     "name": "Something from Nothing",
     "license": "Fixer",
     "ability": "Deduction",
     "description": "You have a rare talent, one that relies on seeing the world in a diﬀerent way to most. When con�onted with a problem, your instinct is to remove the problem, rather than seeking a way around it. And in those situations where most would see nothing to help, you see endless potential. They still tell stories about the time you found your way out of a locked pantry without opening the door.",
-    "specialisation": "Fabricator"
+    "specialisation": "Fabricator",
+    "level": "specialisation"
   },
   {
     "name": "Animating Energy",
     "license": "Fixer",
     "ability": "Observation",
     "description": "It's a wonderful thing, seeing the contraption you’ve worked so hard on jolt, judder, or shudder to life. Whether by steam, clockwork, or just good old fashioned human exertion, a machine hums and revels in its newly gained power. People, you’ve noticed, are like this too. Too o�en we resemble automata. But that animating energy, that touch you have, brings others to life.",
-    "specialisation": "Fabricator"
+    "specialisation": "Fabricator",
+    "level": "specialisation"
   },
   {
     "name": "A Living Machine",
     "license": "Fixer",
     "ability": "Traversal",
     "description": "The mechanically minded focus onﬁxity. Machines and tools are simple enough; make the right connections orﬁnd theﬂaw and things will go on much as they did before. The Wilds have a mind of their own, but your journeys have shown that, like a machine, they operate according to patterns and a logic all their own. If you can decipher that, the challenge of travel is easier to overcome.",
-    "specialisation": "Fabricator"
+    "specialisation": "Fabricator",
+    "level": "specialisation"
   },
   {
     "name": "Revolutions",
     "license": "Fixer",
     "ability": "Exploration",
     "description": "The turn of a wheel, the swing of a hammer, the completion of a plan: all are needed to bring about a revolution. Your journeys have exposed you to ways of doing and being that had never occurred to you before, along with experiences that have no names. You carry this fervour with you wherever you go as a spark of joy, and sparks help igniteﬁres in all kinds of places.",
-    "specialisation": "Fabricator"
+    "specialisation": "Fabricator",
+    "level": "specialisation"
   },
   {
     "name": "Master Fabricator",
     "license": "Fixer",
     "ability": "Deduction",
     "description": "The world is wood and iron, parts separated�om the whole. The world is unshaped, broken, beyond use. The world is ignorance fumbling in the darkness, a light extinguished. The world, as you know, is more. The world is invention, innovation, shaped by human hands. Scavenger Skills",
-    "specialisation": "Fabricator"
+    "specialisation": "Fabricator",
+    "level": "specialisation"
   },
   {
     "name": "All That Glimmers",
     "license": "Fixer",
     "ability": "Observation",
     "description": "You are someone who sees the value in things le�behind or cast aside. ‘Not all that glimmers is gold!’ your parents said to you. ‘Gold is not the only glimmer worthﬁnding,’ you’d think. This has served you well on your journeys. You’ve found things far more valuable. An empty eggshell, the last home of a new life; a nest still warm; a safe haven in a storm. You have an eye for value. Don’t forget it.",
-    "specialisation": "Scavenger"
+    "specialisation": "Scavenger",
+    "level": "specialisation"
   },
   {
     "name": "Finder of Lost Things",
     "license": "Fixer",
     "ability": "Deduction",
     "description": "Most associate loss with the tangible: an item, a person, a possession. But to focus on things is to lack perspective. A secret told is a secret lost. Trust broken is trust lost. Loss, while sometimes necessary, is always painful. You have a sense of lost things, and can see the weight loss puts on people. O�en, it is those who have lost who need to be found. You know where toﬁnd them, and what they need.",
-    "specialisation": "Scavenger"
+    "specialisation": "Scavenger",
+    "level": "specialisation"
   },
   {
     "name": "The Marrow of Life",
     "license": "Fixer",
     "ability": "Exploration",
     "description": "You came up hard. Some would say that you spent more time on the bones of your arse than oﬀthem. But even when you and those around you had nothing, there was always each other. There was experience, the stuﬀof life. You have scavenged everything�om the experiences encountered on your journeys, and these experiences are yours to share. A story is a thing, and it is precious.",
-    "specialisation": "Scavenger"
+    "specialisation": "Scavenger",
+    "level": "specialisation"
   },
   {
     "name": "Master Scavenger",
     "license": "Fixer",
     "ability": "Exploration",
     "description": "The world is a rubbish dump, a charnel pit, the leavings from the table. The world is a scrabble in the mud, the pangs of hunger. The world is loose clothes, rags draped over a skeleton. The world, as you know, is more than this. The world is solidarity, giving and receiving, a trial by fire.",
-    "specialisation": "Scavenger"
+    "specialisation": "Scavenger",
+    "level": "specialisation"
   },
   {
     "name": "Wide Ranging",
     "license": "Guardian",
     "ability": "Traversal",
-    "description": "You have spent many hours roaming the terrain of your homeland and gained an aﬃnity for moving beyond the sight of the most isolated villages. The secrets of the Wilds await your presence, and you’re always looking beyond the horizon for new paths to blaze."
+    "description": "You have spent many hours roaming the terrain of your homeland and gained an aﬃnity for moving beyond the sight of the most isolated villages. The secrets of the Wilds await your presence, and you’re always looking beyond the horizon for new paths to blaze.",
+    "level": "starting"
   },
   {
     "name": "Awareness",
     "license": "Guardian",
     "ability": "Observation",
-    "description": "Keeping one’s wits about them is vital for survival, whether one is in a city, a village, or deep in the mountains. Your mentor taught you that awareness, the honing of one’s attention until it is as sharp as any blade, is a Guardian’s very best protection."
+    "description": "Keeping one’s wits about them is vital for survival, whether one is in a city, a village, or deep in the mountains. Your mentor taught you that awareness, the honing of one’s attention until it is as sharp as any blade, is a Guardian’s very best protection.",
+    "level": "starting"
   },
   {
     "name": "Sixth Sense",
     "license": "Guardian",
     "ability": "Exploration",
-    "description": "When you were young, the Wilds called to you. Your sight, smell, hearing, touch, and even your taste registered this yearning. Now, your exposure to the Wilds has given you a sixth sense, allowing you to feel that which the Wilds feel."
+    "description": "When you were young, the Wilds called to you. Your sight, smell, hearing, touch, and even your taste registered this yearning. Now, your exposure to the Wilds has given you a sixth sense, allowing you to feel that which the Wilds feel.",
+    "level": "starting"
   },
   {
     "name": "Quick Thinking",
     "license": "Guardian",
     "ability": "Traversal",
-    "description": "Your athleticism and reﬂexes have made you adept at recognising hazards in the Wilds, making you a valuable travelling companion. More than once you’ve saved a comrade�om a twisted ankle, or worse."
+    "description": "Your athleticism and reﬂexes have made you adept at recognising hazards in the Wilds, making you a valuable travelling companion. More than once you’ve saved a comrade�om a twisted ankle, or worse.",
+    "level": "starting"
   },
   {
     "name": "Keen Eyed",
     "license": "Guardian",
     "ability": "Traversal",
-    "description": "Most peopleﬁlter out the details of the world around them, moving through life hardly seeing anything. But you know that there is much to be found where you least expect it. Littleﬂies past you, and details ranging�om environmental hazards to potentially dangerous predators ring out in your brain regularly."
+    "description": "Most peopleﬁlter out the details of the world around them, moving through life hardly seeing anything. But you know that there is much to be found where you least expect it. Littleﬂies past you, and details ranging�om environmental hazards to potentially dangerous predators ring out in your brain regularly.",
+    "level": "starting"
   },
   {
     "name": "Amateur Botanist",
     "license": "Guardian",
     "ability": "Exploration",
-    "description": "During your training, you paid special attention to the lessons on theﬂora of your home region. As a result, you know whichﬂowers, shrubs, and trees can oﬀer aid and which ones spell poisonous harm."
+    "description": "During your training, you paid special attention to the lessons on theﬂora of your home region. As a result, you know whichﬂowers, shrubs, and trees can oﬀer aid and which ones spell poisonous harm.",
+    "level": "starting"
   },
   {
     "name": "Tracks in the Mud",
     "license": "Guardian",
     "ability": "Exploration",
-    "description": "You’ve got a keen eye for following a trail, whether through mud, sleet, or cobblestone. When you peer closely at tracks, sometimes you can even discern the physical state of the entity that le�them behind."
+    "description": "You’ve got a keen eye for following a trail, whether through mud, sleet, or cobblestone. When you peer closely at tracks, sometimes you can even discern the physical state of the entity that le�them behind.",
+    "level": "starting"
   },
   {
     "name": "Soft Steps",
     "license": "Guardian",
     "ability": "Traversal",
-    "description": "As you stalked cats, surprised dogs, and carefully inspected bird's nests in your youth, you became accustomed totreading so�ly lest you reveal your presence to your target. Despite whatever armour you might be wearing, it’s unusually easy for you to creep close without alerting others to your presence."
+    "description": "As you stalked cats, surprised dogs, and carefully inspected bird's nests in your youth, you became accustomed totreading so�ly lest you reveal your presence to your target. Despite whatever armour you might be wearing, it’s unusually easy for you to creep close without alerting others to your presence.",
+    "level": "starting"
   },
   {
     "name": "Predator or Prey",
     "license": "Guardian",
     "ability": "Deduction",
-    "description": "Your dedication to the creatures of the Wilds is associated with one side of Fate's greatest dichotomy: predator or prey. This unusual aﬃnity has inspired you to mimic the techniques of your chosen side, allowing you to take on the actions of a possible predator or a lowly prey to obtain subtle advantages in theﬁeld. Guardian Level One Skills"
+    "description": "Your dedication to the creatures of the Wilds is associated with one side of Fate's greatest dichotomy: predator or prey. This unusual aﬃnity has inspired you to mimic the techniques of your chosen side, allowing you to take on the actions of a possible predator or a lowly prey to obtain subtle advantages in theﬁeld. Guardian Level One Skills",
+    "level": "starting"
   },
   {
     "name": "Strong as Oak",
     "license": "Guardian",
     "ability": "Traversal",
-    "description": "Years of training with armour and shield have given you an impressively strong physique. Whether it’s clearing a shrub-lined path, chopping down a rotting tree, or li�ing a colossal boulder, you can be relied on when strength is needed to solve a situation."
+    "description": "Years of training with armour and shield have given you an impressively strong physique. Whether it’s clearing a shrub-lined path, chopping down a rotting tree, or li�ing a colossal boulder, you can be relied on when strength is needed to solve a situation.",
+    "level": "level_one"
   },
   {
     "name": "Surefooted",
     "license": "Guardian",
     "ability": "Traversal",
-    "description": "Time spent in the Wilds is careful and attentive time. Those charging through the underbrush without choosing their steps with care will roll an ankle, and vulnerability can be quickly punished. You are practised and surefooted as a result of careful attention to your surroundings."
+    "description": "Time spent in the Wilds is careful and attentive time. Those charging through the underbrush without choosing their steps with care will roll an ankle, and vulnerability can be quickly punished. You are practised and surefooted as a result of careful attention to your surroundings.",
+    "level": "level_one"
   },
   {
     "name": "Draw Attention",
     "license": "Guardian",
     "ability": "Exploration",
-    "description": "Guardians are o�en an imposing presence in theﬁeld, though this isn’t always related to their size. Even small and seemingly unimpressive Guardians radiate an energy that cannot be ignored. You may not speak very much, but when exploring the Wilds, you draw all eyes to you."
+    "description": "Guardians are o�en an imposing presence in theﬁeld, though this isn’t always related to their size. Even small and seemingly unimpressive Guardians radiate an energy that cannot be ignored. You may not speak very much, but when exploring the Wilds, you draw all eyes to you.",
+    "level": "level_one"
   },
   {
     "name": "Moving Mountains",
     "license": "Guardian",
     "ability": "Traversal",
-    "description": "Most people aren’t built for the Wilds. You, however, let the Wildsﬂow through you. When a drastic situation emerges that others think is just too diﬃcult, chances are you can overcome it, either by sheer physical force or mental fortitude. Practised Reﬂexes [Traversal] You have spent hours, days, and months honing your skills to ensure you and your companions are as safe as can be during treks across rough terrain. The result? You can move and react with the speed of wild things, aﬀording you a better chance to avoid danger."
+    "description": "Most people aren’t built for the Wilds. You, however, let the Wildsﬂow through you. When a drastic situation emerges that others think is just too diﬃcult, chances are you can overcome it, either by sheer physical force or mental fortitude. Practised Reﬂexes [Traversal] You have spent hours, days, and months honing your skills to ensure you and your companions are as safe as can be during treks across rough terrain. The result? You can move and react with the speed of wild things, aﬀording you a better chance to avoid danger.",
+    "level": "level_one"
   },
   {
     "name": "Sharp Hearing",
     "license": "Guardian",
     "ability": "Observation",
-    "description": "The Monsters and Creatures of the Wilds use all of their senses to detect prey and avoid danger. While many humans only rely on their eyes, your experiences have taught you to stand still and hear the world around you."
+    "description": "The Monsters and Creatures of the Wilds use all of their senses to detect prey and avoid danger. While many humans only rely on their eyes, your experiences have taught you to stand still and hear the world around you.",
+    "level": "level_one"
   },
   {
     "name": "Poultice",
     "license": "Guardian",
     "ability": "Deduction",
-    "description": "The Wilds areﬁlled with herbs, mosses, and plants that can treat minor iǌuries and alleviate the symptoms of illness. This knowledge is vital for Guardians, who spend increasing amounts of time isolated and alone. The ability to treat pain and illness makes them essential to others."
+    "description": "The Wilds areﬁlled with herbs, mosses, and plants that can treat minor iǌuries and alleviate the symptoms of illness. This knowledge is vital for Guardians, who spend increasing amounts of time isolated and alone. The ability to treat pain and illness makes them essential to others.",
+    "level": "level_one"
   },
   {
     "name": "Edible Plants",
     "license": "Guardian",
     "ability": "Observation",
-    "description": "Nature presents a bounty for those who know what they are looking for. While survival in the Wilds is diﬃcult, those whoﬁnd themselves short of food, or wanting to supplement their stores, must have knowledge of those plants that are edible. The particularly astute will also have studied the eating habits of Monsters and Creatures, and know which plants they prefer."
+    "description": "Nature presents a bounty for those who know what they are looking for. While survival in the Wilds is diﬃcult, those whoﬁnd themselves short of food, or wanting to supplement their stores, must have knowledge of those plants that are edible. The particularly astute will also have studied the eating habits of Monsters and Creatures, and know which plants they prefer.",
+    "level": "level_one"
   },
   {
     "name": "Animal Tracker",
     "license": "Guardian",
     "ability": "Observation",
-    "description": "Each Guardian interprets their duty diﬀerently. Some stand vigil over certain locations while others travel widely. You have chosen to track the Monsters and Creatures of the wild, developing your skills in stalking, observing, and documenting in case one of these living beings must be trapped for its own good. Camouﬂage [Traversal] You have spent time observing the hardest-to-ﬁnd Monsters and Creatures of the Wilds, examining how they remain hidden�om view. And you have adopted these skills for your own purposes, melting into the environment and avoiding those who seek you out. Guardian Level Two Skills"
+    "description": "Each Guardian interprets their duty diﬀerently. Some stand vigil over certain locations while others travel widely. You have chosen to track the Monsters and Creatures of the wild, developing your skills in stalking, observing, and documenting in case one of these living beings must be trapped for its own good. Camouﬂage [Traversal] You have spent time observing the hardest-to-ﬁnd Monsters and Creatures of the Wilds, examining how they remain hidden�om view. And you have adopted these skills for your own purposes, melting into the environment and avoiding those who seek you out. Guardian Level Two Skills",
+    "level": "level_one"
   },
   {
     "name": "Bulwark",
     "license": "Guardian",
     "ability": "Traversal",
-    "description": "A Guardian’s training begins and ends with their shield and armour, and you take this one step further, turning yourself into an armoured human shield at a moment’s notice. You’re perfectly willing to throw your own body in harm’s way to protect the lives and health of others."
+    "description": "A Guardian’s training begins and ends with their shield and armour, and you take this one step further, turning yourself into an armoured human shield at a moment’s notice. You’re perfectly willing to throw your own body in harm’s way to protect the lives and health of others.",
+    "level": "level_two"
   },
   {
     "name": "Intimidating Presence",
     "license": "Guardian",
     "ability": "Traversal",
-    "description": "All Guardians, even the smallest, emanate an air of physical capability. And while they’re committed to non- violence, they are not people you’d want to mess with. Youexhibit this to the fullest, radiating intimidation even�om the tiniest of movements."
+    "description": "All Guardians, even the smallest, emanate an air of physical capability. And while they’re committed to non- violence, they are not people you’d want to mess with. Youexhibit this to the fullest, radiating intimidation even�om the tiniest of movements.",
+    "level": "level_two"
   },
   {
     "name": "Nurture",
     "license": "Guardian",
     "ability": "Exploration",
-    "description": "All life follows the same stages: we are born, we grow, we live, we die. Rarely, though, is life as vulnerable as it is in its earliest forms. Your priority has always been to cherish and protect life in itsﬁrst stages. You have a tendency to seek out, locate, and win the trust of youngsters – both human and otherwise."
+    "description": "All life follows the same stages: we are born, we grow, we live, we die. Rarely, though, is life as vulnerable as it is in its earliest forms. Your priority has always been to cherish and protect life in itsﬁrst stages. You have a tendency to seek out, locate, and win the trust of youngsters – both human and otherwise.",
+    "level": "level_two"
   },
   {
     "name": "Attuned",
     "license": "Guardian",
     "ability": "Observation",
-    "description": "When you quiet your mind, the Wildsﬁll it with images, sounds, scents, and tastes. You have become attuned to its ever-changing, always constant nature, and your sixth sense can tell you a myriad of diﬀerent things if you just stop to listen to it."
+    "description": "When you quiet your mind, the Wildsﬁll it with images, sounds, scents, and tastes. You have become attuned to its ever-changing, always constant nature, and your sixth sense can tell you a myriad of diﬀerent things if you just stop to listen to it.",
+    "level": "level_two"
   },
   {
     "name": "Athletics",
     "license": "Guardian",
     "ability": "Traversal",
-    "description": "The terrain of the Wilds is ever-changing. Those travelling through it are called upon to ford rivers, climb mountains, scale cliﬀs, wade through swamps, and trudge through snow, among many other trials of endurance. Your rigorous training has given you the athletic skills required to overcome these diﬃculties."
+    "description": "The terrain of the Wilds is ever-changing. Those travelling through it are called upon to ford rivers, climb mountains, scale cliﬀs, wade through swamps, and trudge through snow, among many other trials of endurance. Your rigorous training has given you the athletic skills required to overcome these diﬃculties.",
+    "level": "level_two"
   },
   {
     "name": "Revive",
     "license": "Guardian",
     "ability": "Exploration",
-    "description": "Certain herbs, oils, and mixtures are known to have reviving powers, normally due to their strong (or foul) smell. You’re skilled at locating these potent tools and are always theﬁrst to help an unconscious ally who needs a little pick-me-up."
+    "description": "Certain herbs, oils, and mixtures are known to have reviving powers, normally due to their strong (or foul) smell. You’re skilled at locating these potent tools and are always theﬁrst to help an unconscious ally who needs a little pick-me-up.",
+    "level": "level_two"
   },
   {
     "name": "Restore",
     "license": "Guardian",
     "ability": "Deduction",
-    "description": "Survival in the Wilds requires a knowledge ofﬁrst aid, basic medicine, and the optimal way to treat iǌuries. You have spent time learning�om healers of all types and are skilled enough to treat basic physical iǌuries."
+    "description": "Survival in the Wilds requires a knowledge ofﬁrst aid, basic medicine, and the optimal way to treat iǌuries. You have spent time learning�om healers of all types and are skilled enough to treat basic physical iǌuries.",
+    "level": "level_two"
   },
   {
     "name": "Enticing Scent",
     "license": "Guardian",
     "ability": "Exploration",
-    "description": "Trackers know that it is o�en best to have your target come to you. To this end, each tracker learns the habits of their quarry, and can mix together plants, foods, and other substances to create alluring smells."
+    "description": "Trackers know that it is o�en best to have your target come to you. To this end, each tracker learns the habits of their quarry, and can mix together plants, foods, and other substances to create alluring smells.",
+    "level": "level_two"
   },
   {
     "name": "The Spark of Life",
     "license": "Guardian",
     "ability": "Observation",
     "description": "The Flux showed us that all life – even the oldest, strongest, most deeply rooted – dwells in the shadow of its own absence. You have seen its eﬀects – of vibrancy, fecundity, and creation stripped away. But you have also seen the shoots of recovery, the spark of life always burning, incandescent even when most exposed. You have seen life reassert itself, and know how to nurture it.",
-    "specialisation": "Warden"
+    "specialisation": "Warden",
+    "level": "specialisation"
   },
   {
     "name": "Sentinel",
     "license": "Guardian",
     "ability": "Exploration",
     "description": "The Wilds are full of features that embody the principles of the sentinel. From broad and ancient oaks to titanic mountains and cliﬀs, cascading waterfalls to vast rivers holding the way against any incursion. You, the shield of the Wilds, can be counted among them. You are the gate, the wall, the bulwark against the harms that would befall the land. Stand strong, sentinel.",
-    "specialisation": "Warden"
+    "specialisation": "Warden",
+    "level": "specialisation"
   },
   {
     "name": "Depth of Focus",
     "license": "Guardian",
     "ability": "Observation",
     "description": "Survival requires a state of constant vigilance, especially when the safety of others rests in your hands. Some describe an awareness of danger as a sixth sense, as if�om a mystical source. You know the answer is far more mundane. To anticipate danger, to survive in the Wilds, is a case of focus, practice, and dedication. You are attuned to the Wilds and can sense dangers long before others.",
-    "specialisation": "Warden"
+    "specialisation": "Warden",
+    "level": "specialisation"
   },
   {
     "name": "From Anywhere",
     "license": "Guardian",
     "ability": "Deduction",
     "description": "The Wilds obey a logic all of their own. Those not used to these erratic patterns are prone to underestimate or fail to notice the signs around them. You have seen most of what the Wilds can throw at you, and this allows you to anticipate the scenarios you might encounter on your travels. Those who charge in o�enﬁnd themselves lost, iǌured, or worse. Not you, not here, not ever. Into the Depths, Up to the Heights [Traversal] No matter where you are, you always have your feet. No matter the height, you keep your head. No matter the depths and the darkness, your wits will not abandon you. You have travelled to places and seen sights that you could not ever have imagined before you started. And while the thought of hidden places motivates your every step, you know you’ll be able to handle them when youﬁnd them.",
-    "specialisation": "Warden"
+    "specialisation": "Warden",
+    "level": "specialisation"
   },
   {
     "name": "Nature’s Avenger",
     "license": "Guardian",
     "ability": "Deduction",
     "description": "The thought – that someone would kill, would harm, would exploit the Wilds and those who call it home – gave you chills. The reality, you’re a�aid to admit, was far worse. Nothing could have prepared you for the things you have witnessed. But this knowledge has made you strong and steeled your conviction. You know those who inﬂicted this harm, and you know how toﬁnd them.",
-    "specialisation": "Survivalist"
+    "specialisation": "Survivalist",
+    "level": "specialisation"
   },
   {
     "name": "Into the Depths, Up to the Heights",
     "license": "Guardian",
     "ability": "Traversal",
     "description": "No matter where you are, you always have your feet. No matter the height, you keep your head. No matter the depths and the darkness, your wits will not abandon you. You have travelled to places and seen sights that you could not ever have imagined before you started. And while the thought of hidden places motivates your every step, you know you’ll be able to handle them when youﬁnd them.",
-    "specialisation": "Survivalist"
+    "specialisation": "Survivalist",
+    "level": "specialisation"
   },
   {
     "name": "Every Lesson Yet Explored",
     "license": "Guardian",
     "ability": "Exploration",
     "description": "You know what you know, and you know what you don’t. The Guardian’s path is to forge ahead, to protect, to nurture and care. It is one of sacriﬁce of the self, of upli�ing others at one’s own expense. Your training was rigorous, but the most important lesson you learned was to listen: to others, to the Wilds, to your instincts. You have learned all you can�om others, and this serves you well.",
-    "specialisation": "Survivalist"
+    "specialisation": "Survivalist",
+    "level": "specialisation"
   },
   {
     "name": "Signs of Struggle",
     "license": "Guardian",
     "ability": "Observation",
     "description": "Those given the responsibilities of a Trapper by the Mappa Mundi Institute are deeply aware of the impact of their chosen path. It does not suﬃce to be skilled enough toﬁnd, track, and capture a living being. They must be focused, above all else, on the preservation of life. You exempli� this, and have spent hours studying Monster and Creature biology and knowing when they are in distress.",
-    "specialisation": "Trapper"
+    "specialisation": "Trapper",
+    "level": "specialisation"
   },
   {
     "name": "The Best Approach",
     "license": "Guardian",
     "ability": "Deduction",
     "description": "Each being is unique. The patterns of its life, its behaviours, its interactions are always diﬀerent, even subtly,�om those around it. What works for one will not always work for another. You learned this lesson through practice and exposure. You know that approaching your target is rooted in respect, deference, and taking time to consider how best to achieve your goals.",
-    "specialisation": "Trapper"
+    "specialisation": "Trapper",
+    "level": "specialisation"
   },
   {
     "name": "The Hidden Ways",
     "license": "Guardian",
     "ability": "Traversal",
     "description": "There are places that nobody knows, that no human has seen, places where no voice has pierced the silence of a thousand times a thousand years. These are places none will see, not even you. But the ways less taken, those reserved for Monsters and Creatures, can be found, and you know where to look. You have learned toﬁnd and walk these paths less seen, always in pursuit of your target. Diﬀerent Stripes [Exploration] While others among your contemporaries have focused their energies on understanding the diﬀerences between peoples, or places, or environments, you have taken Monsters and Creatures as your object of study. Your travels have exposed you to non-human life in abundant variety, and you can be counted on to know and understand even the smallest of diﬀerences between them.",
-    "specialisation": "Trapper"
+    "specialisation": "Trapper",
+    "level": "specialisation"
   },
   {
     "name": "Master Warden",
     "license": "Guardian",
     "ability": "Exploration",
     "description": "The world is dead, blood and bone splattered and smashed in the mud. The world is replete with danger, a threat to you and those you love. The world is an enemy, nemesis, fear in the dark. The world, as you know, is more. The world is a paradise, a gi�, a treasure to be shared.Survivalist Skills",
-    "specialisation": "Warden"
+    "specialisation": "Warden",
+    "level": "specialisation"
   },
   {
     "name": "Master Survivalist",
     "license": "Guardian",
     "ability": "Traversal",
     "description": "The world is a cliﬀ, a precipice, the call of the void. The world is struggle and pain and con�ontation. The world is a conﬂagration, a sickness, a shattered morass. The world, as you know, is more. The world is a rope, a bridge, a helping hand. Trapper Skills",
-    "specialisation": "Survivalist"
+    "specialisation": "Survivalist",
+    "level": "specialisation"
   },
   {
     "name": "Master Trapper",
     "license": "Guardian",
     "ability": "Exploration",
     "description": "The world is a snare, a pit, a goal, the pleas of a frightened captive. The world is restraint, restriction, opportunity lost and potential unreached. The world belongs to the strong, the uncaring. The world, as you know, is more. The world is aid offered, help accepted, and freedom realised.",
-    "specialisation": "Trapper"
+    "specialisation": "Trapper",
+    "level": "specialisation"
   },
   {
     "name": "Difference",
     "license": "Archivist",
     "ability": "Observation",
     "description": "Your research and years of study have taught you two fundamental truths: difference divides, and difference unites. You have travelled to more places, met more people, experienced more major events and examples of the everyday than almost any before you. You have changed; this journey has changed you. Where once you were outside, now you can fit. Respect for difference has paid dividends.",
-    "specialisation": "Historian"
+    "specialisation": "Historian",
+    "level": "specialisation"
   },
   {
     "name": "Better than Nothing",
     "license": "Fixer",
     "ability": "Traversal",
     "description": "Too many who have tried to find themselves in the Wilds have been lost to starvation, dehydration, or exposure. You have been close to this yourself, have seen your companions delirious due to thirst and heat, hunger and cold. But you know that something is always better than nothing; the choice to starve is no choice at all. When it matters most, you know you'll find something out in the Wilds.",
-    "specialisation": "Scavenger"
+    "specialisation": "Scavenger",
+    "level": "specialisation"
   },
   {
     "name": "Practised Reflexes",
     "license": "Guardian",
     "ability": "Traversal",
     "description": "You have spent hours, days, and months honing your skills to ensure you and your companions are as safe as can be during treks across rough terrain. The result? You can move and react with the speed of wild things, affording you a better chance to avoid danger.",
-    "specialisation": null
+    "specialisation": null,
+    "level": "level_two"
   },
   {
     "name": "Camouflage",
     "license": "Guardian",
     "ability": "Traversal",
     "description": "You have spent time observing the hardest-to-find Monsters and Creatures of the Wilds, examining how they remain hidden from view. And you have adopted these skills for your own purposes, melting into the environment and avoiding those who seek you out.",
-    "specialisation": null
+    "specialisation": null,
+    "level": "level_two"
   },
   {
     "name": "One with the Wilds",
     "license": "Guardian",
     "ability": "Traversal",
     "description": "There is nothing you cannot be. You are earth, stone, mud, and dust. You are moss, leaves, bark, and branches. You are water, a ripple, a wave, the current. You are the wind, the sun and the sky, the shadow of clouds. The life of a Warden is one of total and absent impact. Of being seen and felt without being noticed. You are the living embodiment of the Wilds, able to move seamlessly within.",
-    "specialisation": "Survivalist"
+    "specialisation": "Survivalist",
+    "level": "specialisation"
   },
   {
     "name": "Different Stripes",
     "license": "Guardian",
     "ability": "Exploration",
     "description": "While others among your contemporaries have focused their energies on understanding the differences between peoples, or places, or environments, you have taken Monsters and Creatures as your object of study. Your travels have exposed you to non-human life in abundant variety, and you can be counted on to know and understand even the smallest of differences between them.",
-    "specialisation": "Trapper"
+    "specialisation": "Trapper",
+    "level": "specialisation"
   }
 ]
