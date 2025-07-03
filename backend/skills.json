@@ -1,0 +1,746 @@
+[
+  {
+    "name": "Local Knowledge",
+    "class": "Archivist"
+  },
+  {
+    "name": "Geography",
+    "class": "Archivist"
+  },
+  {
+    "name": "Twitcher",
+    "class": "Archivist"
+  },
+  {
+    "name": "Wanderer",
+    "class": "Archivist"
+  },
+  {
+    "name": "Behaviourist",
+    "class": "Archivist"
+  },
+  {
+    "name": "Animal Enthusiast",
+    "class": "Archivist"
+  },
+  {
+    "name": "Folk Tradition",
+    "class": "Archivist"
+  },
+  {
+    "name": "Politics",
+    "class": "Archivist"
+  },
+  {
+    "name": "Foundations",
+    "class": "Archivist"
+  },
+  {
+    "name": "Local Guides",
+    "class": "Archivist"
+  },
+  {
+    "name": "Internal Compass",
+    "class": "Archivist"
+  },
+  {
+    "name": "Migratory Patterns",
+    "class": "Archivist"
+  },
+  {
+    "name": "Wildwalker",
+    "class": "Archivist"
+  },
+  {
+    "name": "Green Fingered",
+    "class": "Archivist"
+  },
+  {
+    "name": "Creature Specialist",
+    "class": "Archivist"
+  },
+  {
+    "name": "Monstrous Ecologies",
+    "class": "Archivist"
+  },
+  {
+    "name": "Lore Keeper",
+    "class": "Archivist"
+  },
+  {
+    "name": "Negotiator",
+    "class": "Archivist"
+  },
+  {
+    "name": "Amateur Archaeologist",
+    "class": "Archivist"
+  },
+  {
+    "name": "Obscure Languages",
+    "class": "Archivist"
+  },
+  {
+    "name": "Flânerie",
+    "class": "Archivist"
+  },
+  {
+    "name": "Traces of Fate",
+    "class": "Archivist"
+  },
+  {
+    "name": "Hidden Networks",
+    "class": "Archivist"
+  },
+  {
+    "name": "Plant Collector",
+    "class": "Archivist"
+  },
+  {
+    "name": "Non-Verbal Communication",
+    "class": "Archivist"
+  },
+  {
+    "name": "Monster Specialist",
+    "class": "Archivist"
+  },
+  {
+    "name": "Curator",
+    "class": "Archivist"
+  },
+  {
+    "name": "Excavations",
+    "class": "Archivist"
+  },
+  {
+    "name": "Cartographer's Tools",
+    "class": "Archivist",
+    "specialisation": "Cartographer"
+  },
+  {
+    "name": "Mathematician",
+    "class": "Archivist",
+    "specialisation": "Cartographer"
+  },
+  {
+    "name": "Travel Hardened",
+    "class": "Archivist",
+    "specialisation": "Cartographer"
+  },
+  {
+    "name": "Over the Edge",
+    "class": "Archivist",
+    "specialisation": "Cartographer"
+  },
+  {
+    "name": "Master Cartographer",
+    "class": "Archivist",
+    "specialisation": "Cartographer"
+  },
+  {
+    "name": "Sentience",
+    "class": "Archivist",
+    "specialisation": "Biologist"
+  },
+  {
+    "name": "Breath of Life",
+    "class": "Archivist",
+    "specialisation": "Biologist"
+  },
+  {
+    "name": "Field Expert",
+    "class": "Archivist",
+    "specialisation": "Biologist"
+  },
+  {
+    "name": "Fate’s Laboratory",
+    "class": "Archivist",
+    "specialisation": "Biologist"
+  },
+  {
+    "name": "Master Biologist",
+    "class": "Archivist",
+    "specialisation": "Biologist"
+  },
+  {
+    "name": "Difference",
+    "class": "Archivist",
+    "specialisation": "Historian"
+  },
+  {
+    "name": "Power Comes From Below",
+    "class": "Archivist",
+    "specialisation": "Historian"
+  },
+  {
+    "name": "Ancient and New",
+    "class": "Archivist",
+    "specialisation": "Historian"
+  },
+  {
+    "name": "Knowledgeable",
+    "class": "Archivist",
+    "specialisation": "Historian"
+  },
+  {
+    "name": "Master Historian",
+    "class": "Archivist",
+    "specialisation": "Historian"
+  },
+  {
+    "name": "Whispers",
+    "class": "Diviner"
+  },
+  {
+    "name": "Intentions",
+    "class": "Diviner"
+  },
+  {
+    "name": "Patterns",
+    "class": "Diviner"
+  },
+  {
+    "name": "Presence",
+    "class": "Diviner"
+  },
+  {
+    "name": "Memories",
+    "class": "Diviner"
+  },
+  {
+    "name": "Familiar",
+    "class": "Diviner"
+  },
+  {
+    "name": "Shadows on the Wall",
+    "class": "Diviner"
+  },
+  {
+    "name": "Signs in the Wild",
+    "class": "Diviner"
+  },
+  {
+    "name": "Divina",
+    "class": "Diviner"
+  },
+  {
+    "name": "Reader",
+    "class": "Diviner"
+  },
+  {
+    "name": "Welcome Presence",
+    "class": "Diviner"
+  },
+  {
+    "name": "Outsider",
+    "class": "Diviner"
+  },
+  {
+    "name": "Weaver",
+    "class": "Diviner"
+  },
+  {
+    "name": "Cut Threads",
+    "class": "Diviner"
+  },
+  {
+    "name": "Resonance",
+    "class": "Diviner"
+  },
+  {
+    "name": "Voices",
+    "class": "Diviner"
+  },
+  {
+    "name": "Light Fingers",
+    "class": "Diviner"
+  },
+  {
+    "name": "Fateways",
+    "class": "Diviner"
+  },
+  {
+    "name": "Dialects",
+    "class": "Diviner"
+  },
+  {
+    "name": "Speaker",
+    "class": "Diviner"
+  },
+  {
+    "name": "Seer",
+    "class": "Diviner"
+  },
+  {
+    "name": "Witch",
+    "class": "Diviner"
+  },
+  {
+    "name": "True Sight",
+    "class": "Diviner"
+  },
+  {
+    "name": "Shaper",
+    "class": "Diviner"
+  },
+  {
+    "name": "Fortune Teller",
+    "class": "Diviner"
+  },
+  {
+    "name": "Energy Flows",
+    "class": "Diviner"
+  },
+  {
+    "name": "Wildspeaker",
+    "class": "Diviner"
+  },
+  {
+    "name": "Dark Premonitions",
+    "class": "Diviner",
+    "specialisation": "Cartomancer"
+  },
+  {
+    "name": "Symbology",
+    "class": "Diviner",
+    "specialisation": "Cartomancer"
+  },
+  {
+    "name": "A Thinking Map",
+    "class": "Diviner",
+    "specialisation": "Cartomancer"
+  },
+  {
+    "name": "The World in Images",
+    "class": "Diviner",
+    "specialisation": "Cartomancer"
+  },
+  {
+    "name": "Master Cartomancer",
+    "class": "Diviner",
+    "specialisation": "Cartomancer"
+  },
+  {
+    "name": "Games of Chance",
+    "class": "Diviner",
+    "specialisation": "Ossiomancer"
+  },
+  {
+    "name": "Vestiges of Life",
+    "class": "Diviner",
+    "specialisation": "Ossiomancer"
+  },
+  {
+    "name": "Seasoned",
+    "class": "Diviner",
+    "specialisation": "Ossiomancer"
+  },
+  {
+    "name": "Bonesmith",
+    "class": "Diviner",
+    "specialisation": "Ossiomancer"
+  },
+  {
+    "name": "Master Ossiomancer",
+    "class": "Diviner",
+    "specialisation": "Ossiomancer"
+  },
+  {
+    "name": "Making Itself Known",
+    "class": "Diviner",
+    "specialisation": "Augur"
+  },
+  {
+    "name": "The Voice of the Wilds",
+    "class": "Diviner",
+    "specialisation": "Augur"
+  },
+  {
+    "name": "A Guiding Light",
+    "class": "Diviner",
+    "specialisation": "Augur"
+  },
+  {
+    "name": "Unspoiled",
+    "class": "Diviner",
+    "specialisation": "Augur"
+  },
+  {
+    "name": "Master Augur",
+    "class": "Diviner",
+    "specialisation": "Augur"
+  },
+  {
+    "name": "Relationships",
+    "class": "Fixer"
+  },
+  {
+    "name": "Resourceful",
+    "class": "Fixer"
+  },
+  {
+    "name": "People Watcher",
+    "class": "Fixer"
+  },
+  {
+    "name": "Steady Hands",
+    "class": "Fixer"
+  },
+  {
+    "name": "Inner Workings",
+    "class": "Fixer"
+  },
+  {
+    "name": "Working Patterns",
+    "class": "Fixer"
+  },
+  {
+    "name": "Don’t Eat That!",
+    "class": "Fixer"
+  },
+  {
+    "name": "Quartermaster",
+    "class": "Fixer"
+  },
+  {
+    "name": "Stolen Opportunities",
+    "class": "Fixer"
+  },
+  {
+    "name": "Silver Tongue",
+    "class": "Fixer"
+  },
+  {
+    "name": "Finder",
+    "class": "Fixer"
+  },
+  {
+    "name": "Body Language",
+    "class": "Fixer"
+  },
+  {
+    "name": "Gift Giver",
+    "class": "Fixer"
+  },
+  {
+    "name": "Gift Maker",
+    "class": "Fixer"
+  },
+  {
+    "name": "Advanced Workings",
+    "class": "Fixer"
+  },
+  {
+    "name": "Guild Member",
+    "class": "Fixer"
+  },
+  {
+    "name": "Emergency Treatment",
+    "class": "Fixer"
+  },
+  {
+    "name": "Black Marketeer",
+    "class": "Fixer"
+  },
+  {
+    "name": "Backwoods Prepper",
+    "class": "Fixer"
+  },
+  {
+    "name": "Lucky Charm",
+    "class": "Fixer"
+  },
+  {
+    "name": "Leader",
+    "class": "Fixer"
+  },
+  {
+    "name": "Linguist",
+    "class": "Fixer"
+  },
+  {
+    "name": "Manipulator",
+    "class": "Fixer"
+  },
+  {
+    "name": "Emotional Resonance",
+    "class": "Fixer"
+  },
+  {
+    "name": "Unusual Engineering",
+    "class": "Fixer"
+  },
+  {
+    "name": "Forgery",
+    "class": "Fixer"
+  },
+  {
+    "name": "Hireling",
+    "class": "Fixer"
+  },
+  {
+    "name": "Underground Connections",
+    "class": "Fixer"
+  },
+  {
+    "name": "Reuse and Recycle",
+    "class": "Fixer"
+  },
+  {
+    "name": "Power Behind the Throne",
+    "class": "Fixer",
+    "specialisation": "Envoy"
+  },
+  {
+    "name": "Faultlines and Fissures",
+    "class": "Fixer",
+    "specialisation": "Envoy"
+  },
+  {
+    "name": "Safe Passage",
+    "class": "Fixer",
+    "specialisation": "Envoy"
+  },
+  {
+    "name": "Diplomat",
+    "class": "Fixer",
+    "specialisation": "Envoy"
+  },
+  {
+    "name": "Master Envoy",
+    "class": "Fixer",
+    "specialisation": "Envoy"
+  },
+  {
+    "name": "Something from Nothing",
+    "class": "Fixer",
+    "specialisation": "Fabricator"
+  },
+  {
+    "name": "Animating Energy",
+    "class": "Fixer",
+    "specialisation": "Fabricator"
+  },
+  {
+    "name": "A Living Machine",
+    "class": "Fixer",
+    "specialisation": "Fabricator"
+  },
+  {
+    "name": "Revolutions",
+    "class": "Fixer",
+    "specialisation": "Fabricator"
+  },
+  {
+    "name": "Master Fabricator",
+    "class": "Fixer",
+    "specialisation": "Fabricator"
+  },
+  {
+    "name": "All That Glimmers",
+    "class": "Fixer",
+    "specialisation": "Scavenger"
+  },
+  {
+    "name": "Finder of Lost Things",
+    "class": "Fixer",
+    "specialisation": "Scavenger"
+  },
+  {
+    "name": "Better than Nothing",
+    "class": "Fixer",
+    "specialisation": "Scavenger"
+  },
+  {
+    "name": "The Marrow of Life",
+    "class": "Fixer",
+    "specialisation": "Scavenger"
+  },
+  {
+    "name": "Master Scavenger",
+    "class": "Fixer",
+    "specialisation": "Scavenger"
+  },
+  {
+    "name": "Wide Ranging",
+    "class": "Guardian"
+  },
+  {
+    "name": "Awareness",
+    "class": "Guardian"
+  },
+  {
+    "name": "Sixth Sense",
+    "class": "Guardian"
+  },
+  {
+    "name": "Quick Thinking",
+    "class": "Guardian"
+  },
+  {
+    "name": "Keen Eyed",
+    "class": "Guardian"
+  },
+  {
+    "name": "Amateur Botanist",
+    "class": "Guardian"
+  },
+  {
+    "name": "Tracks in the Mud",
+    "class": "Guardian"
+  },
+  {
+    "name": "Soft Steps",
+    "class": "Guardian"
+  },
+  {
+    "name": "Predator or Prey",
+    "class": "Guardian"
+  },
+  {
+    "name": "Strong as Oak",
+    "class": "Guardian"
+  },
+  {
+    "name": "Surefooted",
+    "class": "Guardian"
+  },
+  {
+    "name": "Draw Attention",
+    "class": "Guardian"
+  },
+  {
+    "name": "Moving Mountains",
+    "class": "Guardian"
+  },
+  {
+    "name": "Practised Reflexes",
+    "class": "Guardian"
+  },
+  {
+    "name": "Sharp Hearing",
+    "class": "Guardian"
+  },
+  {
+    "name": "Poultice",
+    "class": "Guardian"
+  },
+  {
+    "name": "Edible Plants",
+    "class": "Guardian"
+  },
+  {
+    "name": "Animal Tracker",
+    "class": "Guardian"
+  },
+  {
+    "name": "Camouflage",
+    "class": "Guardian"
+  },
+  {
+    "name": "Bulwark",
+    "class": "Guardian"
+  },
+  {
+    "name": "Intimidating Presence",
+    "class": "Guardian"
+  },
+  {
+    "name": "Nurture",
+    "class": "Guardian"
+  },
+  {
+    "name": "Attuned",
+    "class": "Guardian"
+  },
+  {
+    "name": "Athletics",
+    "class": "Guardian"
+  },
+  {
+    "name": "Revive",
+    "class": "Guardian"
+  },
+  {
+    "name": "Restore",
+    "class": "Guardian"
+  },
+  {
+    "name": "Enticing Scent",
+    "class": "Guardian"
+  },
+  {
+    "name": "The Spark of Life",
+    "class": "Guardian",
+    "specialisation": "Warden"
+  },
+  {
+    "name": "Sentinel",
+    "class": "Guardian",
+    "specialisation": "Warden"
+  },
+  {
+    "name": "Depth of Focus",
+    "class": "Guardian",
+    "specialisation": "Warden"
+  },
+  {
+    "name": "From Anywhere",
+    "class": "Guardian",
+    "specialisation": "Warden"
+  },
+  {
+    "name": "Nature’s Avenger",
+    "class": "Guardian",
+    "specialisation": "Survivalist"
+  },
+  {
+    "name": "One with the Wilds",
+    "class": "Guardian",
+    "specialisation": "Survivalist"
+  },
+  {
+    "name": "Into the Depths, Up to the Heights",
+    "class": "Guardian",
+    "specialisation": "Survivalist"
+  },
+  {
+    "name": "Every Lesson Yet Explored",
+    "class": "Guardian",
+    "specialisation": "Survivalist"
+  },
+  {
+    "name": "Signs of Struggle",
+    "class": "Guardian",
+    "specialisation": "Trapper"
+  },
+  {
+    "name": "The Best Approach",
+    "class": "Guardian",
+    "specialisation": "Trapper"
+  },
+  {
+    "name": "The Hidden Ways",
+    "class": "Guardian",
+    "specialisation": "Trapper"
+  },
+  {
+    "name": "Different Stripes",
+    "class": "Guardian",
+    "specialisation": "Trapper"
+  },
+  {
+    "name": "Master Warden",
+    "class": "Guardian",
+    "specialisation": "Warden"
+  },
+  {
+    "name": "Master Survivalist",
+    "class": "Guardian",
+    "specialisation": "Survivalist"
+  },
+  {
+    "name": "Master Trapper",
+    "class": "Guardian",
+    "specialisation": "Trapper"
+  }
+]

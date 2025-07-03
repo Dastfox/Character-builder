@@ -13,6 +13,7 @@ interface Character {
 @Component({
     selector: 'character-form',
     templateUrl: './character-form.component.html',
+    styleUrls: ['./character-form.component.css'],
     standalone: false
 })
 export class CharacterFormComponent implements OnInit {
