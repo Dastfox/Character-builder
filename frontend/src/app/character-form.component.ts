@@ -11,8 +11,9 @@ interface Character {
 }
 
 @Component({
-  selector: 'character-form',
-  templateUrl: './character-form.component.html'
+    selector: 'character-form',
+    templateUrl: './character-form.component.html',
+    standalone: false
 })
 export class CharacterFormComponent implements OnInit {
   licenses: string[] = [];
