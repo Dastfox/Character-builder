@@ -18,8 +18,20 @@
   <div>
     <h3>Abilities</h3>
     <div *ngFor="let key of abilityKeys">
-      <label>{{key}}: <input [(ngModel)]="model.abilities[key]" /></label>
+      <label>
+        {{key}}:
+        <select [(ngModel)]="model.abilities[key]" [disabled]="locked.has(key)">
+          <option value="d4">D4</option>
+          <option value="d6">D6</option>
+        </select>
+        <span *ngIf="locked.has(key)">
+          {{ model.abilities[key] === 'd6' ? '(Strength)' : '(Weakness)' }}
+        </span>
+      </label>
     </div>
+    <button *ngIf="model.license === 'Diviner'" (click)="randomizeDiviner()">
+      Roll Strength & Weakness
+    </button>
   </div>
 
   <div>
