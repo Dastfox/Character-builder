@@ -1,3 +1,27 @@
+<div class="form-card" *ngIf="!result">
+  <label>Name: <input [(ngModel)]="name" /></label>
+
+  <div *ngIf="currentQuestion">
+    <h3>{{ currentQuestion.text }}</h3>
+    <div *ngFor="let o of currentOptions">
+      <label>
+        <input type="radio" [name]="currentQuestion.id" [value]="o.id" [(ngModel)]="answers[currentQuestion.id]" />
+        {{ o.text }}
+      </label>
+    </div>
+    <button class="save" (click)="next()" *ngIf="!finished()">Next</button>
+  </div>
+
+  <div *ngIf="licenseDesc && currentIndex >= 4">
+    <p><em>{{ licenseDesc }}</em></p>
+  </div>
+
+  <div *ngIf="finished()">
+    <label>Description:</label>
+    <textarea [(ngModel)]="description"></textarea>
+    <button class="save" (click)="submit()">Submit</button>
+  </div>
+=======
 <div class="form-card">
   <label>Name: <input [(ngModel)]="name" /></label>
 

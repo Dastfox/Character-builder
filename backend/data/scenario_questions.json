@@ -64,7 +64,7 @@
     "text": "In quiet moments you study:",
     "options": [
       {"id": "arch", "text": "Maps and terrain", "skill": "Geography", "license": "Archivist"},
-      {"id": "div", "text": "Patterns in chance", "skill": "Patterns", "license": "Diviner"},
+      {"id": "div", "text": "Echoes carried on the wind", "skill": "Memories", "license": "Diviner"},
       {"id": "fix", "text": "Useful odds and ends", "skill": "Resourceful", "license": "Fixer"},
       {"id": "gua", "text": "Signs of movement", "skill": "Awareness", "license": "Guardian"}
     ]
@@ -83,7 +83,8 @@
     "id": "q9",
     "text": "When trouble brews you usually:",
     "options": [
-      {"id": "arch", "text": "Venture along hidden paths", "skill": "Wanderer", "license": "Archivist"},
+      {"id": "arch", "text": "Care for your favourite creature", "skill": "Animal Enthusiast", "license": "Archivist"},
+
       {"id": "div", "text": "Read motives and signs", "skill": "Intentions", "license": "Diviner"},
       {"id": "fix", "text": "Improve your tools", "skill": "Steady Hands", "license": "Fixer"},
       {"id": "gua", "text": "React quickly to threats", "skill": "Quick Thinking", "license": "Guardian"}
