@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "text": "Within the Mappa Mundi halls you are most often found:",
+    "options": [
+      {"id": "arch", "text": "Cataloguing tales of the past", "license": "Archivist"},
+      {"id": "div", "text": "Interpreting omens and symbols", "license": "Diviner"},
+      {"id": "fix", "text": "Repurposing scrap into tools", "license": "Fixer"},
+      {"id": "gua", "text": "Training with the shieldwall", "license": "Guardian"}
+    ]
+  },
+  {
+    "id": "q2",
+    "text": "On the road you most enjoy:",
+    "options": [
+      {"id": "arch", "text": "Gathering local histories", "license": "Archivist"},
+      {"id": "div", "text": "Watching for portents", "license": "Diviner"},
+      {"id": "fix", "text": "Scavenging for useful junk", "license": "Fixer"},
+      {"id": "gua", "text": "Planning defensive routes", "license": "Guardian"}
+    ]
+  },
+  {
+    "id": "q3",
+    "text": "Which task calls to you first when reaching a new settlement?",
+    "options": [
+      {"id": "arch", "text": "Questioning elders for lore", "license": "Archivist"},
+      {"id": "div", "text": "Reading the local winds", "license": "Diviner"},
+      {"id": "fix", "text": "Checking what might be repaired", "license": "Fixer"},
+      {"id": "gua", "text": "Assessing threats to the people", "license": "Guardian"}
+    ]
+  },
+  {
+    "id": "q4",
+    "text": "You are praised for your ability to:",
+    "options": [
+      {"id": "arch", "text": "Recall obscure stories", "license": "Archivist"},
+      {"id": "div", "text": "Foresee danger", "license": "Diviner"},
+      {"id": "fix", "text": "Fix almost anything", "license": "Fixer"},
+      {"id": "gua", "text": "Stand firm under pressure", "license": "Guardian"}
+    ]
+  },
+  {
+    "id": "q5",
+    "text": "When facing the unknown, you rely on:",
+    "options": [
+      {"id": "obs", "text": "Keen observation", "ability": "Observation"},
+      {"id": "exp", "text": "Bold exploration", "ability": "Exploration"},
+      {"id": "ded", "text": "Careful deduction", "ability": "Deduction"},
+      {"id": "tra", "text": "Unyielding traversal", "ability": "Traversal"}
+    ]
+  },
+  {
+    "id": "q6",
+    "text": "Your early lessons focused on:",
+    "options": [
+      {"id": "arch", "text": "Ancient records and local lore", "skill": "Local Knowledge", "license": "Archivist"},
+      {"id": "div", "text": "Whispers of fate", "skill": "Whispers", "license": "Diviner"},
+      {"id": "fix", "text": "Building trust", "skill": "Relationships", "license": "Fixer"},
+      {"id": "gua", "text": "Tracking dangers", "skill": "Wide Ranging", "license": "Guardian"}
+    ]
+  },
+  {
+    "id": "q7",
+    "text": "In quiet moments you study:",
+    "options": [
+      {"id": "arch", "text": "Maps and terrain", "skill": "Geography", "license": "Archivist"},
+      {"id": "div", "text": "Echoes carried on the wind", "skill": "Memories", "license": "Diviner"},
+      {"id": "fix", "text": "Useful odds and ends", "skill": "Resourceful", "license": "Fixer"},
+      {"id": "gua", "text": "Signs of movement", "skill": "Awareness", "license": "Guardian"}
+    ]
+  },
+  {
+    "id": "q8",
+    "text": "You most often consult with:",
+    "options": [
+      {"id": "arch", "text": "Bird watchers and storytellers", "skill": "Twitcher", "license": "Archivist"},
+      {"id": "div", "text": "Prophets and dreamers", "skill": "Presence", "license": "Diviner"},
+      {"id": "fix", "text": "Traders and engineers", "skill": "People Watcher", "license": "Fixer"},
+      {"id": "gua", "text": "Seasoned scouts", "skill": "Sixth Sense", "license": "Guardian"}
+    ]
+  },
+  {
+    "id": "q9",
+    "text": "When trouble brews you usually:",
+    "options": [
+      {"id": "arch", "text": "Care for your favourite creature", "skill": "Animal Enthusiast", "license": "Archivist"},
+      {"id": "div", "text": "Read motives and signs", "skill": "Intentions", "license": "Diviner"},
+      {"id": "fix", "text": "Improve your tools", "skill": "Steady Hands", "license": "Fixer"},
+      {"id": "gua", "text": "React quickly to threats", "skill": "Quick Thinking", "license": "Guardian"}
+    ]
+  },
+  {
+    "id": "q10",
+    "text": "Your go-to approach with others is:",
+    "options": [
+      {"id": "arch", "text": "Diagnose their ailments", "interaction": "Diagnose", "license": "Archivist"},
+      {"id": "div", "text": "Offer small gifts of insight", "interaction": "Gift", "license": "Diviner"},
+      {"id": "fix", "text": "Provoke them to act", "interaction": "Provoke", "license": "Fixer"},
+      {"id": "gua", "text": "Shield them from danger", "interaction": "Protect", "license": "Guardian"}
+    ]
+  },
+  {
+    "id": "q11",
+    "text": "When time allows, you like to:",
+    "options": [
+      {"id": "arch", "text": "Sketch what you see", "interaction": "Sketch", "license": "Archivist"},
+      {"id": "div", "text": "Read fortunes", "interaction": "Read", "license": "Diviner"},
+      {"id": "fix", "text": "Share useful salvage", "interaction": "Gift", "license": "Fixer"},
+      {"id": "gua", "text": "Share a meal", "interaction": "Feed", "license": "Guardian"}
+    ]
+  },
+  {
+    "id": "q12",
+    "text": "Others count on you to:",
+    "options": [
+      {"id": "arch", "text": "Study new findings", "interaction": "Study", "license": "Archivist"},
+      {"id": "div", "text": "Soothe frayed nerves", "interaction": "Soothe", "license": "Diviner"},
+      {"id": "fix", "text": "Repair gear on the fly", "interaction": "Touch", "license": "Fixer"},
+      {"id": "gua", "text": "Keep everyone playful", "interaction": "Play", "license": "Guardian"}
+    ]
+  }
+]
