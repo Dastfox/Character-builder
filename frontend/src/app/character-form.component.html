@@ -1,35 +1,40 @@
 <div class="form-card">
   <label>Name: <input [(ngModel)]="model.name" /></label>
-</div>
-<div>
-  <label>Description:</label>
-  <textarea [(ngModel)]="model.description"></textarea>
-</div>
-<div>
-  <label>License:
-    <select [(ngModel)]="model.license" (change)="onLicenseChange()">
-      <option value="">-- choose --</option>
-      <option *ngFor="let l of licenses" [value]="l">{{l}}</option>
-    </select>
-  </label>
-</div>
-<div>
-  <h3>Abilities</h3>
-  <div *ngFor="let key of abilityKeys">
-    <label>{{key}}: <input [(ngModel)]="model.abilities[key]" /></label>
+
+  <div>
+    <label>Description:</label>
+    <textarea [(ngModel)]="model.description"></textarea>
   </div>
-</div>
-<div>
-  <h3>Skills</h3>
-  <div *ngFor="let s of skills">
-    <label><input type="checkbox" [value]="s" (change)="toggleSkill(s, $event.target.checked)"> {{s}}</label>
+
+  <div>
+    <label>License:
+      <select [(ngModel)]="model.license" (change)="onLicenseChange()">
+        <option value="">-- choose --</option>
+        <option *ngFor="let l of licenses" [value]="l">{{l}}</option>
+      </select>
+    </label>
   </div>
-</div>
-<div>
-  <h3>Interactions</h3>
-  <div *ngFor="let i of interactions">
-    <label><input type="checkbox" [value]="i" (change)="toggleInteraction(i, $event.target.checked)"> {{i}}</label>
+
+  <div>
+    <h3>Abilities</h3>
+    <div *ngFor="let key of abilityKeys">
+      <label>{{key}}: <input [(ngModel)]="model.abilities[key]" /></label>
+    </div>
   </div>
+
+  <div>
+    <h3>Skills</h3>
+    <div *ngFor="let s of skills">
+      <label><input type="checkbox" [value]="s" (change)="toggleSkill(s, $event.target.checked)"> {{s}}</label>
+    </div>
+  </div>
+
+  <div>
+    <h3>Interactions</h3>
+    <div *ngFor="let i of interactions">
+      <label><input type="checkbox" [value]="i" (change)="toggleInteraction(i, $event.target.checked)"> {{i}}</label>
+    </div>
+  </div>
+
+  <button class="save" (click)="save()">Save</button>
 </div>
-</div>
-<button class="save" (click)="save()">Save</button>
