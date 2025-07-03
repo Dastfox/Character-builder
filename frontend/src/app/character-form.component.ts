@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService } from './api.service';
 
 interface Character {
+  id?: number;
   name: string;
   description: string;
   license: string;
@@ -34,6 +35,7 @@ export class CharacterFormComponent implements OnInit {
     skills: [],
     interactions: []
   };
+  created: Character | null = null;
 
   constructor(private api: ApiService) {}
 
@@ -64,8 +66,13 @@ export class CharacterFormComponent implements OnInit {
   }
 
   save() {
-    this.api.createCharacter(this.model).subscribe(res => {
-      alert('Character saved with id ' + res.id);
+    this.api.createCharacter(this.model).subscribe({
+      next: res => {
+        this.created = res as Character;
+      },
+      error: err => {
+        alert('Error: ' + (err.error?.detail || 'unknown'));
+      }
     });
   }
 }
