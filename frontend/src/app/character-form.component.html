@@ -17,8 +17,16 @@
 
   <div>
     <h3>Abilities</h3>
+    <div *ngIf="model.license === 'Diviner'">
+      <button (click)="rollDiviner()">Roll Strength/Weakness</button>
+    </div>
     <div *ngFor="let key of abilityKeys">
-      <label>{{key}}: <input [(ngModel)]="model.abilities[key]" /></label>
+      <label>{{key}}:
+        <select [(ngModel)]="model.abilities[key]">
+          <option value="">--</option>
+          <option *ngFor="let d of diceOptions" [value]="d">{{d}}</option>
+        </select>
+      </label>
     </div>
   </div>
 
@@ -37,4 +45,7 @@
   </div>
 
   <button class="save" (click)="save()">Save</button>
+  <div *ngIf="lastId">
+    <a [href]="exportUrl()" target="_blank">Download Sheet</a>
+  </div>
 </div>

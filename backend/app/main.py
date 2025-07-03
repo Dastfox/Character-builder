@@ -4,6 +4,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from typing import List, Dict
 import io
+import json
+import os
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 
@@ -21,13 +23,14 @@ app.add_middleware(
 ABILITIES = ["Observation", "Exploration", "Deduction", "Traversal"]
 LICENSES = ["Archivist", "Diviner", "Fixer", "Guardian"]
 
-# Placeholder skill and interaction data
-SKILLS: Dict[str, List[str]] = {
-    "Archivist": ["Local Knowledge", "Cartographer's Tools", "Biologist"],
-    "Diviner": ["Whispers", "Cartomancer", "Ossiomancer"],
-    "Fixer": ["Tinker", "Mechanic", "Smuggler"],
-    "Guardian": ["Protector", "Warrior", "Bodyguard"],
-}
+# Load skills from skills.json
+SKILL_FILE = os.path.join(os.path.dirname(__file__), "..", "skills.json")
+with open(SKILL_FILE, "r", encoding="utf-8") as f:
+    skill_rows = json.load(f)
+
+SKILLS: Dict[str, List[str]] = {}
+for row in skill_rows:
+    SKILLS.setdefault(row["class"], []).append(row["name"])
 
 INTERACTIONS: Dict[str, List[str]] = {
     "Archivist": ["Research", "Analyse", "Catalog"],
@@ -66,11 +69,34 @@ def get_skills(license: str):
 def get_interactions(license: str):
     return INTERACTIONS.get(license, [])
 
+
+def validate_character(char: Character):
+    dice_values = list(char.abilities.model_dump().values())
+    allowed = {"D4", "D6"}
+    if any(d not in allowed for d in dice_values):
+        raise HTTPException(status_code=400, detail="Abilities must be D4 or D6")
+    if sorted(dice_values) != ["D4", "D4", "D6", "D6"]:
+        raise HTTPException(status_code=400, detail="Abilities must use two D4 and two D6")
+
+    if char.license == "Archivist":
+        if char.abilities.Observation != "D6" or char.abilities.Traversal != "D4":
+            raise HTTPException(status_code=400, detail="Archivist must have D6 Observation and D4 Traversal")
+    elif char.license == "Fixer":
+        if char.abilities.Deduction != "D6" or char.abilities.Traversal != "D4":
+            raise HTTPException(status_code=400, detail="Fixer must have D6 Deduction and D4 Traversal")
+    elif char.license == "Guardian":
+        if char.abilities.Traversal != "D6" or char.abilities.Deduction != "D4":
+            raise HTTPException(status_code=400, detail="Guardian must have D6 Traversal and D4 Deduction")
+    elif char.license == "Diviner":
+        # No fixed abilities, just ensure distribution is correct
+        pass
+    else:
+        raise HTTPException(status_code=400, detail="Invalid license")
+
 @app.post("/characters", response_model=Character)
 def create_character(char: Character):
     global next_id
-    if char.license not in LICENSES:
-        raise HTTPException(status_code=400, detail="Invalid license")
+    validate_character(char)
     char.id = next_id
     next_id += 1
     characters[char.id] = char
@@ -113,4 +139,8 @@ def export_character(char_id: int):
     pdf.showPage()
     pdf.save()
     buffer.seek(0)
-    return StreamingResponse(buffer, media_type="application/pdf", headers={"Content-Disposition": f"attachment; filename=character_{char_id}.pdf"})
+    return StreamingResponse(
+        buffer,
+        media_type="application/pdf",
+        headers={"Content-Disposition": f"inline; filename=character_{char_id}.pdf"},
+    )
