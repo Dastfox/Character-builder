@@ -30,6 +30,14 @@ export class ApiService {
     return this.http.get<string[]>(`${this.base}/interactions/${license}`);
   }
 
+  getScenarioQuestions(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.base}/scenario/questions`);
+  }
+
+  buildFromScenario(payload: any): Observable<any> {
+    return this.http.post(`${this.base}/scenario/build`, payload);
+  }
+
   createCharacter(char: any): Observable<any> {
     return this.http.post(`${this.base}/characters`, char);
   }

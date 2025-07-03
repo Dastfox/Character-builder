@@ -60,6 +60,34 @@ SKILL_RULES: Dict[str, Dict[str, int]] = {
 # Map skill name -> detail for quick lookups
 SKILL_MAP: Dict[str, SkillDetail] = {s.name: s for s in ALL_SKILLS}
 
+# Load scenario questions used for the guided character creation
+with open(ROOT_DIR / "backend" / "data" / "scenario_questions.json", "r", encoding="utf-8") as f:
+    SCENARIO_QUESTIONS = json.load(f)
+
+# Short licence descriptions presented after scenario creation
+LICENSE_DESCRIPTIONS: Dict[str, str] = {
+    "Archivist": (
+        "Training: Strength in Observation, Weakness in Traversal. "
+        "Starting Skills: Two Observation skills, one Deduction skill, one Exploration skill. "
+        "Interactions: Choose three from Diagnose, Sketch, Study, Take Samples, Talk."
+    ),
+    "Diviner": (
+        "Training: Strength and Weakness determined by Fate. "
+        "Starting Skills: Two Deduction skills, one Observation skill, one Exploration skill. "
+        "Interactions: Choose three from Gift, Read, Sing, Soothe, Touch."
+    ),
+    "Fixer": (
+        "Training: Strength in Deduction, Weakness in Traversal. "
+        "Starting Skills: Two Deduction skills, one Exploration skill, one Observation skill. "
+        "Interactions: Choose three from Bait, Gift, Provoke, Read, Touch."
+    ),
+    "Guardian": (
+        "Training: Strength in Traversal, Weakness in Deduction. "
+        "Starting Skills: Two Traversal skills, one Exploration skill, one Observation skill. "
+        "Interactions: Choose three from Explore, Feed, Play, Protect, Provoke."
+    ),
+}
+
 class AbilityDice(BaseModel):
     Observation: str = Field(default="")
     Exploration: str = Field(default="")
@@ -74,6 +102,12 @@ class Character(BaseModel):
     abilities: AbilityDice
     skills: List[str] = []
     interactions: List[str] = []
+
+
+class ScenarioAnswers(BaseModel):
+    name: str
+    description: str
+    answers: Dict[str, str]
 
 characters: Dict[int, Character] = {}
 next_id = 1
@@ -100,6 +134,101 @@ def get_skills(license: str):
 @app.get("/interactions/{license}", response_model=List[str])
 def get_interactions(license: str):
     return INTERACTIONS.get(license, [])
+
+
+@app.get("/scenario/questions")
+def get_scenario_questions():
+    """Return the list of guided creation questions."""
+    return SCENARIO_QUESTIONS
+
+
+@app.post("/scenario/build")
+def build_from_scenario(data: ScenarioAnswers):
+    """Create a character based on answers to scenario questions."""
+    license_scores: Dict[str, int] = {l: 0 for l in LICENSES}
+    skills: List[str] = []
+    interactions: List[str] = []
+    ability_choice: str | None = None
+    answers = data.answers
+
+    option_lookup: Dict[str, Dict[str, Dict]] = {}
+    for q in SCENARIO_QUESTIONS:
+        option_lookup[q["id"]] = {o["id"]: o for o in q.get("options", [])}
+
+    for qid, oid in answers.items():
+        option = option_lookup.get(qid, {}).get(oid)
+        if not option:
+            continue
+        if "license" in option:
+            license_scores[option["license"]] += 1
+        if "ability" in option:
+            ability_choice = option["ability"]
+        if "skill" in option:
+            if option["skill"] not in skills:
+                skills.append(option["skill"])
+        if "interaction" in option:
+            if option["interaction"] not in interactions:
+                interactions.append(option["interaction"])
+
+    license = max(license_scores.items(), key=lambda x: x[1])[0]
+
+    # determine ability dice
+    abil_map = {a: "" for a in ABILITIES}
+    training = {
+        "Archivist": {"strength": "Observation", "weakness": "Traversal"},
+        "Fixer": {"strength": "Deduction", "weakness": "Traversal"},
+        "Guardian": {"strength": "Traversal", "weakness": "Deduction"},
+    }
+    rules = training.get(license)
+    if license == "Diviner":
+        strength = ability_choice or "Deduction"
+        weakness = next(a for a in ABILITIES if a != strength)
+        abil_map[strength] = "d6"
+        abil_map[weakness] = "d4"
+    else:
+        if rules:
+            abil_map[rules["strength"]] = "d6"
+            abil_map[rules["weakness"]] = "d4"
+        if ability_choice and ability_choice not in (rules["strength"], rules["weakness"]):
+            abil_map[ability_choice] = "d6"
+    # fill remaining
+    for a in ABILITIES:
+        if not abil_map[a]:
+            abil_map[a] = "d4" if list(abil_map.values()).count("d4") < 2 else "d6"
+    abilities = AbilityDice(**abil_map)
+
+    if len(skills) < 4:
+        defaults = [
+            s.name
+            for s in SKILLS_BY_LICENSE.get(license, [])
+            if s.level == "starting"
+        ]
+        for s in defaults:
+            if len(skills) >= 4:
+                break
+            if s not in skills:
+                skills.append(s)
+
+    if len(interactions) < 3:
+        defaults = INTERACTIONS.get(license, [])
+        for i in defaults:
+            if len(interactions) >= 3:
+                break
+            if i not in interactions:
+                interactions.append(i)
+
+    char = Character(
+        name=data.name,
+        description=data.description,
+        license=license,
+        abilities=abilities,
+        skills=skills,
+        interactions=interactions,
+    )
+    created = create_character(char)
+    result = created.model_dump()
+    result["license_description"] = LICENSE_DESCRIPTIONS.get(license, "")
+    return result
 
 @app.post("/characters", response_model=Character)
 def create_character(char: Character):

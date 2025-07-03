@@ -1,0 +1,37 @@
+<div class="form-card">
+  <label>Name: <input [(ngModel)]="name" /></label>
+
+  <div *ngFor="let q of questions">
+    <h3>{{q.text}}</h3>
+    <div *ngFor="let o of q.options">
+      <label>
+        <input type="radio" [name]="q.id" [value]="o.id" [(ngModel)]="answers[q.id]" />
+        {{o.text}}
+      </label>
+    </div>
+  </div>
+
+  <div>
+    <label>Description:</label>
+    <textarea [(ngModel)]="description"></textarea>
+  </div>
+
+  <button class="save" (click)="submit()">Submit</button>
+</div>
+
+<div *ngIf="result" class="result-card">
+  <h2>Saved Character</h2>
+  <p><strong>ID:</strong> {{result.id}}</p>
+  <p><strong>Name:</strong> {{result.name}}</p>
+  <p><strong>Description:</strong> {{result.description}}</p>
+  <p><strong>License:</strong> {{result.license}}</p>
+  <p>{{result.license_description}}</p>
+  <div>
+    <h3>Abilities</h3>
+    <div *ngFor="let key of ['Observation','Exploration','Deduction','Traversal']">
+      {{key}}: {{result.abilities[key]}}
+    </div>
+  </div>
+  <p><strong>Skills:</strong> {{result.skills.join(', ')}}</p>
+  <p><strong>Interactions:</strong> {{result.interactions.join(', ')}}</p>
+</div>
