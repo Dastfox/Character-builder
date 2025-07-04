@@ -12,21 +12,9 @@ export class ScenarioFormComponent implements OnInit {
   currentIndex = 0;
   answers: Record<string, string> = {};
   license = '';
-  licenseDesc = '';
   name = '';
   description = '';
   result: any | null = null;
-
-  licenseDescriptions: Record<string, string> = {
-    Archivist:
-      'Training: Strength in Observation, Weakness in Traversal. Starting Skills: Two Observation skills, one Deduction skill, one Exploration skill. Interactions: Choose three from Diagnose, Sketch, Study, Take Samples, Talk.',
-    Diviner:
-      'Training: Strength and Weakness determined by Fate. Starting Skills: Two Deduction skills, one Observation skill, one Exploration skill. Interactions: Choose three from Gift, Read, Sing, Soothe, Touch.',
-    Fixer:
-      'Training: Strength in Deduction, Weakness in Traversal. Starting Skills: Two Deduction skills, one Exploration skill, one Observation skill. Interactions: Choose three from Bait, Gift, Provoke, Read, Touch.',
-    Guardian:
-      'Training: Strength in Traversal, Weakness in Deduction. Starting Skills: Two Traversal skills, one Exploration skill, one Observation skill. Interactions: Choose three from Explore, Feed, Play, Protect, Provoke.'
-  };
 
   constructor(private api: ApiService) {}
 
@@ -119,7 +107,6 @@ export class ScenarioFormComponent implements OnInit {
       }
     }
     this.license = Object.entries(scores).sort((a, b) => b[1] - a[1])[0][0];
-    this.licenseDesc = this.licenseDescriptions[this.license];
   }
 
   finished() {
