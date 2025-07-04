@@ -38,14 +38,5 @@
   </div>
   <p><strong>Skills:</strong> {{result.skills.join(', ')}}</p>
   <p><strong>Interactions:</strong> {{result.interactions.join(', ')}}</p>
-    <div class="sheet-container">
-    <img src="assets/Character Sheet.png" alt="Character sheet" />
-    <div class="sheet-field sheet-name">{{result.name}}</div>
-    <div class="sheet-field sheet-description">{{result.description}}</div>
-    <div class="sheet-field sheet-license">{{result.license}}</div>
-    <div class="sheet-field sheet-abilities" *ngFor="let key of ['Observation','Exploration','Deduction','Traversal']; let i = index" [style.top.px]="150 + i*20" style="left: 350px">{{result.abilities[key]}}</div>
-    <div class="sheet-field sheet-skills">{{result.skills.join(', ')}}</div>
-    <div class="sheet-field sheet-interactions">{{result.interactions.join(', ')}}</div>
-  </div>
-  <button class="save" (click)="download()">Download PDF</button>
+  <button class="save" (click)="exportPdf()">Download PDF</button>
 </div>

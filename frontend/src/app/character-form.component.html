@@ -113,5 +113,7 @@
       {{ created?.interactions.join(", ") }}
     </div>
   </div>
-  <button class="save" (click)="download()">Download PDF</button>
+  <p><strong>Skills:</strong> {{created?.skills.join(', ')}}</p>
+  <p><strong>Interactions:</strong> {{created?.interactions.join(', ')}}</p>
+  <button class="save" (click)="exportPdf()">Download PDF</button>
 </div>
