@@ -76,49 +76,36 @@ input[type="text"], textarea, select {
   transform: translateX(0);
 }
 
-.sheet-container {
+.sheet-wrapper {
   position: relative;
-  margin-top: 1rem;
+  width: min(100%, 792px);
 }
 
-.sheet-container img {
-  width: 100%;
+.sheet-wrapper img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
-.sheet-field {
+.field {
   position: absolute;
   font-weight: bold;
-  font-size: 12px;
+  pointer-events: none;
+  color: #000;
+  text-shadow: 1px 1px 2px #ece8c9;
+  white-space: nowrap;
 }
 
-.sheet-name {
-  top: 40px;
-  left: 120px;
-}
+.name { left: 12%; top: 13%; width: 30%; }
+.licence { left: 10%; top: 19.5%; width: 30%; }
 
-.sheet-description {
-  top: 60px;
-  left: 120px;
-}
+.strength { left: 17%; top: 46.75%; width: 12%; }
+.weakness { left: 37%; top: 46.75%; width: 12%; }
 
-.sheet-license {
-  top: 80px;
-  left: 120px;
-}
+.traversal { left: 11.75%; top: 56%; width: 12%; }
+.observation { left: 11.75%; top: 65.5%; width: 12%; }
+.deduction { left: 11.75%; top: 74.25%; width: 12%; }
+.exploration { left: 11.75%; top: 84%; width: 12%; }
 
-.sheet-skills {
-  bottom: 80px;
-  left: 60px;
-  width: 480px;
-}
-
-.sheet-interactions {
-  bottom: 40px;
-  left: 60px;
-  width: 480px;
-}
-
-.sheet-abilities {
-  left: 350px;
-}
+.skill { left: 60%; top: 44%; width: 20%; }
+.interaction { left: 55%; top: 76%; width: 20%; }

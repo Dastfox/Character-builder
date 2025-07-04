@@ -83,37 +83,26 @@
 
 <div *ngIf="created" class="result-card">
   <h2>Saved Character</h2>
-  <p><strong>ID:</strong> {{ created?.id }}</p>
-  <p><strong>Name:</strong> {{ created?.name }}</p>
-  <p><strong>Description:</strong> {{ created?.description }}</p>
-  <p><strong>License:</strong> {{ created?.license }}</p>
-  <div>
-    <h3>Abilities</h3>
-    <div *ngFor="let key of abilityKeys">
-      {{ key }}: {{ created?.abilities[key] }}
-    </div>
-  </div>
-  <p><strong>Skills:</strong> {{ created?.skills.join(", ") }}</p>
-  <p><strong>Interactions:</strong> {{ created?.interactions.join(", ") }}</p>
-  <div class="sheet-container">
+  <div class="sheet-wrapper">
     <img src="assets/Character Sheet.png" alt="Character sheet" />
-    <div class="sheet-field sheet-name">{{ created?.name }}</div>
-    <div class="sheet-field sheet-description">{{ created?.description }}</div>
-    <div class="sheet-field sheet-license">{{ created?.license }}</div>
-    <div
-      class="sheet-field sheet-abilities"
-      *ngFor="let key of abilityKeys; let i = index"
-      [style.top.px]="150 + i * 20"
-      style="left: 350px"
-    >
-      {{ created?.abilities[key] }}
-    </div>
-    <div class="sheet-field sheet-skills">{{ created?.skills.join(", ") }}</div>
-    <div class="sheet-field sheet-interactions">
-      {{ created?.interactions.join(", ") }}
-    </div>
+    <span class="field name">{{ created?.name }}</span>
+    <span class="field licence">{{ created?.license }}</span>
+    <span class="field strength">{{ strengthAbility(created!) }}</span>
+    <span class="field weakness">{{ weaknessAbility(created!) }}</span>
+    <span class="field traversal">{{ created?.abilities['Traversal'] }}</span>
+    <span class="field observation">{{ created?.abilities['Observation'] }}</span>
+    <span class="field deduction">{{ created?.abilities['Deduction'] }}</span>
+    <span class="field exploration">{{ created?.abilities['Exploration'] }}</span>
+    <span class="field skill">
+      <ul>
+        <li *ngFor="let s of created?.skills">{{ s }}</li>
+      </ul>
+    </span>
+    <span class="field interaction">
+      <ul>
+        <li *ngFor="let i of created?.interactions">{{ i }}</li>
+      </ul>
+    </span>
   </div>
-  <p><strong>Skills:</strong> {{created?.skills.join(', ')}}</p>
-  <p><strong>Interactions:</strong> {{created?.interactions.join(', ')}}</p>
   <button class="save" (click)="exportPdf()">Download PDF</button>
 </div>
