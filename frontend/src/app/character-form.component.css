@@ -75,3 +75,50 @@ input[type="text"], textarea, select {
   opacity: 1;
   transform: translateX(0);
 }
+
+.sheet-container {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.sheet-container img {
+  width: 100%;
+  display: block;
+}
+
+.sheet-field {
+  position: absolute;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.sheet-name {
+  top: 40px;
+  left: 120px;
+}
+
+.sheet-description {
+  top: 60px;
+  left: 120px;
+}
+
+.sheet-license {
+  top: 80px;
+  left: 120px;
+}
+
+.sheet-skills {
+  bottom: 80px;
+  left: 60px;
+  width: 480px;
+}
+
+.sheet-interactions {
+  bottom: 40px;
+  left: 60px;
+  width: 480px;
+}
+
+.sheet-abilities {
+  left: 350px;
+}

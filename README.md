@@ -30,3 +30,5 @@ Open `http://localhost:4200` to view the app.
 
 After creating a character you can download a PDF sheet from `/characters/{id}/export`.
 The PDF uses `Character Sheet.png` as a background template if the file is present.
+The front-end displays the same sheet filled with the character data and provides
+a **Download PDF** button once a character is saved.

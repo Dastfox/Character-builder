@@ -191,4 +191,15 @@ export class CharacterFormComponent implements OnInit {
       }
     });
   }
+    download() {
+    if (!this.created?.id) return;
+    this.api.exportCharacter(this.created.id).subscribe(blob => {
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `character_${this.created?.id}.pdf`;
+      a.click();
+      window.URL.revokeObjectURL(url);
+    });
+  }
 }

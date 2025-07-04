@@ -1,10 +1,10 @@
-import { Injectable } from '@angular/core';
-import { HttpClient, HttpParams } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Injectable } from "@angular/core";
+import { HttpClient, HttpParams } from "@angular/common/http";
+import { Observable } from "rxjs";
 
 @Injectable()
 export class ApiService {
-  private base = 'http://localhost:8000';
+  private base = "http://localhost:8000";
 
   constructor(private http: HttpClient) {}
 
@@ -12,16 +12,18 @@ export class ApiService {
     return this.http.get<string[]>(`${this.base}/licenses`);
   }
 
-  getSkills(filters: { license?: string; ability?: string; level?: string } = {}): Observable<any[]> {
+  getSkills(
+    filters: { license?: string; ability?: string; level?: string } = {}
+  ): Observable<any[]> {
     let params = new HttpParams();
     if (filters.license) {
-      params = params.set('license', filters.license);
+      params = params.set("license", filters.license);
     }
     if (filters.ability) {
-      params = params.set('ability', filters.ability);
+      params = params.set("ability", filters.ability);
     }
     if (filters.level) {
-      params = params.set('level', filters.level);
+      params = params.set("level", filters.level);
     }
     return this.http.get<any[]>(`${this.base}/skills`, { params });
   }
@@ -40,5 +42,11 @@ export class ApiService {
 
   createCharacter(char: any): Observable<any> {
     return this.http.post(`${this.base}/characters`, char);
+  }
+
+  exportCharacter(id: number): Observable<Blob> {
+    return this.http.get(`${this.base}/characters/${id}/export`, {
+      responseType: "blob",
+    });
   }
 }
