@@ -158,7 +158,7 @@ export class ApiService {
       Guardian: 0
     };
     let skills: string[] = [];
-    const interactions: string[] = [];
+    let interactions: string[] = [];
     let abilityChoice: string | null = null;
 
     const optionLookup: Record<string, Record<string, any>> = {};
@@ -252,8 +252,10 @@ export class ApiService {
       }
     }
 
+    const allowedInt = this.interactions[license] || [];
+    interactions = interactions.filter(i => allowedInt.includes(i));
+
     if (interactions.length < 3) {
-      const allowedInt = this.interactions[license] || [];
       for (const i of allowedInt) {
         if (interactions.length >= 3) break;
         if (!interactions.includes(i)) interactions.push(i);
