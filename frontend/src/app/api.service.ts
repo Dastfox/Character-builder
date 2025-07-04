@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import skillsJson from '../assets/skills_with_details.json';
+import questionsJson from '../assets/scenario_questions.json';
 import { Observable, of, throwError } from 'rxjs';
 import { map, switchMap } from 'rxjs/operators';
 
@@ -39,31 +40,23 @@ export class ApiService {
   };
   private characters: Character[] = [];
   private nextId = 1;
-  private allSkills: SkillDetail[] = [];
-  private scenarioQuestions: any[] = [];
+  private allSkills: SkillDetail[] = skillsJson as SkillDetail[];
+  private scenarioQuestions: any[] = questionsJson as any[];
 
-  constructor(private http: HttpClient) {
-    this.http.get<SkillDetail[]>('assets/skills_with_details.json').subscribe(d => (this.allSkills = d));
-    this.http.get<any[]>('assets/scenario_questions.json').subscribe(q => (this.scenarioQuestions = q));
-  }
+  constructor() {}
 
   getLicenses(): Observable<string[]> {
     return of(this.licenses);
   }
 
   getSkills(filters: { license?: string; ability?: string; level?: string } = {}): Observable<SkillDetail[]> {
-    const ensure = this.allSkills.length
-      ? of(this.allSkills)
-      : this.http.get<SkillDetail[]>('assets/skills_with_details.json').pipe(map(d => (this.allSkills = d, d)));
-    return ensure.pipe(
-      map(skills =>
-        skills.filter(s => {
-          if (filters.license && s.license !== filters.license) return false;
-          if (filters.ability && s.ability !== filters.ability) return false;
-          if (filters.level && s.level !== filters.level) return false;
-          return true;
-        })
-      )
+    return of(
+      this.allSkills.filter(s => {
+        if (filters.license && s.license !== filters.license) return false;
+        if (filters.ability && s.ability !== filters.ability) return false;
+        if (filters.level && s.level !== filters.level) return false;
+        return true;
+      })
     );
   }
 
@@ -72,9 +65,7 @@ export class ApiService {
   }
 
   getScenarioQuestions(): Observable<any[]> {
-    return this.scenarioQuestions.length
-      ? of(this.scenarioQuestions)
-      : this.http.get<any[]>('assets/scenario_questions.json').pipe(map(q => (this.scenarioQuestions = q, q)));
+    return of(this.scenarioQuestions);
   }
 
   buildFromScenario(payload: any): Observable<any> {
