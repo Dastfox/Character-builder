@@ -83,26 +83,6 @@
 
 <div *ngIf="created" class="result-card">
   <h2>Saved Character</h2>
-  <div class="sheet-wrapper">
-    <img src="assets/Character Sheet.png" alt="Character sheet" />
-    <span class="field name">{{ created?.name }}</span>
-    <span class="field licence">{{ created?.license }}</span>
-    <span class="field strength">{{ strengthAbility(created!) }}</span>
-    <span class="field weakness">{{ weaknessAbility(created!) }}</span>
-    <span class="field traversal">{{ created?.abilities['Traversal'] }}</span>
-    <span class="field observation">{{ created?.abilities['Observation'] }}</span>
-    <span class="field deduction">{{ created?.abilities['Deduction'] }}</span>
-    <span class="field exploration">{{ created?.abilities['Exploration'] }}</span>
-    <span class="field skill">
-      <ul>
-        <li *ngFor="let s of created?.skills">{{ s }}</li>
-      </ul>
-    </span>
-    <span class="field interaction">
-      <ul>
-        <li *ngFor="let i of created?.interactions">{{ i }}</li>
-      </ul>
-    </span>
-  </div>
+  <character-sheet [character]="created"></character-sheet>
   <button class="save" (click)="exportPdf()">Download PDF</button>
 </div>

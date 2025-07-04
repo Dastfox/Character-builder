@@ -54,15 +54,6 @@ export class CharacterFormComponent implements OnInit {
   };
   created: Character | null = null;
   hoveredSkill: Skill | null = null;
-  strengthAbility(c: Character): string {
-    const entry = Object.entries(c.abilities).find(([_, v]) => v === "d6");
-    return entry ? entry[0] : "";
-  }
-
-  weaknessAbility(c: Character): string {
-    const entry = Object.entries(c.abilities).find(([_, v]) => v === "d4");
-    return entry ? entry[0] : "";
-  }
 
 
   constructor(private api: ApiService) {}
