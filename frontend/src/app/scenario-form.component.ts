@@ -55,7 +55,10 @@ export class ScenarioFormComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.api.getScenarioQuestions().subscribe(q => (this.questions = q));
+    this.api.getScenarioQuestions().subscribe(q => {
+      this.questions = q;
+      this.autoAdvanceSingle();
+    });
   }
 
 
@@ -77,7 +80,10 @@ export class ScenarioFormComponent implements OnInit {
   next() {
     const q = this.currentQuestion;
     if (!q) return;
-    if (!this.answers[q.id]) {
+    const opts = this.currentOptions;
+    if (opts.length === 1) {
+      this.answers[q.id] = opts[0].id;
+    } else if (!this.answers[q.id]) {
       alert('Please select an option');
       return;
     }
@@ -85,6 +91,22 @@ export class ScenarioFormComponent implements OnInit {
       this.determineLicense();
     }
     this.currentIndex++;
+    this.autoAdvanceSingle();
+  }
+
+  private autoAdvanceSingle() {
+    while (
+      this.currentQuestion &&
+      this.currentOptions.length === 1 &&
+      !this.answers[this.currentQuestion.id]
+    ) {
+      const q = this.currentQuestion;
+      this.answers[q.id] = this.currentOptions[0].id;
+      if (q.id === 'q4') {
+        this.determineLicense();
+      }
+      this.currentIndex++;
+    }
   }
 
   determineLicense() {
