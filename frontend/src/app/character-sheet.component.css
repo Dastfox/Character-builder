@@ -1,0 +1,34 @@
+.sheet-wrapper {
+  position: relative;
+  width: min(100%, 792px);
+}
+
+.sheet-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.field {
+  font-size: 10px;
+  position: absolute;
+  font-weight: bold;
+  pointer-events: none;
+  color: #000;
+  text-shadow: 1px 1px 2px #ece8c9;
+  white-space: nowrap;
+}
+
+.name { left: 12%; top: 13%; width: 30%; }
+.licence { left: 10%; top: 19.5%; width: 30%; }
+
+.strength { left: 17%; top: 46.75%; width: 12%;}
+.weakness { left: 37%; top: 46.75%; width: 12%; }
+
+.traversal { left: 11.75%; top: 56%; width: 12%; font-size: 15px;}
+.observation { left: 11.75%; top: 65.5%; width: 12%; font-size: 15px;}
+.deduction { left: 11.75%; top: 74.25%; width: 12%; font-size: 15px;}
+.exploration { left: 11.75%; top: 84%; width: 12%; font-size: 15px;}
+
+.skill { left: 53%; top: 44%; width: 20%; }
+.interaction { left: 50%; top: 76%; width: 20%; }

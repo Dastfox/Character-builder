@@ -1,0 +1,87 @@
+# ──────────────────────────────────────────────────
+#  FastAPI / Python backend
+# ──────────────────────────────────────────────────
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.mypy_cache/
+.pytest_cache/
+
+# Virtual-envs
+.env            # pip-env / hatch / direnv
+.venv/
+venv/
+ENV/
+
+# Packaging & build
+build/
+dist/
+*.egg-info/
+.eggs/
+wheelhouse/
+
+# Tooling state
+.coverage
+htmlcov/
+.tox/
+.dmypy.json
+.pyre/
+
+# IDEs
+.idea/
+.vscode/
+*.code-workspace
+*.sublime-*
+
+# Local settings / secrets
+*.env
+*.sqlite3
+instance/        # if you keep per-machine configs here
+migration_*      # alembic scratch migrations
+
+# ──────────────────────────────────────────────────
+#  Angular frontend  (assumed in ./frontend/)
+# ──────────────────────────────────────────────────
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/.angular-cache/
+frontend/.nx/            # if using Nx
+frontend/.env            # frontend secrets (dotenv or dotenv-webpack)
+
+# Build artifacts produced outside the frontend dir (e.g. Docker COPIES)
+node_modules/
+dist/
+
+# Optional: lock-files that belong to the generated build
+# (keep them if you want deterministic CI builds!)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ──────────────────────────────────────────────────
+#  Logs & runtime files
+# ──────────────────────────────────────────────────
+*.log
+*.pid
+*.seed
+*.tgz
+*.gz
+
+# ──────────────────────────────────────────────────
+#  OS-specific & miscellaneous
+# ──────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# ──────────────────────────────────────────────────
+#  Docker (only if you build images locally)
+# ──────────────────────────────────────────────────
+*.tar
+*.img
+docker-compose.override.yml

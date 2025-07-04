@@ -1,0 +1,29 @@
+<div class="sheet-wrapper">
+  <img src="/assets/Character_Sheet.png" alt="Character sheet" />
+  <span class="field name">{{ character?.name }}</span>
+  <span class="field licence">{{ character?.license }}</span>
+  <span class="field strength">{{ strengthAbility(character) }}</span>
+  <span class="field weakness">{{ weaknessAbility(character) }}</span>
+  <span class="field traversal">
+    {{ character?.abilities["Traversal"] | uppercase }}
+  </span>
+  <span class="field observation">
+    {{ character?.abilities["Observation"] | uppercase }}
+  </span>
+  <span class="field deduction">
+    {{ character?.abilities["Deduction"] | uppercase }}
+  </span>
+  <span class="field exploration">
+    {{ character?.abilities["Exploration"] | uppercase }}
+  </span>
+  <span class="field skill">
+    <ul>
+      <li *ngFor="let s of character?.skills">{{ s }}</li>
+    </ul>
+  </span>
+  <span class="field interaction">
+    <ul>
+      <li *ngFor="let i of character?.interactions">{{ i }}</li>
+    </ul>
+  </span>
+</div>
