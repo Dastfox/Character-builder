@@ -30,6 +30,30 @@ export class ScenarioFormComponent implements OnInit {
 
   constructor(private api: ApiService) {}
 
+  exportPdf() {
+    if (!this.result) return;
+    const { jsPDF } = (window as any);
+    const doc = new jsPDF();
+    const c = this.result;
+    let y = 10;
+    doc.text(`Name: ${c.name}`, 10, y);
+    y += 10;
+    doc.text(`Description: ${c.description}`, 10, y);
+    y += 10;
+    doc.text(`License: ${c.license}`, 10, y);
+    y += 10;
+    doc.text('Abilities:', 10, y);
+    for (const a of ['Observation','Exploration','Deduction','Traversal']) {
+      y += 10;
+      doc.text(`${a}: ${c.abilities[a]}`, 20, y);
+    }
+    y += 10;
+    doc.text('Skills: ' + c.skills.join(', '), 10, y);
+    y += 10;
+    doc.text('Interactions: ' + c.interactions.join(', '), 10, y);
+    doc.save(`character_${c.id}.pdf`);
+  }
+
   ngOnInit() {
     this.api.getScenarioQuestions().subscribe(q => (this.questions = q));
   }
