@@ -60,8 +60,8 @@ export class CharacterFormComponent implements OnInit {
 
   exportPdf() {
     if (!this.created) return;
-    // jsPDF imported from CDN
-    const { jsPDF } = (window as any);
+    // jsPDF imported from CDN. The UMD build exposes `window.jspdf.jsPDF`.
+    const { jsPDF } = (window as any).jspdf || (window as any);
     const doc = new jsPDF();
     const c = this.created;
     let y = 10;

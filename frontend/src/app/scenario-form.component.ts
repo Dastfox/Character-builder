@@ -32,7 +32,8 @@ export class ScenarioFormComponent implements OnInit {
 
   exportPdf() {
     if (!this.result) return;
-    const { jsPDF } = (window as any);
+    // jsPDF imported from CDN. The UMD build exposes `window.jspdf.jsPDF`.
+    const { jsPDF } = (window as any).jspdf || (window as any);
     const doc = new jsPDF();
     const c = this.result;
     let y = 10;
