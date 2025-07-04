@@ -228,6 +228,10 @@ def build_from_scenario(data: ScenarioAnswers):
             if s not in skills:
                 skills.append(s)
 
+    # keep only interactions valid for the determined licence
+    allowed_interactions = INTERACTIONS.get(license, [])
+    interactions = [i for i in interactions if i in allowed_interactions]
+
     if len(interactions) < 3:
         defaults = INTERACTIONS.get(license, [])
         for i in defaults:
