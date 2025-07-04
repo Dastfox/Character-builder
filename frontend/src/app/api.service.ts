@@ -157,7 +157,7 @@ export class ApiService {
       Fixer: 0,
       Guardian: 0
     };
-    const skills: string[] = [];
+    let skills: string[] = [];
     const interactions: string[] = [];
     let abilityChoice: string | null = null;
 
@@ -205,6 +205,58 @@ export class ApiService {
     for (const a of Object.keys(abilities)) {
       if (!abilities[a]) {
         abilities[a] = Object.values(abilities).filter(d => d === 'd4').length < 2 ? 'd4' : 'd6';
+      }
+    }
+
+    // ensure selected skills are valid starting skills for the licence and
+    // satisfy the required ability distribution
+    const allowed = this.skillsForLicense(license).filter(
+      s => s.level === 'starting'
+    );
+    const allowedNames = allowed.map(s => s.name);
+    skills = skills.filter(s => allowedNames.includes(s));
+
+    const rule = this.skillRules[license] || {};
+    const abilityCounts: Record<string, number> = {
+      Observation: 0,
+      Exploration: 0,
+      Deduction: 0,
+      Traversal: 0
+    };
+    for (const s of skills) {
+      const detail = this.allSkills.find(d => d.name === s);
+      if (detail) abilityCounts[detail.ability] += 1;
+    }
+
+    const byAbility: Record<string, string[]> = {};
+    for (const s of allowed) {
+      if (!byAbility[s.ability]) byAbility[s.ability] = [];
+      byAbility[s.ability].push(s.name);
+    }
+    for (const ability of Object.keys(rule)) {
+      const required = rule[ability];
+      const choices = byAbility[ability] || [];
+      for (const name of choices) {
+        if (abilityCounts[ability] >= required) break;
+        if (!skills.includes(name)) {
+          skills.push(name);
+          abilityCounts[ability] += 1;
+        }
+      }
+    }
+
+    if (skills.length < 4) {
+      for (const name of allowedNames) {
+        if (skills.length >= 4) break;
+        if (!skills.includes(name)) skills.push(name);
+      }
+    }
+
+    if (interactions.length < 3) {
+      const allowedInt = this.interactions[license] || [];
+      for (const i of allowedInt) {
+        if (interactions.length >= 3) break;
+        if (!interactions.includes(i)) interactions.push(i);
       }
     }
 
