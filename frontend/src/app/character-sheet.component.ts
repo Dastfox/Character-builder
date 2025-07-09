@@ -5,7 +5,10 @@ export interface Character {
   name: string;
   description: string;
   license: string;
+  strength: string;
+  weakness: string;
   abilities: Record<string, string>;
+  training: Record<string, { successes: number; failures: number }>;
   skills: string[];
   interactions: string[];
 }
@@ -20,12 +23,12 @@ export class CharacterSheetComponent {
   @Input() character!: Character;
 
   strengthAbility(c: Character): string {
-    const entry = Object.entries(c.abilities).find(([_, v]) => v === 'd6');
-    return entry ? entry[0] : '';
+    return c.strength ||
+      (Object.entries(c.abilities).find(([_, v]) => v === 'd6')?.[0] || '');
   }
 
   weaknessAbility(c: Character): string {
-    const entry = Object.entries(c.abilities).find(([_, v]) => v === 'd4');
-    return entry ? entry[0] : '';
+    return c.weakness ||
+      (Object.entries(c.abilities).find(([_, v]) => v === 'd4')?.[0] || '');
   }
 }

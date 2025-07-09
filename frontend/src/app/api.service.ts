@@ -18,7 +18,10 @@ export interface Character {
   name: string;
   description: string;
   license: string;
+  strength: string;
+  weakness: string;
   abilities: Record<string, string>;
+  training: Record<string, { successes: number; failures: number }>;
   skills: string[];
   interactions: string[];
 }
@@ -91,6 +94,14 @@ export class ApiService {
 
   private validateAndStoreCharacter(char: Character): Character {
     this.validateCharacter(char);
+    if (!char.training) {
+      char.training = {
+        Observation: { successes: 0, failures: 0 },
+        Exploration: { successes: 0, failures: 0 },
+        Deduction: { successes: 0, failures: 0 },
+        Traversal: { successes: 0, failures: 0 }
+      };
+    }
     char.id = this.nextId++;
     this.characters.push(char);
     return char;
@@ -266,7 +277,16 @@ export class ApiService {
       name: payload.name,
       description: payload.description,
       license,
+      strength: rules ? rules.strength : abilityChoice || 'Deduction',
+      weakness:
+        rules ? rules.weakness : ['Observation', 'Exploration', 'Deduction', 'Traversal'].find(a => a !== (abilityChoice || 'Deduction')) as string,
       abilities,
+      training: {
+        Observation: { successes: 0, failures: 0 },
+        Exploration: { successes: 0, failures: 0 },
+        Deduction: { successes: 0, failures: 0 },
+        Traversal: { successes: 0, failures: 0 }
+      },
       skills,
       interactions
     };
