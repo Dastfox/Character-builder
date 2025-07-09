@@ -6,7 +6,10 @@ interface Character {
   name: string;
   description: string;
   license: string;
+  strength: string;
+  weakness: string;
   abilities: Record<string, string>;
+  training: Record<string, { successes: number; failures: number }>;
   skills: string[];
   interactions: string[];
 }
@@ -43,11 +46,19 @@ export class CharacterFormComponent implements OnInit {
     name: '',
     description: '',
     license: '',
+    strength: '',
+    weakness: '',
     abilities: {
       Observation: '',
       Exploration: '',
       Deduction: '',
       Traversal: ''
+    },
+    training: {
+      Observation: { successes: 0, failures: 0 },
+      Exploration: { successes: 0, failures: 0 },
+      Deduction: { successes: 0, failures: 0 },
+      Traversal: { successes: 0, failures: 0 }
     },
     skills: [],
     interactions: []
@@ -103,7 +114,11 @@ export class CharacterFormComponent implements OnInit {
 
   setTrainingDefaults() {
     this.locked.clear();
-    this.abilityKeys.forEach(k => (this.model.abilities[k] = ''));
+    this.abilityKeys.forEach(k => {
+      this.model.abilities[k] = '';
+      this.model.training[k].successes = 0;
+      this.model.training[k].failures = 0;
+    });
     const rules: any = {
       Archivist: { strength: 'Observation', weakness: 'Traversal' },
       Fixer: { strength: 'Deduction', weakness: 'Traversal' },
@@ -114,6 +129,8 @@ export class CharacterFormComponent implements OnInit {
     if (r) {
       this.locked.add(r.strength);
       this.locked.add(r.weakness);
+      this.model.strength = r.strength;
+      this.model.weakness = r.weakness;
       this.model.abilities[r.strength] = 'd6';
       this.model.abilities[r.weakness] = 'd4';
       const rest = this.abilityKeys.filter(k => !this.locked.has(k));
@@ -131,8 +148,14 @@ export class CharacterFormComponent implements OnInit {
     const weakness = pool.splice(Math.floor(Math.random() * pool.length), 1)[0];
     this.locked.add(strength);
     this.locked.add(weakness);
+    this.model.strength = strength;
+    this.model.weakness = weakness;
     this.model.abilities[strength] = 'd6';
     this.model.abilities[weakness] = 'd4';
+    this.abilityKeys.forEach(k => {
+      this.model.training[k].successes = 0;
+      this.model.training[k].failures = 0;
+    });
     // leave remaining abilities empty so the player must assign them
     this.model.abilities[pool[0]] = '';
     this.model.abilities[pool[1]] = '';
@@ -216,6 +239,54 @@ export class CharacterFormComponent implements OnInit {
         alert('Error: ' + (err.error?.detail || 'unknown'));
       }
     });
+  }
+
+  levelUp() {
+    const char: Character = (this.created || this.model) as Character;
+    const ladder = ['d4', 'd6', 'd8', 'd12'];
+    const messages: string[] = [];
+    for (const ability of this.abilityKeys) {
+      const current = char.abilities[ability];
+      const idx = ladder.indexOf(current);
+      if (idx === -1 || idx === ladder.length - 1) {
+        messages.push(`${ability} is already at maximum (${current}).`);
+        continue;
+      }
+      const nextDie = ladder[idx + 1];
+      const faces = parseInt(nextDie.slice(1), 10);
+      const reqS = faces;
+      const reqF = Math.floor(faces / 2);
+      const prog = char.training[ability] || { successes: 0, failures: 0 };
+      const needS = Math.max(reqS - prog.successes, 0);
+      const needF = Math.max(reqF - prog.failures, 0);
+      let allowed = needS === 0 && needF === 0;
+      if (allowed) {
+        if (ability !== char.strength) {
+          const strengthDie = char.abilities[char.strength];
+          if (ladder.indexOf(strengthDie) < idx + 1) allowed = false;
+        }
+        if (ability === char.weakness) {
+          for (const a of this.abilityKeys) {
+            if (a === char.weakness) continue;
+            if (ladder.indexOf(char.abilities[a]) < idx + 1) {
+              allowed = false;
+              break;
+            }
+          }
+        }
+      }
+      if (allowed) {
+        char.abilities[ability] = nextDie;
+        prog.successes -= reqS;
+        prog.failures -= reqF;
+        messages.push(`${ability} upgraded to ${nextDie}!`);
+      } else {
+        messages.push(
+          `${ability}: need ${needS} more successes and ${needF} more failures for ${nextDie}.`
+        );
+      }
+    }
+    alert(messages.join('\n'));
   }
 
 }
