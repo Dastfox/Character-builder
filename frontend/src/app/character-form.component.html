@@ -30,7 +30,18 @@
         <span *ngIf="locked.has(key)">
           {{ model.abilities[key] === "d6" ? "(Strength)" : "(Weakness)" }}
         </span>
+        <button
+          class="level-option"
+          *ngIf="leveling"
+          (click)="upgradeAbility(key)"
+          [disabled]="!levelInfo[key]?.allowed"
+        >
+          +
+        </button>
       </label>
+      <div *ngIf="leveling">
+        Need {{ levelInfo[key]?.needS }} successes and {{ levelInfo[key]?.needF }} failures
+      </div>
     </div>
     <button *ngIf="model.license === 'Diviner'" (click)="randomizeDiviner()">
       Roll Strength & Weakness

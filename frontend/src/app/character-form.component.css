@@ -76,3 +76,12 @@ input[type="text"], textarea, select {
   transform: translateX(0);
 }
 
+.level {
+  margin-left: 0.5rem;
+}
+
+button.level-option {
+  margin-left: 0.5rem;
+  padding: 0 0.5rem;
+}
+
