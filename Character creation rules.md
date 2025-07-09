@@ -41,3 +41,4 @@ Training: Strength in Traversal, Weakness in Deduction.
 Starting Skills: Two Traversal skills, one Exploration skill, one Observation skill.
 
 Starting Interactions: Choose three from Explore, Feed, Play, Protect, Provoke.
+

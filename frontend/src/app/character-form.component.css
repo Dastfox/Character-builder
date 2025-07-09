@@ -27,6 +27,15 @@ input[type="text"], textarea, select {
   border: 1px solid #ccc;
 }
 
+select {
+  width: 30%;
+}
+
+.level-info{
+  font-size: 0.85em;
+  font-style: italic;
+}
+
 .save {
   display: block;
   margin: 2rem auto 0;
