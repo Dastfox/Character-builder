@@ -66,6 +66,9 @@ export class CharacterFormComponent implements OnInit {
   created: Character | null = null;
   hoveredSkill: Skill | null = null;
 
+  leveling = false;
+  levelInfo: Record<string, { needS: number; needF: number; allowed: boolean; nextDie: string }> = {};
+
 
   constructor(private api: ApiService) {}
 
@@ -241,15 +244,15 @@ export class CharacterFormComponent implements OnInit {
     });
   }
 
-  levelUp() {
+  private computeLevelInfo() {
     const char: Character = (this.created || this.model) as Character;
     const ladder = ['d4', 'd6', 'd8', 'd12'];
-    const messages: string[] = [];
+    this.levelInfo = {};
     for (const ability of this.abilityKeys) {
       const current = char.abilities[ability];
       const idx = ladder.indexOf(current);
       if (idx === -1 || idx === ladder.length - 1) {
-        messages.push(`${ability} is already at maximum (${current}).`);
+        this.levelInfo[ability] = { needS: 0, needF: 0, allowed: false, nextDie: current };
         continue;
       }
       const nextDie = ladder[idx + 1];
@@ -275,18 +278,28 @@ export class CharacterFormComponent implements OnInit {
           }
         }
       }
-      if (allowed) {
-        char.abilities[ability] = nextDie;
-        prog.successes -= reqS;
-        prog.failures -= reqF;
-        messages.push(`${ability} upgraded to ${nextDie}!`);
-      } else {
-        messages.push(
-          `${ability}: need ${needS} more successes and ${needF} more failures for ${nextDie}.`
-        );
-      }
+      this.levelInfo[ability] = { needS, needF, allowed, nextDie };
     }
-    alert(messages.join('\n'));
+  }
+
+  levelUp() {
+    this.leveling = !this.leveling;
+    if (this.leveling) {
+      this.computeLevelInfo();
+    }
+  }
+
+  upgradeAbility(ability: string) {
+    this.computeLevelInfo();
+    const info = this.levelInfo[ability];
+    if (!info || !info.allowed) return;
+    const char: Character = (this.created || this.model) as Character;
+    char.abilities[ability] = info.nextDie;
+    const reqS = parseInt(info.nextDie.slice(1), 10);
+    const reqF = Math.floor(reqS / 2);
+    char.training[ability].successes -= reqS;
+    char.training[ability].failures -= reqF;
+    this.computeLevelInfo();
   }
 
 }
